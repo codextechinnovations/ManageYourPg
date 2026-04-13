@@ -1,0 +1,52 @@
+<svg width="375" height="812" viewBox="0 0 375 812" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a4e"/>
+      <stop offset="100%" style="stop-color:#1e3a8a"/>
+    </linearGradient>
+  </defs>
+  <rect width="375" height="812" fill="url(#bgGrad)"/>
+  <circle cx="187" cy="120" r="50" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="187" cy="100" r="40" fill="#3b82f6"/>
+  <text x="187" y="108" font-family="Arial" font-size="28" fill="white" text-anchor="middle" font-weight="bold">MY</text>
+  <text x="187" y="185" font-family="Arial" font-size="18" fill="white" text-anchor="middle" font-weight="bold">Manage Your PG</text>
+  <text x="187" y="205" font-family="Arial" font-size="14" fill="#94a3b8" text-anchor="middle">PG Owner</text>
+  <rect x="30" y="250" width="315" height="50" rx="12" fill="rgba(255,255,255,0.05)"/>
+  <rect x="50" y="268" width="24" height="24" rx="4" fill="#3b82f6"/>
+  <text x="90" y="282" font-family="Arial" font-size="16" fill="white">Dashboard</text>
+  <rect x="345" y="271" width="10" height="6" rx="3" fill="#3b82f6"/>
+  <rect x="30" y="310" width="315" height="50" rx="12" fill="rgba(255,255,255,0.05)"/>
+  <rect x="50" y="328" width="24" height="24" rx="4" fill="#8b5cf6"/>
+  <text x="90" y="342" font-family="Arial" font-size="16" fill="white">Tenants</text>
+  <rect x="345" y="331" width="10" height="6" rx="3" fill="#8b5cf6"/>
+  <rect x="30" y="370" width="315" height="50" rx="12" fill="rgba(255,255,255,0.05)"/>
+  <rect x="50" y="388" width="24" height="24" rx="4" fill="#22c55e"/>
+  <text x="90" y="402" font-family="Arial" font-size="16" fill="white">Payments</text>
+  <rect x="345" y="391" width="10" height="6" rx="3" fill="#22c55e"/>
+  <rect x="30" y="430" width="315" height="50" rx="12" fill="rgba(255,255,255,0.05)"/>
+  <rect x="50" y="448" width="24" height="24" rx="4" fill="#f59e0b"/>
+  <text x="90" y="462" font-family="Arial" font-size="16" fill="white">Rooms</text>
+  <rect x="345" y="451" width="10" height="6" rx="3" fill="#f59e0b"/>
+  <rect x="30" y="490" width="315" height="50" rx="12" fill="rgba(255,255,255,0.05)"/>
+  <rect x="50" y="508" width="24" height="24" rx="4" fill="#ef4444"/>
+  <text x="90" y="522" font-family="Arial" font-size="16" fill="white">Notice Board</text>
+  <rect x="345" y="511" width="10" height="6" rx="3" fill="#ef4444"/>
+  <rect x="30" y="550" width="315" height="50" rx="12" fill="rgba(255,255,255,0.05)"/>
+  <rect x="50" y="568" width="24" height="24" rx="4" fill="#ec4899"/>
+  <text x="90" y="582" font-family="Arial" font-size="16" fill="white">Bank Details</text>
+  <rect x="345" y="571" width="10" height="6" rx="3" fill="#ec4899"/>
+  <rect x="30" y="610" width="315" height="50" rx="12" fill="rgba(255,255,255,0.05)"/>
+  <rect x="50" y="628" width="24" height="24" rx="4" fill="#14b8a6"/>
+  <text x="90" y="642" font-family="Arial" font-size="16" fill="white">Food Menu</text>
+  <rect x="345" y="631" width="10" height="6" rx="3" fill="#14b8a6"/>
+  <rect x="30" y="670" width="315" height="50" rx="12" fill="rgba(255,255,255,0.05)"/>
+  <rect x="50" y="688" width="24" height="24" rx="4" fill="#f97316"/>
+  <text x="90" y="702" font-family="Arial" font-size="16" fill="white">Settings</text>
+  <rect x="345" y="691" width="10" height="6" rx="3" fill="#f97316"/>
+  <rect x="30" y="730" width="315" height="50" rx="12" fill="rgba(255,255,255,0.05)"/>
+  <rect x="50" y="748" width="24" height="24" rx="4" fill="#64748b"/>
+  <text x="90" y="762" font-family="Arial" font-size="16" fill="#94a3b8">Logout</text>
+  <circle cx="50" cy="775" r="10" fill="none" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="45" y1="780" x2="55" y2="770" stroke="#94a3b8" stroke-width="2"/>
+  <text x="187" y="800" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">v1.0.0</text>
+</svg>

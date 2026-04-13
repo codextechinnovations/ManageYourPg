@@ -1,0 +1,33 @@
+<svg width="375" height="812" viewBox="0 0 375 812" xmlns="http://www.w3.org/2000/svg">
+  <rect width="375" height="812" fill="#1a1a4e"/>
+  <rect x="0" y="60" width="375" height="60" fill="#1e3a8a" opacity="0.5"/>
+  <text x="20" y="100" font-family="Arial" font-size="24" fill="white" font-weight="bold">Tenants</text>
+  <circle cx="340" cy="95" r="20" fill="#3b82f6"/>
+  <text x="340" y="100" font-family="Arial" font-size="14" fill="white" text-anchor="middle">+</text>
+  <rect x="15" y="140" width="345" height="120" rx="12" fill="#2d2d7e"/>
+  <rect x="30" y="155" width="40" height="40" rx="20" fill="#3b82f6"/>
+  <text x="50" y="180" font-family="Arial" font-size="16" fill="white" text-anchor="middle">JD</text>
+  <text x="80" y="165" font-family="Arial" font-size="16" fill="white" font-weight="bold">John Doe</text>
+  <text x="80" y="185" font-family="Arial" font-size="12" fill="#94a3b8">Room 101 • Bed A</text>
+  <text x="280" y="165" font-family="Arial" font-size="14" fill="#22c55e" text-anchor="end">Active</text>
+  <rect x="15" y="275" width="345" height="120" rx="12" fill="#2d2d7e"/>
+  <rect x="30" y="290" width="40" height="40" rx="20" fill="#8b5cf6"/>
+  <text x="50" y="315" font-family="Arial" font-size="16" fill="white" text-anchor="middle">AS</text>
+  <text x="80" y="300" font-family="Arial" font-size="16" fill="white" font-weight="bold">Alice Smith</text>
+  <text x="80" y="320" font-family="Arial" font-size="12" fill="#94a3b8">Room 102 • Bed B</text>
+  <text x="280" y="300" font-family="Arial" font-size="14" fill="#22c55e" text-anchor="end">Active</text>
+  <rect x="15" y="410" width="345" height="120" rx="12" fill="#2d2d7e"/>
+  <rect x="30" y="425" width="40" height="40" rx="20" fill="#f59e0b"/>
+  <text x="50" y="450" font-family="Arial" font-size="16" fill="white" text-anchor="middle">RK</text>
+  <text x="80" y="435" font-family="Arial" font-size="16" fill="white" font-weight="bold">Rahul Kumar</text>
+  <text x="80" y="455" font-family="Arial" font-size="12" fill="#94a3b8">Room 103 • Bed A</text>
+  <text x="280" y="435" font-family="Arial" font-size="14" fill="#22c55e" text-anchor="end">Active</text>
+  <rect x="15" y="545" width="345" height="120" rx="12" fill="#2d2d7e"/>
+  <rect x="30" y="560" width="40" height="40" rx="20" fill="#ef4444"/>
+  <text x="50" y="585" font-family="Arial" font-size="16" fill="white" text-anchor="middle">SP</text>
+  <text x="80" y="570" font-family="Arial" font-size="16" fill="white" font-weight="bold">Sarah P</text>
+  <text x="80" y="590" font-family="Arial" font-size="12" fill="#94a3b8">Room 104 • Bed A</text>
+  <text x="280" y="570" font-family="Arial" font-size="14" fill="#eab308" text-anchor="end">Pending</text>
+  <rect x="120" y="750" width="135" height="45" rx="22.5" fill="#3b82f6"/>
+  <text x="187" y="780" font-family="Arial" font-size="16" fill="white" text-anchor="middle">+ Add Tenant</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg width="375" height="812" viewBox="0 0 375 812" xmlns="http://www.w3.org/2000/svg">
+  <rect width="375" height="812" fill="#f8fafc"/>
+  <rect x="0" y="60" width="375" height="60" fill="#1a1a4e"/>
+  <circle cx="30" cy="95" r="20" fill="none" stroke="white" stroke-width="2"/>
+  <line x1="25" y1="90" x2="35" y2="100" stroke="white" stroke-width="2"/>
+  <line x1="35" y1="90" x2="25" y2="100" stroke="white" stroke-width="2"/>
+  <text x="187" y="105" font-family="Arial" font-size="20" fill="white" text-anchor="middle" font-weight="bold">Send Notice</text>
+  <rect x="300" y="82" width="60" height="30" rx="15" fill="#22c55e"/>
+  <text x="330" y="103" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Send</text>
+  <rect x="15" y="140" width="345" height="50" rx="12" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="25" y="170" font-family="Arial" font-size="12" fill="#64748b">Notice Title</text>
+  <rect x="15" y="210" width="345" height="120" rx="12" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="25" y="240" font-family="Arial" font-size="12" fill="#64748b">Message</text>
+  <text x="25" y="270" font-family="Arial" font-size="14" fill="#1e293b">Enter your notice content here...</text>
+  <rect x="15" y="350" width="345" height="50" rx="12" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <circle cx="35" cy="375" r="15" fill="#3b82f6"/>
+  <circle cx="35" cy="375" r="8" fill="white"/>
+  <text x="60" y="380" font-family="Arial" font-size="14" fill="#1e293b">All Tenants (245)</text>
+  <circle cx="345" cy="375" r="10" fill="#e2e8f0"/>
+  <polyline points="340,370 344,375 352,368" stroke="#64748b" stroke-width="2" fill="none"/>
+  <text x="25" y="430" font-family="Arial" font-size="14" fill="#64748b">Send Options</text>
+  <rect x="15" y="450" width="165" height="45" rx="10" fill="#3b82f6"/>
+  <text x="97" y="478" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Push Notification</text>
+  <rect x="195" y="450" width="165" height="45" rx="10" fill="#f1f5f9" stroke="#e2e8f0"/>
+  <text x="277" y="478" font-family="Arial" font-size="14" fill="#64748b" text-anchor="middle">Email</text>
+  <rect x="15" y="510" width="165" height="45" rx="10" fill="#f1f5f9" stroke="#e2e8f0"/>
+  <text x="97" y="538" font-family="Arial" font-size="14" fill="#64748b" text-anchor="middle">SMS</text>
+  <rect x="195" y="510" width="165" height="45" rx="10" fill="#f1f5f9" stroke="#e2e8f0"/>
+  <text x="277" y="538" font-family="Arial" font-size="14" fill="#64748b" text-anchor="middle">WhatsApp</text>
+  <rect x="15" y="580" width="345" height="50" rx="12" fill="#f1f5f9"/>
+  <text x="25" y="605" font-family="Arial" font-size="12" fill="#64748b">Schedule for later</text>
+  <circle cx="340" cy="605" r="12" fill="none" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="15" y="650" width="345" height="50" rx="12" fill="#f1f5f9"/>
+  <text x="25" y="675" font-family="Arial" font-size="12" fill="#64748b">Track delivery</text>
+  <circle cx="340" cy="675" r="12" fill="none" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="120" y="750" width="135" height="45" rx="22.5" fill="#22c55e"/>
+  <text x="187" y="778" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Send Notice</text>
+</svg>

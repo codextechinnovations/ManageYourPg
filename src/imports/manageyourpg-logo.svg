@@ -1,0 +1,43 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a4e"/>
+      <stop offset="45%" stop-color="#2d2d7e"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <linearGradient id="slash" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <clipPath id="clip">
+      <rect width="200" height="200" rx="44"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="200" height="200" rx="44" fill="url(#bg)"/>
+
+  <!-- Green slash diagonal -->
+  <polygon points="0,138 200,52 200,200 0,200" fill="url(#slash)" clip-path="url(#clip)" opacity="0.87"/>
+
+  <!-- Subtle gradient ring border -->
+  <rect width="200" height="200" rx="44" fill="none" stroke="url(#ring)" stroke-width="3" opacity="0.35"/>
+
+  <!-- PG text -->
+  <text
+    x="100"
+    y="112"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    font-family="Poppins, system-ui, sans-serif"
+    font-weight="800"
+    font-size="78"
+    fill="white"
+    letter-spacing="-3"
+    opacity="1"
+  >PG</text>
+</svg>

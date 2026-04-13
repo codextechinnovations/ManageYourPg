@@ -1,0 +1,42 @@
+<svg width="375" height="812" viewBox="0 0 375 812" xmlns="http://www.w3.org/2000/svg">
+  <rect width="375" height="812" fill="#1a1a4e"/>
+  <rect x="0" y="60" width="375" height="60" fill="#1e3a8a" opacity="0.5"/>
+  <text x="20" y="100" font-family="Arial" font-size="24" fill="white" font-weight="bold">Payments</text>
+  <circle cx="340" cy="95" r="20" fill="#3b82f6"/>
+  <text x="340" y="100" font-family="Arial" font-size="14" fill="white" text-anchor="middle">+</text>
+  <rect x="15" y="130" width="345" height="100" rx="12" fill="#22c55e" opacity="0.3"/>
+  <text x="25" y="160" font-family="Arial" font-size="14" fill="#22c55e">This Month</text>
+  <text x="25" y="195" font-family="Arial" font-size="36" fill="white" font-weight="bold">₹4,82,000</text>
+  <text x="340" y="195" font-family="Arial" font-size="14" fill="#22c55e" text-anchor="end">+12%</text>
+  <rect x="15" y="250" width="165" height="80" rx="12" fill="#2d2d7e"/>
+  <text x="25" y="280" font-family="Arial" font-size="12" fill="#94a3b8">Collected</text>
+  <text x="25" y="310" font-family="Arial" font-size="20" fill="white" font-weight="bold">₹3,20,000</text>
+  <rect x="195" y="250" width="165" height="80" rx="12" fill="#2d2d7e"/>
+  <text x="205" y="280" font-family="Arial" font-size="12" fill="#94a3b8">Pending</text>
+  <text x="205" y="310" font-family="Arial" font-size="20" fill="#f59e0b" font-weight="bold">₹62,000</text>
+  <rect x="15" y="350" width="345" height="100" rx="12" fill="#2d2d7e"/>
+  <circle cx="45" cy="385" r="18" fill="#3b82f6"/>
+  <circle cx="45" cy="385" r="8" fill="white"/>
+  <text x="75" y="380" font-family="Arial" font-size="14" fill="white">John Doe</text>
+  <text x="75" y="400" font-family="Arial" font-size="12" fill="#94a3b8">Room 101 • Jan 2026</text>
+  <text x="340" y="380" font-family="Arial" font-size="14" fill="#22c55e" text-anchor="end">₹12,000</text>
+  <text x="340" y="400" font-family="Arial" font-size="11" fill="#22c55e" text-anchor="end">Paid</text>
+  <rect x="15" y="465" width="345" height="100" rx="12" fill="#2d2d7e"/>
+  <circle cx="45" cy="500" r="18" fill="#8b5cf6"/>
+  <circle cx="45" cy="500" r="8" fill="white"/>
+  <text x="75" y="495" font-family="Arial" font-size="14" fill="white">Alice Smith</text>
+  <text x="75" y="515" font-family="Arial" font-size="12" fill="#94a3b8">Room 102 • Jan 2026</text>
+  <text x="340" y="495" font-family="Arial" font-size="14" fill="#22c55e" text-anchor="end">₹10,000</text>
+  <text x="340" y="515" font-family="Arial" font-size="11" fill="#22c55e" text-anchor="end">Paid</text>
+  <rect x="15" y="580" width="345" height="100" rx="12" fill="#2d2d7e"/>
+  <circle cx="45" cy="615" r="18" fill="#f59e0b"/>
+  <circle cx="45" cy="615" r="8" fill="white"/>
+  <text x="75" y="610" font-family="Arial" font-size="14" fill="white">Rahul Kumar</text>
+  <text x="75" y="630" font-family="Arial" font-size="12" fill="#94a3b8">Room 103 • Jan 2026</text>
+  <text x="340" y="610" font-family="Arial" font-size="14" fill="#f59e0b" text-anchor="end">₹15,000</text>
+  <text x="340" y="630" font-family="Arial" font-size="11" fill="#f59e0b" text-anchor="end">Pending</text>
+  <rect x="15" y="695" width="345" height="40" rx="20" fill="#2d2d7e"/>
+  <text x="187" y="720" font-family="Arial" font-size="14" fill="white" text-anchor="middle">View All Payments</text>
+  <rect x="120" y="750" width="135" height="45" rx="22.5" fill="#3b82f6"/>
+  <text x="187" y="780" font-family="Arial" font-size="16" fill="white" text-anchor="middle">+ Send Reminder</text>
+</svg>
