@@ -89,16 +89,17 @@ export function Pricing() {
           className="text-center mb-12"
         >
           <div className="inline-block mb-4 px-4 py-2 bg-blue-100 text-[#1a1a4e] rounded-full">
-            Pricing
+            Affordable PG Management Pricing
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Simple,{' '}
+            Best Value{' '}
             <span className="bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] bg-clip-text text-transparent">
-              Transparent Pricing
-            </span>
+              PG Management App
+            </span>{' '}
+            Pricing in India
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-            Choose the perfect plan for your PG management needs
+            Start free up to 10 tenants. Upgrade when you grow. Most affordable PG software in India - less than ₹17/day!
           </p>
 
           {/* Billing Toggle */}

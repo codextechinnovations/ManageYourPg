@@ -113,11 +113,11 @@ export function Hero() {
               transition={{ delay: 0.3 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
             >
-              Professional{' '}
+              #1{' '}
               <span className="bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] bg-clip-text text-transparent">
-                PG Management
+                PG Management Software
               </span>{' '}
-              Software for India
+              in India
             </motion.h1>
 
             <motion.p
@@ -126,9 +126,7 @@ export function Hero() {
               transition={{ delay: 0.4 }}
               className="text-xl text-gray-600 mb-8 leading-relaxed"
             >
-              Automate rent collection, manage tenants, track room occupancy, 
-              and generate reports - all from one app. Trusted by 5000+ PG owners 
-              across Bangalore, Mumbai, Delhi, Chennai, Hyderabad & Pune.
+              Automate rent collection, manage tenants, track room occupancy, and generate reports - all from one app. Rated #1 PG management app by 5000+ owners in Bangalore, Mumbai, Delhi, Chennai, Hyderabad, Pune. Start free!
             </motion.p>
 
             <motion.div
