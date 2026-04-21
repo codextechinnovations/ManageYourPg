@@ -260,7 +260,7 @@ export function Screenshots() {
               </div>
               
               <div className="p-0.5">
-                <img src="/screenshots/web-dashboard.png" alt="Web Dashboard" className="w-full rounded-b-xl" />
+                <img src="https://i.ibb.co/9mNfcMXG/Screenshot-2026-04-21-121259.png" alt="Web Dashboard" className="w-full rounded-b-xl" />
               </div>
             </div>
           </motion.div>
