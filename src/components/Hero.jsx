@@ -10,8 +10,10 @@ import {
   Shield,
   Zap,
   Wallet,
-  BarChart3
+  BarChart3,
+  Smartphone
 } from 'lucide-react'
+import apkFile from '../assets/app-debug.apk'
 
 export function Hero() {
   const floatingCards = [
@@ -160,6 +162,17 @@ export function Hero() {
               >
                 Book Demo
               </motion.button>
+
+              <motion.a
+                href={apkFile}
+                download
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-full hover:shadow-2xl transition-all flex items-center justify-center gap-2"
+              >
+                <Smartphone className="w-5 h-5" />
+                Download APK
+              </motion.a>
             </motion.div>
 
             <motion.div
