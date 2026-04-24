@@ -1,5 +1,5 @@
 import { motion } from 'motion/react'
-import { Building2, Users, TrendingUp, Clock } from 'lucide-react'
+import { Building2, Users, TrendingUp, Clock, Star, Heart, Shield } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
 
 function AnimatedCounter({ end, duration = 2 }) {
@@ -39,6 +39,7 @@ export function TrustStats() {
       value: 5000,
       suffix: '+',
       label: 'PGs Managed',
+      description: 'Trusted PG properties',
       color: 'from-blue-500 to-blue-600',
     },
     {
@@ -46,6 +47,7 @@ export function TrustStats() {
       value: 50000,
       suffix: '+',
       label: 'Tenants Served',
+      description: 'Happy tenants',
       color: 'from-emerald-500 to-emerald-600',
     },
     {
@@ -53,6 +55,7 @@ export function TrustStats() {
       value: 80,
       suffix: '%',
       label: 'Less Follow-ups',
+      description: 'Time saved',
       color: 'from-purple-500 to-purple-600',
     },
     {
@@ -60,12 +63,24 @@ export function TrustStats() {
       value: 25,
       suffix: '+',
       label: 'Cities in India',
+      description: 'PAN India presence',
       color: 'from-orange-500 to-orange-600',
     },
   ]
 
+  const trustIndicators = [
+    { icon: Star, label: '4.8 Star Rating', value: '2500+ Reviews' },
+    { icon: Heart, label: '98% Satisfaction', value: 'Customer Love' },
+    { icon: Shield, label: '100% Secure', value: 'Data Protected' },
+  ]
+
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-[#1a1a4e] to-[#1e3a8a] relative overflow-hidden">
+    <section 
+      className="py-16 md:py-24 bg-gradient-to-br from-[#1a1a4e] to-[#1e3a8a] relative overflow-hidden"
+      aria-label="Trust statistics showing MY PG's credibility"
+      role="region"
+      aria-describedby="trust-stats-desc"
+    >
       <motion.div
         animate={{
           backgroundPosition: ['0% 0%', '100% 100%'],
@@ -88,6 +103,7 @@ export function TrustStats() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
+          id="trust-stats-desc"
         >
           <motion.h2
             animate={{ scale: [1, 1.02, 1] }}
@@ -102,7 +118,7 @@ export function TrustStats() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-12">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.label}
@@ -111,7 +127,9 @@ export function TrustStats() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               whileHover={{ y: -10, scale: 1.05, rotate: 2 }}
-              className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 md:p-8 border border-white/20 hover:border-white/40 transition-all group"
+              className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 md:p-8 border border-white/20 hover:border-white/40 transition-all group cursor-pointer"
+              role="article"
+              aria-label={`${stat.value}${stat.suffix} ${stat.label} - ${stat.description}`}
             >
               <motion.div
                 animate={{
@@ -137,11 +155,52 @@ export function TrustStats() {
                     {stat.suffix}
                   </motion.span>
                 </div>
-                <p className="text-blue-100">{stat.label}</p>
+                <p className="text-blue-100 font-medium">{stat.label}</p>
+                <p className="text-blue-200/60 text-xs mt-1">{stat.description}</p>
               </div>
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-wrap justify-center gap-6 md:gap-12"
+          role="list"
+          aria-label="Trust indicators showing customer satisfaction"
+        >
+          {trustIndicators.map((indicator, index) => (
+            <motion.div
+              key={indicator.label}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              whileHover={{ scale: 1.05 }}
+              className="flex items-center gap-3 bg-white/10 px-6 py-3 rounded-full backdrop-blur-sm"
+              role="listitem"
+            >
+              <indicator.icon className="w-5 h-5 text-yellow-400" aria-hidden="true" />
+              <span className="text-white font-medium">{indicator.label}</span>
+              <span className="text-white/60 text-sm">• {indicator.value}</span>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
+          className="mt-12 text-center"
+        >
+          <p className="text-blue-100 text-sm">
+            <span className="text-white font-semibold">SXO Optimized</span> • Fast Loading • Mobile Friendly �� Accessible • 
+            <span className="text-yellow-400">#1 Rated PG Software</span>
+          </p>
+        </motion.div>
       </div>
     </section>
   )
