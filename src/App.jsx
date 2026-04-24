@@ -13,6 +13,7 @@ import { ServiceAreas } from './components/ServiceAreas'
 import { About } from './components/About'
 import { WhyChoose } from './components/WhyChoose'
 import { PropertyListing } from './components/PropertyListing'
+import { ChatBox } from './components/ChatBox'
 
 export default function App() {
   return (
@@ -34,6 +35,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <ChatBox />
     </div>
   )
 }

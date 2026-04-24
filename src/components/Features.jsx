@@ -9,10 +9,15 @@ import {
   BedDouble,
   BellRing,
   Shield,
+  ShieldCheck,
   Wallet,
   MessageSquare,
   Building,
   BarChart3,
+  CalendarClock,
+  Soup,
+  Sparkles,
+  Video,
 } from 'lucide-react'
 
 export function Features() {
@@ -81,6 +86,34 @@ export function Features() {
       color: 'from-red-500 to-red-600',
     },
     {
+      icon: ShieldCheck,
+      title: 'Police & Background Verification',
+      description:
+        'Comprehensive tenant verification including police verification, address proof, identity check, and background screening for complete peace of mind.',
+      color: 'from-green-500 to-emerald-600',
+    },
+    {
+      icon: Soup,
+      title: 'Food & Meal Services',
+      description:
+        'Manage meal plans, food menus, dietary preferences, mess timings, and food expenses. Track breakfast, lunch, dinner services effortlessly.',
+      color: 'from-yellow-500 to-amber-600',
+    },
+    {
+      icon: Sparkles,
+      title: 'Cleaning & Maintenance Services',
+      description:
+        'Schedule room cleaning, common area maintenance, pest control, and hygiene management. Track service history and maintain PG standards.',
+      color: 'from-sky-500 to-cyan-600',
+    },
+    {
+      icon: Video,
+      title: 'CCTV Camera Integration',
+      description:
+        'Integrate and monitor CCTV cameras across your PG properties. Live surveillance, recording storage, and remote access for complete security.',
+      color: 'from-slate-500 to-gray-600',
+    },
+    {
       icon: Building,
       title: 'Multi-Property Management',
       description:
@@ -100,6 +133,13 @@ export function Features() {
       description:
         'Create professional digital rent receipts instantly. Share via WhatsApp or email - accepted everywhere in India.',
       color: 'from-rose-500 to-rose-600',
+    },
+    {
+      icon: CalendarClock,
+      title: 'Short Stay & Long Stay',
+      description:
+        'Flexible rental plans for both short stays (daily/weekly) and long stays (monthly/yearly). Manage different pricing and terms effortlessly.',
+      color: 'from-amber-500 to-orange-600',
     },
   ]
 

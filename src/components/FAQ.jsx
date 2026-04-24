@@ -56,11 +56,11 @@ export function FAQ() {
     },
     {
       question: "Is there a free trial for PG management app?",
-      answer: "Yes, MY PG offers a free forever plan where you can manage up to 10 tenants absolutely free with no credit card required. Upgrade to premium plans for unlimited tenants, priority support, and advanced analytics."
+      answer: "Yes, MY PG offers a 7-day FREE trial for all PG owners with no credit card required. Experience all premium features during the trial period before deciding on our paid plans."
     },
     {
       question: "How much does PG management software cost in India?",
-      answer: "MY PG offers the most competitive pricing in India: Free forever for up to 10 tenants, Premium at just ₹499/month for full features. Compared to other PG apps charging ₹1500-3000/month, MY PG provides better value with more features including automated rent collection, multi-property support, and mobile apps for both iOS and Android."
+      answer: "MY PG offers the most competitive pricing in India: 7-day FREE trial with no credit card required, Premium at just ₹499/month or ₹3,999/year for unlimited features including multi-property support, advanced analytics, and priority support. Compared to other PG apps charging ₹1500-3000/month, MY PG provides better value."
     },
     {
       question: "How to automate rent collection for my PG?",

@@ -122,7 +122,7 @@ export function Hero() {
               transition={{ delay: 0.4 }}
               className="text-xl text-gray-600 mb-8 leading-relaxed"
             >
-              Automate rent collection, manage tenants, track room occupancy, and generate reports - all from one app. Rated #1 PG management app by 5000+ owners in Bangalore, Mumbai, Delhi, Chennai, Hyderabad, Pune. Start free!
+              Automate rent collection, manage tenants, track room occupancy, and generate reports - all from one app. Rated #1 PG management app by 5000+ owners in Bangalore, Mumbai, Delhi, Chennai, Hyderabad, Pune. Try it FREE for 7 days - No credit card required!
             </motion.p>
 
             <motion.div

@@ -7,36 +7,36 @@ export function Pricing() {
 
   const plans = [
     {
-      name: 'Basic',
+      name: 'Free Trial',
       icon: Zap,
-      monthlyPrice: 499,
-      yearlyPrice: 3999,
-      description: 'Perfect for small PG owners getting started',
-      badge: null,
+      monthlyPrice: 0,
+      yearlyPrice: 0,
+      description: 'Try MY PG free for 7 days - no credit card required',
+      badge: 'Try Free',
       popular: false,
       features: [
         'Full access to mobile app',
         'Full access to web dashboard',
-        'Up to 50 tenants',
+        'Up to 10 tenants',
         'Payment tracking',
         'Expense management',
         'Basic reports',
         'Email support',
-        'Regular updates',
+        '7 days free trial',
       ],
-      color: 'from-blue-500 to-blue-600',
-      borderColor: 'border-blue-200',
+      color: 'from-emerald-500 to-green-600',
+      borderColor: 'border-green-200',
     },
     {
-      name: 'Customizable',
+      name: 'Premium',
       icon: Sparkles,
-      monthlyPrice: 999,
-      yearlyPrice: 9999,
+      monthlyPrice: 499,
+      yearlyPrice: 3999,
       description: 'Most popular choice for growing PG businesses',
       badge: 'Most Popular',
       popular: true,
       features: [
-        'Everything in Starter',
+        'Everything in Free Trial',
         'Unlimited tenants',
         'Advanced reports & analytics',
         'Room & bed management',
@@ -88,7 +88,7 @@ export function Pricing() {
           className="text-center mb-12"
         >
           <div className="inline-block mb-4 px-4 py-2 bg-blue-100 text-[#1a1a4e] rounded-full">
-            Affordable PG Management Pricing
+            Simple & Affordable Pricing
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Best Value{' '}
@@ -98,7 +98,7 @@ export function Pricing() {
             Pricing in India
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-            Start free up to 10 tenants. Upgrade when you grow. Most affordable PG software in India - less than ₹17/day!
+            7-day FREE trial for all PG owners - no credit card required! Most affordable PG software in India.
           </p>
 
           <motion.div
@@ -185,14 +185,31 @@ export function Pricing() {
                       animate={{ opacity: 1, y: 0 }}
                       className="flex items-baseline gap-2"
                     >
-                      <span className={`text-4xl font-bold bg-gradient-to-r ${plan.color} bg-clip-text text-transparent`}>
-                        ₹{billingCycle === 'monthly' ? plan.monthlyPrice.toLocaleString() : plan.yearlyPrice.toLocaleString()}
-                      </span>
-                      <span className="text-gray-600">
-                        / {billingCycle === 'monthly' ? 'month' : 'year'}
-                      </span>
+                      {plan.name === 'Free Trial' ? (
+                        <>
+                          <span className="text-4xl font-bold bg-gradient-to-r from-emerald-500 to-green-600 bg-clip-text text-transparent">
+                            FREE
+                          </span>
+                          <span className="text-gray-600">
+                            / 7 days trial
+                          </span>
+                        </>
+                      ) : (
+                        <>
+                          <span className={`text-4xl font-bold bg-gradient-to-r ${plan.color} bg-clip-text text-transparent`}>
+                            ₹{billingCycle === 'monthly' ? plan.monthlyPrice.toLocaleString() : plan.yearlyPrice.toLocaleString()}
+                          </span>
+                          <span className="text-gray-600">
+                            / {billingCycle === 'monthly' ? 'month' : 'year'}
+                          </span>
+                        </>
+                      )}
                     </motion.div>
-                    {billingCycle === 'yearly' && (
+                    {plan.name === 'Free Trial' ? (
+                      <p className="text-sm text-gray-500 mt-2">
+                        7 days free trial - no credit card required
+                      </p>
+                    ) : billingCycle === 'yearly' && (
                       <p className="text-sm text-gray-500 mt-2">
                         Just ₹{Math.round(plan.yearlyPrice / 12)}/month when billed annually
                       </p>
@@ -230,10 +247,10 @@ export function Pricing() {
                     className={`w-full px-6 py-3 rounded-full transition-all font-medium ${
                       plan.popular
                         ? `bg-gradient-to-r ${plan.color} text-white hover:shadow-2xl`
-                        : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
+                        : 'bg-emerald-500 hover:bg-emerald-600 text-white'
                     }`}
                   >
-                    {plan.name === 'Enterprise' ? 'Contact Sales' : 'Get Started'}
+                    {plan.name === 'Free Trial' ? 'Start Free Trial' : 'Get Started'}
                   </motion.button>
                 </div>
               </div>
