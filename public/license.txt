@@ -1,0 +1,102 @@
+MY PG - PG Management Software
+Copyright (c) 2020-2026 MY PG Solutions
+
+ALL RIGHTS RESERVED.
+
+This software and associated documentation files (the "Software") are proprietary 
+and confidential information of MY PG Solutions.
+
+LICENSE TERMS:
+
+1. GRANT OF LICENSE
+   MY PG Solutions grants you a non-exclusive, non-transferable, revocable license 
+   to use the MY PG software (mobile app and web dashboard) in accordance with 
+   the subscription plan purchased (Free Trial, Premium Monthly, or Premium Yearly).
+
+2. RESTRICTIONS
+   You may NOT:
+   - Copy, modify, or create derivative works of the Software
+   - Reverse engineer, decompile, or attempt to extract source code
+   - Redistribute, sell, lease, or sublicense the Software
+   - Use the Software for any illegal purpose
+   - Remove or alter any proprietary notices or labels
+   - Attempt to bypass any licensing or activation mechanisms
+
+3. INTELLECTUAL PROPERTY
+   All intellectual property rights in the Software, including but not limited to:
+   - Source code, object code, and algorithms
+   - User interface design and graphics
+   - Logos, trademarks, and brand assets
+   - Documentation and help content
+   - Database structure and schemas
+   
+   Are the exclusive property of MY PG Solutions.
+
+4. DATA OWNERSHIP
+   - You retain ownership of all data you input into the Software (tenant info, 
+     financial records, etc.)
+   - MY PG Solutions retains the right to aggregate anonymized usage data for 
+     product improvement
+   - MY PG Solutions will never sell your customer data to third parties
+
+5. PRICING AND PAYMENT
+   - Free Trial: 7 days, no payment required
+   - Premium Monthly: ₹499/month, billed monthly
+   - Premium Yearly: ₹3999/year, billed annually (33% savings)
+   - All prices are in Indian Rupees (INR) and inclusive of applicable taxes
+   - Failure to pay may result in suspension of service
+
+6. TERM AND TERMINATION
+   - Free Trial expires automatically after 7 days
+   - Paid subscriptions continue until cancelled
+   - Either party may terminate with 30 days written notice
+   - Upon termination, you must cease all use of the Software
+   - Data export is available for 30 days after termination
+
+7. LIMITED WARRANTY
+   The Software is provided "AS IS" without warranty of any kind, express or implied.
+   MY PG Solutions does not warrant that the Software will be error-free or 
+   uninterrupted.
+
+8. LIMITATION OF LIABILITY
+   In no event shall MY PG Solutions be liable for any indirect, special, incidental, 
+   or consequential damages, or any loss of profits, revenue, data, or data use.
+   
+   Maximum liability shall not exceed the amount paid by you for the Software 
+   in the 12 months preceding the claim.
+
+9. INDEMNIFICATION
+   You agree to indemnify and hold harmless MY PG Solutions from any claims, 
+   damages, losses, or expenses arising from your use of the Software or violation 
+   of these terms.
+
+10. GOVERNING LAW
+    These terms shall be governed by and construed in accordance with the laws 
+    of India. Any disputes shall be subject to the exclusive jurisdiction of 
+    the courts in Bangalore, Karnataka, India.
+
+11. PRIVACY
+    Your use of the Software is also governed by our Privacy Policy, available at:
+    https://manageyourpg.com/privacy-policy
+
+12. CONTACT INFORMATION
+    For licensing inquiries, support, or legal matters:
+    
+    MY PG Solutions
+    Email: support@manageyourpg.com
+    Phone: +91-9876543210
+    Website: https://manageyourpg.com
+    Address: India
+
+13. UPDATES TO TERMS
+    MY PG Solutions reserves the right to update these terms at any time.
+    Continued use of the Software after changes constitutes acceptance of 
+    the new terms.
+
+---
+Last Updated: May 2026
+Version: 2.0
+
+TRADEMARK NOTICE:
+MY PG, ManageYourPG, and the MY PG logo are trademarks of MY PG Solutions.
+All other trademarks are the property of their respective owners.
