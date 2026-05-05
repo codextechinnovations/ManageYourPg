@@ -188,19 +188,6 @@ export function TrustStats() {
             </motion.div>
           ))}
         </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.3 }}
-          className="mt-12 text-center"
-        >
-          <p className="text-blue-100 text-sm">
-            <span className="text-white font-semibold">SXO Optimized</span> • Fast Loading • Mobile Friendly �� Accessible • 
-            <span className="text-yellow-400">#1 Rated PG Software</span>
-          </p>
-        </motion.div>
       </div>
     </section>
   )

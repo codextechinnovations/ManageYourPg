@@ -250,7 +250,7 @@ export function Contact() {
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#1a1a4e] focus:border-transparent transition-all"
-                        placeholder="+91 98765 43210"
+                        placeholder="+91 9741821179"
                       />
                     </div>
 

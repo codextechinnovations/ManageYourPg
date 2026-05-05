@@ -4,6 +4,7 @@ import { TrustStats } from './components/TrustStats'
 import { Features } from './components/Features'
 import { Screenshots } from './components/Screenshots'
 import { Pricing } from './components/Pricing'
+import { Careers } from './components/Careers'
 import { Testimonials } from './components/Testimonials'
 import { FAQ } from './components/FAQ'
 import { Contact } from './components/Contact'
@@ -26,6 +27,7 @@ export default function App() {
         <Features />
         <Screenshots />
         <Pricing />
+        <Careers />
         <PropertyListing />
         <ServiceAreas />
         <About />
