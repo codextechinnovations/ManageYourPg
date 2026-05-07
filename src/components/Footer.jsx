@@ -1,5 +1,6 @@
 import { motion } from 'motion/react'
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import logo from '../assets/manageyourpg-logo.svg'
 
 export function Footer() {
@@ -13,15 +14,18 @@ export function Footer() {
   }
 
   const quickLinks = [
-    { label: 'Home', id: 'home' },
-    { label: 'Features', id: 'features' },
-    { label: 'Screenshots', id: 'screenshots' },
-    { label: 'Pricing', id: 'pricing' },
+    { label: 'Home', id: 'home', to: '/' },
+    { label: 'Features', id: 'features', to: '/#features' },
+    { label: 'Screenshots', id: 'screenshots', to: '/#screenshots' },
+    { label: 'Pricing', id: 'pricing', to: '/#pricing' },
+    { label: 'Careers', id: 'careers', to: '/careers' },
   ]
 
   const supportLinks = [
-    { label: 'About', id: 'about' },
-    { label: 'Contact', id: 'contact' },
+    { label: 'About', id: 'about', to: '/about' },
+    { label: 'Contact', id: 'contact', to: '/#contact' },
+    { label: 'Privacy Policy', id: 'privacy', to: '/privacy' },
+    { label: 'Terms of Service', id: 'terms', to: '/terms' },
   ]
 
   const socialLinks = [
@@ -77,12 +81,12 @@ export function Footer() {
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.id}>
-                  <button
-                    onClick={() => scrollToSection(link.id)}
+                  <Link
+                    to={link.to}
                     className="text-blue-100 hover:text-white transition-colors hover:translate-x-1 inline-block"
                   >
                     {link.label}
-                  </button>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -98,30 +102,14 @@ export function Footer() {
             <ul className="space-y-3">
               {supportLinks.map((link) => (
                 <li key={link.id}>
-                  <button
-                    onClick={() => scrollToSection(link.id)}
+                  <Link
+                    to={link.to}
                     className="text-blue-100 hover:text-white transition-colors hover:translate-x-1 inline-block"
                   >
                     {link.label}
-                  </button>
+                  </Link>
                 </li>
               ))}
-              <li>
-                <a
-                  href="#"
-                  className="text-blue-100 hover:text-white transition-colors hover:translate-x-1 inline-block"
-                >
-                  Help Center
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-blue-100 hover:text-white transition-colors hover:translate-x-1 inline-block"
-                >
-                  Privacy Policy
-                </a>
-              </li>
             </ul>
           </motion.div>
 
@@ -171,12 +159,12 @@ export function Footer() {
               © {currentYear} My PG. All rights reserved.
             </p>
             <div className="flex flex-wrap gap-6 text-sm text-blue-100">
-              <a href="#" className="hover:text-white transition-colors">
+              <Link to="/terms" className="hover:text-white transition-colors">
                 Terms of Service
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
+              </Link>
+              <Link to="/privacy" className="hover:text-white transition-colors">
                 Privacy Policy
-              </a>
+              </Link>
               <a href="#" className="hover:text-white transition-colors">
                 Cookie Policy
               </a>

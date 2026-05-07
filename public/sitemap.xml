@@ -31,6 +31,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.manageyourpg.com/about</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.manageyourpg.com/#about</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -49,6 +55,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.manageyourpg.com/careers</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.manageyourpg.com/#contact</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -59,5 +71,17 @@
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.manageyourpg.com/terms</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.manageyourpg.com/privacy</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

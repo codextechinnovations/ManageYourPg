@@ -1,11 +1,14 @@
 import { useState, useEffect } from 'react'
 import { Menu, X, Phone } from 'lucide-react'
 import { motion, AnimatePresence } from 'motion/react'
+import { Link, useLocation } from 'react-router-dom'
 import logo from '../assets/manageyourpg-logo.svg'
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const location = useLocation()
+  const isHome = location.pathname === '/'
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,12 +27,13 @@ export function Navigation() {
   }
 
   const navItems = [
-    { label: 'Home', id: 'home', hash: '#home' },
-    { label: 'Features', id: 'features', hash: '#features' },
-    { label: 'Screenshots', id: 'screenshots', hash: '#screenshots' },
-    { label: 'Pricing', id: 'pricing', hash: '#pricing' },
-    { label: 'About', id: 'about', hash: '#about' },
-    { label: 'Contact', id: 'contact', hash: '#contact' },
+    { label: 'Home', id: 'home', hash: '#home', link: '/' },
+    { label: 'Features', id: 'features', hash: '#features', link: '/#features' },
+    { label: 'Screenshots', id: 'screenshots', hash: '#screenshots', link: '/#screenshots' },
+    { label: 'Pricing', id: 'pricing', hash: '#pricing', link: '/#pricing' },
+    { label: 'Careers', id: 'careers', hash: '#careers', link: '/careers' },
+    { label: 'About', id: 'about', hash: '#about', link: '/about' },
+    { label: 'Contact', id: 'contact', hash: '#contact', link: '/#contact' },
   ]
 
   return (
@@ -46,11 +50,10 @@ export function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
-          <a 
-            href="#home"
-            onClick={(e) => {
-              e.preventDefault()
-              scrollToSection('home')
+          <Link 
+            to="/"
+            onClick={() => {
+              setIsMobileMenuOpen(false)
             }}
             className="flex items-center space-x-3 group"
             itemScope
@@ -70,40 +73,59 @@ export function Navigation() {
             <meta itemProp="name" content="MY PG Solutions" />
             <meta itemProp="url" content="https://manageyourpg.com/" />
             <meta itemProp="logo" content="https://manageyourpg.com/favicon.png" />
-          </a>
+          </Link>
 
           <div className="hidden md:flex items-center space-x-8" role="menubar">
-            {navItems.map((item, index) => (
-              <a
-                key={item.id}
-                href={item.hash}
-                onClick={(e) => {
-                  e.preventDefault()
-                  scrollToSection(item.id)
-                }}
-                className="text-gray-700 hover:text-[#1a1a4e] transition-colors relative group font-medium"
-                role="menuitem"
-                itemScope
-                itemType="https://schema.org/Action"
-                itemProp="target"
-              >
-                {item.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] group-hover:w-full transition-all duration-300"></span>
-                <meta itemProp="name" content={item.label} />
-              </a>
-            ))}
-            <a
-              href="#contact"
-              onClick={(e) => {
-                e.preventDefault()
-                scrollToSection('contact')
-              }}
+            {navItems.map((item) => {
+              if (item.link === '/about' || item.link.startsWith('/') && !item.link.startsWith('/#')) {
+                return (
+                  <Link
+                    key={item.id}
+                    to={item.link}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="text-gray-700 hover:text-[#1a1a4e] transition-colors relative group font-medium"
+                    role="menuitem"
+                    itemScope
+                    itemType="https://schema.org/Action"
+                    itemProp="target"
+                  >
+                    {item.label}
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] group-hover:w-full transition-all duration-300"></span>
+                    <meta itemProp="name" content={item.label} />
+                  </Link>
+                )
+              }
+              return (
+                <a
+                  key={item.id}
+                  href={item.link}
+                  onClick={(e) => {
+                    if (isHome) {
+                      e.preventDefault()
+                      scrollToSection(item.id)
+                    }
+                  }}
+                  className="text-gray-700 hover:text-[#1a1a4e] transition-colors relative group font-medium"
+                  role="menuitem"
+                  itemScope
+                  itemType="https://schema.org/Action"
+                  itemProp="target"
+                >
+                  {item.label}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] group-hover:w-full transition-all duration-300"></span>
+                  <meta itemProp="name" content={item.label} />
+                </a>
+              )
+            })}
+            <Link
+              to="/#contact"
+              onClick={() => setIsMobileMenuOpen(false)}
               className="px-6 py-2.5 bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] text-white rounded-full hover:shadow-lg hover:scale-105 transition-all font-semibold"
               role="menuitem"
               aria-label="Get Started - Contact MY PG"
             >
               Get Started
-            </a>
+            </Link>
           </div>
 
           <button
@@ -131,31 +153,46 @@ export function Navigation() {
             aria-label="Mobile navigation menu"
           >
             <div className="px-4 py-4 space-y-3">
-              {navItems.map((item) => (
-                <a
-                  key={item.id}
-                  href={item.hash}
-                  onClick={(e) => {
-                    e.preventDefault()
-                    scrollToSection(item.id)
-                  }}
-                  className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors font-medium"
-                  role="menuitem"
-                >
-                  {item.label}
-                </a>
-              ))}
-              <a
-                href="#contact"
-                onClick={(e) => {
-                  e.preventDefault()
-                  scrollToSection('contact')
-                }}
+              {navItems.map((item) => {
+                if (item.link === '/about' || item.link.startsWith('/') && !item.link.startsWith('/#')) {
+                  return (
+                    <Link
+                      key={item.id}
+                      to={item.link}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors font-medium"
+                      role="menuitem"
+                    >
+                      {item.label}
+                    </Link>
+                  )
+                }
+                return (
+                  <a
+                    key={item.id}
+                    href={item.link}
+                    onClick={(e) => {
+                      if (isHome) {
+                        e.preventDefault()
+                        scrollToSection(item.id)
+                      }
+                      setIsMobileMenuOpen(false)
+                    }}
+                    className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors font-medium"
+                    role="menuitem"
+                  >
+                    {item.label}
+                  </a>
+                )
+              })}
+              <Link
+                to="/#contact"
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="block w-full px-4 py-2.5 bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] text-white rounded-full hover:shadow-lg transition-all font-semibold text-center"
                 role="menuitem"
               >
                 Get Started
-              </a>
+              </Link>
             </div>
           </motion.div>
         )}
