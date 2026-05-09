@@ -48,12 +48,12 @@ export function Hero() {
   ]
 
   const features = [
-    { icon: Building2, label: 'PG Management', color: 'from-blue-500 to-indigo-600' },
-    { icon: Users, label: 'Tenant Tracking', color: 'from-purple-500 to-pink-600' },
-    { icon: Wallet, label: 'Payment System', color: 'from-emerald-500 to-teal-600' },
-    { icon: BedDouble, label: 'Room Management', color: 'from-orange-500 to-red-600' },
-    { icon: CalendarCheck, label: 'Check-in Requests', color: 'from-cyan-500 to-blue-600' },
-    { icon: BarChart3, label: 'Analytics & Reports', color: 'from-violet-500 to-purple-600' },
+    { icon: Building2, label: 'PG Management Software', color: 'from-blue-500 to-indigo-600' },
+    { icon: Users, label: 'Tenant Management System', color: 'from-purple-500 to-pink-600' },
+    { icon: Wallet, label: 'Rent Collection Software', color: 'from-emerald-500 to-teal-600' },
+    { icon: BedDouble, label: 'Bed Management System', color: 'from-orange-500 to-red-600' },
+    { icon: CalendarCheck, label: 'Digital Check-In for PG', color: 'from-cyan-500 to-blue-600' },
+    { icon: BarChart3, label: 'Occupancy Analytics', color: 'from-violet-500 to-purple-600' },
   ]
 
   return (

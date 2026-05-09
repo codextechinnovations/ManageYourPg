@@ -3,10 +3,10 @@ import { CheckCircle2, Smartphone, Monitor, Clock, Shield, Zap, HeadphonesIcon }
 
 export function About() {
   const features = [
-    'Manage tenants, check-ins, and rent payments seamlessly',
-    'Track expenses and generate comprehensive reports',
-    'Access from anywhere - mobile app or web dashboard',
-    'Designed for both small and large PG businesses',
+    'Manage tenants, check-ins, and rent payments seamlessly with our tenant management system',
+    'Track expenses and generate comprehensive reports with our PG accounting software',
+    'Access from anywhere - PG management app or web dashboard for real-time occupancy tracking',
+    'Designed for both small and large PG businesses - the ideal PG operations software',
   ]
 
   const stats = [
@@ -45,20 +45,20 @@ export function About() {
               viewport={{ once: true }}
               className="inline-block mb-4 px-4 py-2 bg-blue-100 text-[#1a1a4e] rounded-full"
             >
-              About MY PG
+              About MY PG - PG Management Software & App
             </motion.div>
 
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               Your Complete{' '}
               <span className="bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] bg-clip-text text-transparent">
-                PG Management Solution
+                PG Management Software & Tenancy System
               </span>
             </h2>
 
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
               Manage Your PG helps PG owners and managers across India handle daily property
               operations from one place. Say goodbye to spreadsheets and manual
-              tracking - manage everything digitally with ease. Available in all major cities.
+              tracking - manage everything digitally with our PG management app and hostel management software. Available in all major cities including Bangalore, Mumbai, Delhi, Chennai, Hyderabad, and Pune.
             </p>
 
             <div className="space-y-4 mb-8">

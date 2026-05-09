@@ -1,6 +1,5 @@
 import { motion } from 'motion/react'
 import { Lightbulb, IndianRupee, Star, Users, MapPin, Smartphone } from 'lucide-react'
-import { ShareButton } from './ShareButton'
 
 const facts = [
   {
@@ -86,12 +85,6 @@ export function KeyFacts() {
               </div>
               <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">{fact.label}</p>
               <p className="text-gray-700 leading-relaxed">{fact.content}</p>
-              <div className="flex items-center justify-between mt-3">
-                {fact.source && (
-                  <p className="text-xs text-gray-400 italic">Source: {fact.source}</p>
-                )}
-                <ShareButton text={`${fact.label}: ${fact.content}`} className="ml-auto" />
-              </div>
             </motion.div>
           ))}
         </div>

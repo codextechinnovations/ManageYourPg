@@ -48,7 +48,7 @@ export function FAQ() {
     },
     {
       question: "How does PG management software help PG owners?",
-      answer: "PG management software automates daily operations and reduces late rent payments by up to 80% through automated WhatsApp reminders (MY PG user survey, 2025-2026). Features include digital tenant management with KYC storage and police verification, real-time room and bed occupancy tracking across multiple properties, CCTV camera integration for security monitoring, and food service management. MY PG replaces manual spreadsheets with a centralized mobile app and web dashboard accessible from anywhere."
+      answer: "PG management software automates daily operations and reduces late rent payments by up to 80% through automated WhatsApp reminders (MY PG user survey, 2025-2026). Features include digital tenant management with KYC storage and police verification, real-time room and bed occupancy tracking across multiple properties, CCTV camera integration for security monitoring, and food service management. MY PG is the leading PG automation software that replaces manual spreadsheets with a centralized mobile app and web dashboard accessible from anywhere."
     },
     {
       question: "How much does PG management software cost in India?",
@@ -68,7 +68,7 @@ export function FAQ() {
     },
     {
       question: "What features does PG management software need?",
-      answer: "Essential PG management software features include automated rent collection with WhatsApp reminders, digital tenant KYC storage with police verification, real-time room and bed occupancy tracking, expense categorization with tax-ready reports, multi-property dashboard, CCTV camera integration, food and mess management, and digital rent receipts shareable via WhatsApp. MY PG provides all these features integrated into one mobile app and web dashboard."
+      answer: "Essential PG management software features include automated rent collection with WhatsApp reminders, digital tenant KYC storage with police verification, real-time room and bed occupancy tracking, expense categorization with tax-ready reports, multi-property dashboard, CCTV camera integration, food and mess management, and digital rent receipts shareable via WhatsApp. MY PG is the most comprehensive digital PG management platform providing all these features along with tenant tracking software tools integrated into one mobile app and web dashboard."
     },
     {
       question: "How long does it take to set up MY PG?",
@@ -80,7 +80,7 @@ export function FAQ() {
     },
     {
       question: "Is MY PG secure for storing tenant data?",
-      answer: "MY PG uses bank-grade 256-bit encryption for all data storage and is GDPR compliant. The platform provides role-based access control, police verification integration, automatic daily cloud backups, and 99.9% uptime guarantee. All tenant data is stored on secure servers within India and is never shared with third parties."
+      answer: "MY PG uses bank-grade 256-bit encryption for all data storage and is GDPR compliant. The platform provides role-based access control, police verification integration, automatic daily cloud backups, and 99.9% uptime guarantee. All tenant data is stored on secure servers within India and is never shared with third parties. Trusted as the most secure hostel management software and PG management app."
     },
     {
       question: "Can tenants use the PG management app?",
@@ -88,7 +88,7 @@ export function FAQ() {
     },
     {
       question: "Does MY PG support digital rent receipts?",
-      answer: "MY PG generates professional digital rent receipts automatically upon payment confirmation. Receipts include property name, address, tenant name, amount, payment date, and method. They can be shared via WhatsApp or email in PDF format and are accepted for tax filing purposes. All receipts are stored in tenant profiles and can be bulk-exported to Excel."
+      answer: "MY PG generates professional digital rent receipts automatically upon payment confirmation. Receipts include property name, address, tenant name, amount, payment date, and method. They can be shared via WhatsApp or email in PDF format and are accepted for tax filing purposes. All receipts are stored in tenant profiles and can be bulk-exported to Excel. Our PG billing software also supports GST-ready invoices for business owners."
     },
     {
       question: "Why use PG software over Excel or manual tracking?",
@@ -100,7 +100,7 @@ export function FAQ() {
     },
     {
       question: "Can I get reports on my PG occupancy and revenue?",
-      answer: "MY PG provides real-time occupancy dashboards showing filled versus vacant beds, revenue analytics with monthly and yearly trends, expense reports by category, pending payment reports for overdue rents, and profit and loss analysis per property. All reports can be exported to Excel or PDF with custom date range filtering."
+      answer: "MY PG provides real-time occupancy dashboards showing filled versus vacant beds, revenue analytics with monthly and yearly trends, expense reports by category, pending payment reports for overdue rents, and profit and loss analysis per property. All reports can be exported to Excel or PDF with custom date range filtering. As a complete occupancy management software and rent collection software, MY PG gives you full visibility into your PG business performance."
     }
   ]
 

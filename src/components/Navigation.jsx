@@ -28,7 +28,7 @@ export function Navigation() {
 
   const navItems = [
     { label: 'Home', id: 'home', hash: '#home', link: '/' },
-    { label: 'Features', id: 'features', hash: '#features', link: '/#features' },
+    { label: 'Features', id: 'features', hash: '#features', link: '/features' },
     { label: 'Screenshots', id: 'screenshots', hash: '#screenshots', link: '/#screenshots' },
     { label: 'Pricing', id: 'pricing', hash: '#pricing', link: '/#pricing' },
     { label: 'Careers', id: 'careers', hash: '#careers', link: '/careers' },

@@ -1,4 +1,5 @@
 import { motion } from 'motion/react'
+import { Link } from 'react-router-dom'
 import { 
   Building2, 
   Smartphone, 
@@ -7,29 +8,30 @@ import {
   CheckCircle2, 
   ArrowRight,
   Home,
+  ExternalLink,
 } from 'lucide-react'
 
 export function PropertyListing() {
   const benefits = [
     { 
       icon: Building2, 
-      title: 'List Your PG', 
-      description: 'Showcase your property to thousands of potential tenants searching for paying guest accommodation in your city.' 
+      title: 'List Your PG Property', 
+      description: 'Showcase your paying guest accommodation to thousands of potential tenants searching for rooms in your city. Integrated with our PG management software.' 
     },
     { 
       icon: Smartphone, 
-      title: 'Tenant App', 
-      description: 'Your tenants get a dedicated mobile app to view rent, make payments, and raise complaints.' 
+      title: 'Tenant Management App', 
+      description: 'Your tenants get a dedicated mobile app to view rent, make payments via our rent collection software, and raise maintenance complaints.' 
     },
     { 
       icon: Globe, 
-      title: 'Tenant Website', 
-      description: 'Tenants access a professional web portal for all their needs - dashboard, payments, notices, and more.' 
+      title: 'Online Tenant Portal', 
+      description: 'Tenants access a professional web portal for all their needs - occupancy dashboard, rent payments via our PG billing software, notices, and more.' 
     },
     { 
       icon: Users, 
-      title: 'Direct Bookings', 
-      description: 'Receive booking inquiries directly through our platform. No middleman, no commission.' 
+      title: 'Direct Bookings via PG Management App', 
+      description: 'Receive booking inquiries directly through our platform. No middleman, no commission. Powered by our tenant management system.' 
     },
   ]
 
@@ -56,45 +58,67 @@ export function PropertyListing() {
         >
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-blue-100 text-[#1a1a4e] rounded-full">
             <Home className="w-4 h-4" />
-            <span className="text-sm font-medium">GetYourStay</span>
+            <span className="text-sm font-medium">GetYourStay - PG Listing Platform</span>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            List Your PG & Grow Your Tenant Base
+            List Your PG & Grow Your Tenant Base with Our PG Management App
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             GetYourStay helps PG owners list their properties and provides tenants with a 
-            professional mobile app and website - everything they need in one place.
+            professional mobile app and website - everything they need in one place. Powered by MY PG's tenant management system and rent collection software.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {benefits.map((benefit, index) => (
-            <motion.div
-              key={benefit.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1, duration: 0.5 }}
-              whileHover={{ y: -5 }}
-              className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100"
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            {benefits.map((benefit, index) => (
+              <Link
+                key={benefit.title}
+                to="/list-your-pg"
+                className="block"
+              >
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1, duration: 0.5 }}
+                  whileHover={{ y: -5 }}
+                  className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 group"
+                >
+                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br flex items-center justify-center mb-4 ${
+                    index === 0 ? 'from-blue-500 to-blue-600' :
+                    index === 1 ? 'from-green-500 to-green-600' :
+                    index === 2 ? 'from-purple-500 to-purple-600' :
+                    'from-orange-500 to-orange-600'
+                  }`}>
+                    <benefit.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-[#1a1a4e] transition-colors">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {benefit.description}
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-sm font-medium text-[#1a1a4e] opacity-0 group-hover:opacity-100 transition-opacity mt-3">
+                    Learn more <ExternalLink className="w-3.5 h-3.5" />
+                  </span>
+                </motion.div>
+              </Link>
+            ))}
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <Link
+              to="/list-your-pg"
+              className="inline-flex items-center gap-2 text-sm font-medium text-[#1a1a4e] hover:underline"
             >
-              <div className={`w-12 h-12 rounded-xl bg-gradient-to-br flex items-center justify-center mb-4 ${
-                index === 0 ? 'from-blue-500 to-blue-600' :
-                index === 1 ? 'from-green-500 to-green-600' :
-                index === 2 ? 'from-purple-500 to-purple-600' :
-                'from-orange-500 to-orange-600'
-              }`}>
-                <benefit.icon className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                {benefit.title}
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                {benefit.description}
-              </p>
-            </motion.div>
-          ))}
-        </div>
+              View all details about listing your PG <ArrowRight className="w-4 h-4" />
+            </Link>
+          </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}

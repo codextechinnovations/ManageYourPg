@@ -52,7 +52,7 @@ export function Footer() {
             transition={{ duration: 0.5 }}
           >
             <div className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="MY PG Logo" className="w-12 h-12" />
+              <img src={logo} alt="MY PG - PG Management Software & App for Indian PG Owners" className="w-12 h-12" />
               <span className="text-2xl font-bold">Manage Your PG</span>
             </div>
             <p className="text-blue-100 mb-6 leading-relaxed">

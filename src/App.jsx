@@ -24,6 +24,10 @@ import TermsConditions from './pages/TermsConditions'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import CareersPage from './pages/Careers'
 import { PressKit } from './pages/PressKit'
+import { FeaturesPage } from './pages/FeaturesPage'
+import { FeatureDetail } from './pages/FeatureDetail'
+import { ListYourPG } from './pages/ListYourPG'
+import { WhyChoosePage } from './pages/WhyChoosePage'
 
 function ScrollToHash() {
   const { hash } = useLocation()
@@ -95,6 +99,10 @@ export default function App() {
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/careers" element={<CareersPage />} />
           <Route path="/press" element={<PressKit />} />
+          <Route path="/features" element={<FeaturesPage />} />
+          <Route path="/features/:slug" element={<FeatureDetail />} />
+          <Route path="/list-your-pg" element={<ListYourPG />} />
+          <Route path="/why-choose" element={<WhyChoosePage />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

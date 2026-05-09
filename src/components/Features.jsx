@@ -1,4 +1,5 @@
 import { motion } from 'motion/react'
+import { Link } from 'react-router-dom'
 import {
   LayoutDashboard,
   UserPlus,
@@ -18,9 +19,13 @@ import {
   Soup,
   Sparkles,
   Video,
+  ArrowRight,
+  ExternalLink,
 } from 'lucide-react'
 
 export function Features() {
+  const getSlug = (title) => title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
+
   const features = [
     {
       icon: LayoutDashboard,
@@ -40,7 +45,7 @@ export function Features() {
       icon: UserCheck,
       title: 'Digital Check-In for PG',
       description:
-        'Tenants can submit digital check-in requests for your PG accommodation. Approve with one click - no paperwork needed. Paperless tenant onboarding.',
+        'Tenants can submit digital check-in requests via your PG management app. Approve with one click - no paperwork needed. Paperless tenant onboarding with our digital PG management platform.',
       color: 'from-purple-500 to-purple-600',
     },
     {
@@ -68,7 +73,7 @@ export function Features() {
       icon: BedDouble,
       title: 'Room & Bed Management',
       description:
-        'Track room occupancy, bed availability, and pricing. Know vacant beds instantly - ideal for multi-floor PGs across India.',
+        'Track room occupancy, bed availability, and pricing with our bed management system. Know vacant beds instantly - ideal for multi-floor PGs across India.',
       color: 'from-indigo-500 to-indigo-600',
     },
     {
@@ -89,7 +94,7 @@ export function Features() {
       icon: ShieldCheck,
       title: 'Police & Background Verification',
       description:
-        'Comprehensive tenant verification including police verification, address proof, identity check, and background screening for complete peace of mind.',
+        'Comprehensive tenant verification including police verification, address proof, identity check, and background screening. Our tenant tracking software ensures complete peace of mind.',
       color: 'from-green-500 to-emerald-600',
     },
     {
@@ -103,7 +108,7 @@ export function Features() {
       icon: Sparkles,
       title: 'Cleaning & Maintenance Services',
       description:
-        'Schedule room cleaning, common area maintenance, pest control, and hygiene management. Track service history and maintain PG standards.',
+        'Schedule room cleaning, common area maintenance, pest control, and hygiene management. Our complaint management system tracks service history and maintains PG standards.',
       color: 'from-sky-500 to-cyan-600',
     },
     {
@@ -154,7 +159,7 @@ export function Features() {
           className="text-center mb-16"
         >
           <div className="inline-block mb-4 px-4 py-2 bg-blue-100 text-[#1a1a4e] rounded-full">
-            Complete PG Management & Hostel ERP System
+            Complete PG Management, Hostel ERP & Operations Software
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Complete{' '}
@@ -170,28 +175,54 @@ export function Features() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {features.map((feature, index) => (
-            <motion.div
+            <Link
               key={feature.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.05, duration: 0.5 }}
-              whileHover={{ y: -12, scale: 1.03, rotate: 1 }}
-              className="group bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all border border-gray-100 hover:border-blue-200 cursor-pointer"
+              to={`/features/${getSlug(feature.title)}`}
+              className="block"
             >
-              <div className={`w-14 h-14 mb-4 rounded-xl bg-gradient-to-br ${feature.color} flex items-center justify-center shadow-lg`}>
-                <feature.icon className="w-7 h-7 text-white" />
-              </div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05, duration: 0.5 }}
+                whileHover={{ y: -12, scale: 1.03, rotate: 1 }}
+                className="group bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all border border-gray-100 hover:border-blue-200 cursor-pointer"
+              >
+                <div className={`w-14 h-14 mb-4 rounded-xl bg-gradient-to-br ${feature.color} flex items-center justify-center shadow-lg`}>
+                  <feature.icon className="w-7 h-7 text-white" />
+                </div>
 
-              <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#1a1a4e] transition-colors">
-                {feature.title}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {feature.description}
-              </p>
-            </motion.div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#1a1a4e] transition-colors">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {feature.description}
+                </p>
+                <span className="inline-flex items-center gap-1 text-sm font-medium text-[#1a1a4e] opacity-0 group-hover:opacity-100 transition-opacity mt-3">
+                  Learn more <ExternalLink className="w-3.5 h-3.5" />
+                </span>
+              </motion.div>
+            </Link>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3, duration: 0.5 }}
+          className="mt-12 text-center"
+        >
+          <Link
+            to="/features"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] text-white rounded-full hover:shadow-2xl transition-all font-medium"
+          >
+            View All 17 Features with Details <ArrowRight className="w-4 h-4" />
+          </Link>
+          <p className="mt-4 text-sm text-gray-500">
+            Each feature explained with problem, solution, benefits, and real-world use case
+          </p>
+        </motion.div>
       </div>
     </section>
   )
