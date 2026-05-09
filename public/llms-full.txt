@@ -1,0 +1,127 @@
+# MY PG - Full Documentation
+> Complete reference for MY PG - India's leading PG management software | https://manageyourpg.com
+
+## Product Overview
+MY PG (ManageYourPG) is a comprehensive SaaS platform designed specifically for Indian PG (Paying Guest) accommodation owners, landlords, and property managers. The platform digitizes and automates all aspects of PG operations including rent collection, tenant management, room/bed tracking, expense management, and operational reporting.
+
+## Website Structure
+- `/` — Homepage with Hero, Features, Screenshots, Pricing, Careers, Property Listings, Service Areas, About, Why Choose, Testimonials, FAQ, Contact sections
+- `/about` — About Us page with company mission, stats, and values
+- `/careers` — Careers page with job openings, application form, and company stats
+- `/terms` — Terms and Conditions
+- `/privacy` — Privacy Policy
+
+## Pricing
+| Plan | Price | Duration | Features |
+|------|-------|----------|----------|
+| Free Trial | ₹0 | 7 days | Full access, no credit card required |
+| Premium Monthly | ₹499 | 1 month | Unlimited tenants, multi-property, priority support |
+| Premium Yearly | ₹3,999 | 12 months | Save 33%, same features as monthly |
+
+## Features (Detailed)
+
+### Rent Management
+- Automated rent reminders via WhatsApp and SMS
+- UPI, Google Pay, PhonePe, Paytm integration for payments
+- Digital rent receipts with automatic generation
+- Payment tracking dashboard with pending/overdue status
+- Late payment notifications and escalation
+
+### Tenant Management
+- Digital tenant profiles with photo, contact, and KYC documents
+- Aadhaar, PAN, address proof upload and storage
+- Room/bed assignment with move-in/move-out tracking
+- Security deposit tracking with auto-refund calculation
+- Police verification and background screening integration
+- Tenant communication through app and WhatsApp
+
+### Property Management
+- Multi-property support from single dashboard
+- Room and bed configuration (single/double/triple sharing)
+- Real-time occupancy tracking
+- Per-room and per-bed pricing
+- Floor-wise and building-wise management
+
+### Expense Management
+- Expense categorization (maintenance, food, staff, utilities)
+- Monthly expense reports and trends
+- Vendor payment tracking
+- Budget setting and alerts
+
+### Operations
+- Food and mess management (meal plans, dietary preferences, timings)
+- Cleaning and maintenance scheduling (room, common areas, pest control)
+- CCTV camera integration with live monitoring
+- Notice board for tenant announcements
+- Self check-in/check-out requests
+
+### Analytics & Reports
+- Revenue reports by property, month, or year
+- Occupancy rate tracking
+- Rent collection efficiency reports
+- Expense vs revenue analysis
+- Exportable reports (PDF/Excel)
+
+## Service Areas
+Available in 50+ cities including: Bangalore, Mumbai, Delhi, Gurgaon, Noida, Chennai, Hyderabad, Pune, Kolkata, Ahmedabad, Jaipur, Lucknow, Chandigarh, Coimbatore, Visakhapatnam, Indore, Bhopal, Nagpur, Surat, Kochi, Bhubaneswar.
+
+## Company Information
+- **Company Name**: MY PG Solutions
+- **Founded**: 2020
+- **Headquarters**: Bangalore, Karnataka, India
+- **Employees**: 50+
+- **Contact Email**: support@manageyourpg.com
+- **Careers Email**: manageyourpg@gmail.com
+- **Phone**: +91 9741821179
+- **Social Media**: Facebook, Twitter/X, LinkedIn, Instagram, YouTube (@mypgapp)
+
+## Job Openings
+### Sales Executive — Bangalore
+- **Type**: Full-time
+- **Experience**: 1-3 years B2B sales
+- **Salary**: ₹4,00,000 - ₹8,00,000/year + incentives
+- **Openings**: 5
+- **Department**: Sales & Business Development
+- **Requirements**:
+  - 1-3 years B2B sales experience (real estate, SaaS, or fintech preferred)
+  - Strong communication and interpersonal skills
+  - Cold calling and lead generation experience
+  - Self-motivated with target orientation
+  - Hindi, English required (Kannada plus)
+  - Own transportation preferred
+- **Responsibilities**:
+  - Generate leads and convert to customers for PG management software
+  - Conduct product demonstrations to potential clients
+  - Maintain client relationships for retention and upselling
+  - Achieve monthly and quarterly sales targets
+  - Maintain CRM records
+
+## Schema Markup
+The website includes comprehensive JSON-LD structured data:
+- SoftwareApplication schema with aggregate rating (4.8/5, 5000+ reviews)
+- Organization schema with contact details and social profiles
+- FAQPage schema with 10+ frequently asked questions and answers
+- JobPosting schema for Sales Executive position
+- Product schema with pricing offers
+- LocalBusiness schemas for each major city
+- HowTo schema for product setup
+- VideoObject schema for product demo
+- SpeakableSpecification for voice search optimization
+
+## Technical Stack
+| Layer | Technology |
+|-------|-----------|
+| Framework | React 18 |
+| Bundler | Vite 5 |
+| Styling | Tailwind CSS 3 |
+| Animations | Motion (Framer Motion) |
+| Icons | lucide-react |
+| Routing | react-router-dom |
+| Deployment | Vercel |
+
+## Contact & Support
+- **Website**: https://manageyourpg.com
+- **Email**: support@manageyourpg.com
+- **Careers**: manageyourpg@gmail.com
+- **Phone**: +91 9741821179
+- **Address**: Bangalore, Karnataka, India

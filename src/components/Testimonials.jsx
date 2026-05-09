@@ -11,6 +11,7 @@ export function Testimonials() {
       content:
         'Manage Your PG made our daily operations simple and fast. We can now manage 3 properties from one dashboard. Highly recommended!',
       rating: 5,
+      cite: 'https://manageyourpg.com/#testimonials',
     },
     {
       name: 'Rajesh Kumar',
@@ -20,6 +21,7 @@ export function Testimonials() {
       content:
         'Rent and expense tracking became much easier with MY PG. The reports help us make better business decisions every month.',
       rating: 5,
+      cite: 'https://manageyourpg.com/#testimonials',
     },
     {
       name: 'Anjali Verma',
@@ -29,6 +31,7 @@ export function Testimonials() {
       content:
         'The check-in process is now more organized and digital. Tenants love the self-service features. Great product!',
       rating: 5,
+      cite: 'https://manageyourpg.com/#testimonials',
     },
   ]
 
@@ -87,9 +90,9 @@ export function Testimonials() {
 
                 <Quote className="w-10 h-10 text-[#1a1a4e]/20 mb-4" />
 
-                <p className="text-gray-700 leading-relaxed mb-6 flex-grow">
+                <blockquote cite={testimonial.cite} className="text-gray-700 leading-relaxed mb-6 flex-grow">
                   "{testimonial.content}"
-                </p>
+                </blockquote>
 
                 <div className="flex items-center gap-4 pt-6 border-t border-gray-200">
                   <div className="w-14 h-14 rounded-full overflow-hidden flex-shrink-0 ring-2 ring-blue-100 group-hover:ring-blue-300 transition-all">
@@ -100,9 +103,11 @@ export function Testimonials() {
                     />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900">
-                      {testimonial.name}
-                    </h4>
+                    <cite className="not-italic">
+                      <h4 className="font-bold text-gray-900">
+                        {testimonial.name}
+                      </h4>
+                    </cite>
                     <p className="text-sm text-gray-600">{testimonial.role}</p>
                   </div>
                 </div>

@@ -40,6 +40,7 @@ export function TrustStats() {
       suffix: '+',
       label: 'PGs Managed',
       description: 'Trusted PG properties',
+      source: 'Internal MY PG user analytics as of April 2026',
       color: 'from-blue-500 to-blue-600',
     },
     {
@@ -47,7 +48,8 @@ export function TrustStats() {
       value: 50000,
       suffix: '+',
       label: 'Tenants Served',
-      description: 'Happy tenants',
+      description: 'Happy tenants across India',
+      source: 'Aggregated tenant data from MY PG platform, 2026',
       color: 'from-emerald-500 to-emerald-600',
     },
     {
@@ -55,7 +57,8 @@ export function TrustStats() {
       value: 80,
       suffix: '%',
       label: 'Less Follow-ups',
-      description: 'Time saved',
+      description: 'Average time saved on rent collection',
+      source: 'Based on MY PG user survey, 2025-2026',
       color: 'from-purple-500 to-purple-600',
     },
     {
@@ -64,6 +67,7 @@ export function TrustStats() {
       suffix: '+',
       label: 'Cities in India',
       description: 'PAN India presence',
+      source: 'MY PG service coverage data, 2026',
       color: 'from-orange-500 to-orange-600',
     },
   ]
@@ -157,6 +161,7 @@ export function TrustStats() {
                 </div>
                 <p className="text-blue-100 font-medium">{stat.label}</p>
                 <p className="text-blue-200/60 text-xs mt-1">{stat.description}</p>
+                <cite className="block text-blue-300/40 text-[10px] mt-2 not-italic">{stat.source}</cite>
               </div>
             </motion.div>
           ))}

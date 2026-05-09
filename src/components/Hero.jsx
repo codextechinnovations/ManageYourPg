@@ -110,9 +110,9 @@ export function Hero() {
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
             >
               #1{' '}
-              <span className="bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] bg-clip-text text-transparent">
+              <dfn className="bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] bg-clip-text text-transparent not-italic font-bold">
                 PG Management Software
-              </span>{' '}
+              </dfn>{' '}
               in India
             </motion.h1>
 
