@@ -1,5 +1,6 @@
 import { motion } from 'motion/react'
 import { Building2, Users, TrendingUp, Clock, Star, Heart, Shield } from 'lucide-react'
+import { ShareButton } from './ShareButton'
 import { useEffect, useRef, useState } from 'react'
 
 function AnimatedCounter({ end, duration = 2 }) {
@@ -142,6 +143,10 @@ export function TrustStats() {
                 <p className="text-blue-100 font-medium">{stat.label}</p>
                 <p className="text-blue-200/60 text-xs mt-1">{stat.description}</p>
                 <cite className="block text-blue-300/40 text-[10px] mt-2 not-italic">{stat.source}</cite>
+                <ShareButton
+                  text={`MY PG: ${stat.value}${stat.suffix} ${stat.label} - ${stat.description}`}
+                  className="text-blue-300/40 hover:text-white mt-2"
+                />
               </div>
             </motion.div>
           ))}

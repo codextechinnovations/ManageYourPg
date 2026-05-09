@@ -1,5 +1,6 @@
 import { motion } from 'motion/react'
 import { Lightbulb, IndianRupee, Star, Users, MapPin, Smartphone } from 'lucide-react'
+import { ShareButton } from './ShareButton'
 
 const facts = [
   {
@@ -56,16 +57,16 @@ export function KeyFacts() {
           className="text-center mb-12"
         >
           <div className="inline-block mb-4 px-4 py-2 bg-amber-100 text-amber-800 rounded-full">
-            Key Facts
+            Cloud-Based PG Management
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Fast Facts About{' '}
+            Cloud-Based PG Management &{' '}
             <span className="bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] bg-clip-text text-transparent">
-              MY PG
+              Automation Software
             </span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Essential data points and statistics about India's leading PG management platform
+            Essential data points and statistics about India's leading cloud-based PG management and automation software platform for PG owners
           </p>
         </motion.div>
 
@@ -85,9 +86,12 @@ export function KeyFacts() {
               </div>
               <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">{fact.label}</p>
               <p className="text-gray-700 leading-relaxed">{fact.content}</p>
-              {fact.source && (
-                <p className="text-xs text-gray-400 mt-3 italic">Source: {fact.source}</p>
-              )}
+              <div className="flex items-center justify-between mt-3">
+                {fact.source && (
+                  <p className="text-xs text-gray-400 italic">Source: {fact.source}</p>
+                )}
+                <ShareButton text={`${fact.label}: ${fact.content}`} className="ml-auto" />
+              </div>
             </motion.div>
           ))}
         </div>

@@ -24,44 +24,44 @@ export function Features() {
   const features = [
     {
       icon: LayoutDashboard,
-      title: 'Real-Time Dashboard',
+      title: 'PG Owner Dashboard',
       description:
-        'Complete overview of your PG operations - occupancy, rent collection, pending payments, and revenue at a glance. Available for all PG owners in India.',
+        'Complete real-time PG owner dashboard showing occupancy rates, rent collection status, pending payments, and revenue analytics at a glance. Available for all PG owners in India.',
       color: 'from-blue-500 to-blue-600',
     },
     {
       icon: UserPlus,
-      title: 'Tenant Management',
+      title: 'Tenant Management System',
       description:
-        'Add and manage tenant profiles with documents. Digital KYC storage, contact details, payment history - everything in one place.',
+        'Comprehensive tenant management system with digital KYC storage, contact details, payment history, and document management. Add and manage tenant profiles with ease.',
       color: 'from-emerald-500 to-emerald-600',
     },
     {
       icon: UserCheck,
-      title: 'Self Check-In Requests',
+      title: 'Digital Check-In for PG',
       description:
-        'Tenants can submit check-in requests digitally. Approve with one click - no paperwork needed.',
+        'Tenants can submit digital check-in requests for your PG accommodation. Approve with one click - no paperwork needed. Paperless tenant onboarding.',
       color: 'from-purple-500 to-purple-600',
     },
     {
       icon: CreditCard,
-      title: 'Automated Rent Collection',
+      title: 'Rent Collection Software',
       description:
-        'Set up automatic rent reminders, track payments, generate digital receipts. Reduce late payments by 80%.',
+        'Automated rent collection software that sends reminders via WhatsApp and SMS, tracks payments in real-time, and generates digital receipts. Reduce late payments by 80%.',
       color: 'from-orange-500 to-orange-600',
     },
     {
       icon: Receipt,
-      title: 'Expense Tracking',
+      title: 'PG Accounting Software',
       description:
-        'Record and categorize PG expenses - maintenance, food, staff salary. Monitor spending patterns easily.',
+        'Record and categorize PG expenses - maintenance, food, staff salary, utilities. Track spending patterns and generate tax-ready reports with ease.',
       color: 'from-pink-500 to-pink-600',
     },
     {
       icon: FileText,
-      title: 'Reports & Analytics',
+      title: 'Occupancy Management Software',
       description:
-        'Generate detailed reports on payments, occupancy, revenue, and expenses. Make data-driven decisions.',
+        'Generate detailed reports on occupancy rates, payments, revenue, and expenses. Make data-driven decisions with our occupancy management software.',
       color: 'from-cyan-500 to-cyan-600',
     },
     {
@@ -73,9 +73,9 @@ export function Features() {
     },
     {
       icon: BellRing,
-      title: 'Rent Reminders & Notifications',
+      title: 'Online Rent Collection App',
       description:
-        'Automated WhatsApp and SMS reminders for rent due dates. Reduce follow-ups and late payments significantly.',
+        'Automated WhatsApp and SMS reminders for rent due dates via our online rent collection app. Reduce follow-ups and late payments significantly.',
       color: 'from-yellow-500 to-yellow-600',
     },
     {
@@ -94,9 +94,9 @@ export function Features() {
     },
     {
       icon: Soup,
-      title: 'Food & Meal Services',
+      title: 'Food Management for PG',
       description:
-        'Manage meal plans, food menus, dietary preferences, mess timings, and food expenses. Track breakfast, lunch, dinner services effortlessly.',
+        'Manage meal plans, food menus, dietary preferences, mess timings, and food expenses. Track breakfast, lunch, and dinner services effortlessly.',
       color: 'from-yellow-500 to-amber-600',
     },
     {
@@ -115,9 +115,9 @@ export function Features() {
     },
     {
       icon: Building,
-      title: 'Multi-Property Management',
+      title: 'Multi Property Management Software',
       description:
-        'Manage multiple PG properties from one dashboard. Track occupancy and revenue across all locations.',
+        'Manage multiple PG properties from one dashboard with our multi property management software. Track occupancy and revenue across all locations in real-time.',
       color: 'from-teal-500 to-teal-600',
     },
     {
@@ -129,9 +129,9 @@ export function Features() {
     },
     {
       icon: Wallet,
-      title: 'Generate Rent Receipts',
+      title: 'PG Billing Software',
       description:
-        'Create professional digital rent receipts instantly. Share via WhatsApp or email - accepted everywhere in India.',
+        'Generate professional digital rent receipts and bills instantly with our PG billing software. Share receipts via WhatsApp or email - accepted for tax filing across India.',
       color: 'from-rose-500 to-rose-600',
     },
     {
@@ -154,7 +154,7 @@ export function Features() {
           className="text-center mb-16"
         >
           <div className="inline-block mb-4 px-4 py-2 bg-blue-100 text-[#1a1a4e] rounded-full">
-            Best PG Management Features
+            Complete PG Management & Hostel ERP System
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Complete{' '}

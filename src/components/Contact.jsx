@@ -108,7 +108,7 @@ export function Contact() {
           className="text-center mb-16"
         >
           <div className="inline-block mb-4 px-4 py-2 bg-blue-100 text-[#1a1a4e] rounded-full">
-            Contact Us
+            Smart PG Management Solution
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Get in{' '}
@@ -117,8 +117,7 @@ export function Contact() {
             </span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Have questions? We'd love to hear from you. Send us a message and
-            we'll respond as soon as possible.
+            Have questions about our PG management app, hostel management software, or rent collection system? Send us a message and we'll respond as soon as possible.
           </p>
         </motion.div>
 

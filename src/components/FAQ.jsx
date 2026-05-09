@@ -64,7 +64,7 @@ export function FAQ() {
     },
     {
       question: "Is there a free trial for PG management app?",
-      answer: "MY PG offers a 7-day free trial with full access to all premium features and no credit card required. During the trial, PG owners can manage unlimited tenants, enable WhatsApp rent reminders, generate digital receipts and reports, configure CCTV integration, set up food services, and access priority support. After the trial, users can choose Premium at ₹499 per month or ₹3,999 per year."
+      answer: "MY PG offers a 7-day free trial with full access to all premium features and no credit card required. During the trial, PG owners can manage unlimited tenants, enable WhatsApp rent reminders, generate digital receipts and reports, configure CCTV integration, set up food services, and access priority support. After the trial, users can choose Premium at ₹499 per month or ₹3,999 per year. MY PG is also the ideal co-living management software for modern shared housing operators."
     },
     {
       question: "What features does PG management software need?",
@@ -92,7 +92,7 @@ export function FAQ() {
     },
     {
       question: "Why use PG software over Excel or manual tracking?",
-      answer: "Manual tracking in Excel leads to calculation errors, missed rent due dates, data loss risks, and no automated tenant communication. MY PG eliminates these issues by automating rent reminders via WhatsApp, providing real-time occupancy dashboards, generating digital receipts and tax reports, and offering secure cloud backup. Users report an 80% reduction in late payments after switching to MY PG (MY PG user survey, 2025-2026)."
+      answer: "Manual tracking in Excel leads to calculation errors, missed rent due dates, data loss risks, and no automated tenant communication. MY PG eliminates these issues by automating rent reminders via WhatsApp, providing real-time occupancy dashboards, generating digital receipts and tax reports, and offering secure cloud backup. As a comprehensive digital PG management platform, MY PG helps you run your property as a cloud-based PG management system. Users report an 80% reduction in late payments after switching to MY PG (MY PG user survey, 2025-2026)."
     },
     {
       question: "What security features does MY PG offer?",
@@ -125,12 +125,12 @@ export function FAQ() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Everything You Need to Know About{' '}
             <span className="bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] bg-clip-text text-transparent">
-              PG Management Software
+              PG Management & Hostel Software
             </span>{' '}
             in India
           </h2>
           <p className="text-lg text-gray-600">
-            Get instant answers to common questions about MY PG - India's #1 PG management app for PG owners
+            Get instant answers about PG management software, hostel ERP, tenant management systems, and rent collection apps for PG owners across India
           </p>
         </motion.div>
 

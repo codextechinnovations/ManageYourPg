@@ -1,5 +1,5 @@
 import { motion } from 'motion/react'
-import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone } from 'lucide-react'
+import { Facebook, Twitter, Linkedin, Instagram, Youtube, Mail, Phone, ExternalLink } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import logo from '../assets/manageyourpg-logo.svg'
 
@@ -19,6 +19,7 @@ export function Footer() {
     { label: 'Screenshots', id: 'screenshots', to: '/#screenshots' },
     { label: 'Pricing', id: 'pricing', to: '/#pricing' },
     { label: 'Careers', id: 'careers', to: '/careers' },
+    { label: 'Press Kit', id: 'press', to: '/press' },
   ]
 
   const supportLinks = [
@@ -29,10 +30,11 @@ export function Footer() {
   ]
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
+    { icon: Facebook, href: 'https://facebook.com/manageyourpg', label: 'Facebook' },
+    { icon: Twitter, href: 'https://x.com/manageyourpg', label: 'Twitter / X' },
+    { icon: Linkedin, href: 'https://linkedin.com/company/manageyourpg', label: 'LinkedIn' },
+    { icon: Instagram, href: 'https://instagram.com/manageyourpg', label: 'Instagram' },
+    { icon: Youtube, href: 'https://youtube.com/@manageyourpg', label: 'YouTube' },
   ]
 
   return (
@@ -62,6 +64,8 @@ export function Footer() {
                 <a
                   key={social.label}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={social.label}
                   className="w-10 h-10 bg-white/10 backdrop-blur-lg rounded-lg flex items-center justify-center hover:bg-white/20 transition-all hover:scale-110"
                 >
@@ -158,16 +162,54 @@ export function Footer() {
             <p className="text-blue-100 text-center md:text-left">
               © {currentYear} My PG. All rights reserved.
             </p>
-            <div className="flex flex-wrap gap-6 text-sm text-blue-100">
+            <div className="flex flex-wrap gap-4 text-sm">
+              <a
+                href="https://twitter.com/intent/tweet?text=Check%20out%20MY%20PG%20-%20India%27s%20best%20PG%20management%20software&url=https://manageyourpg.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-blue-100 hover:text-white transition-colors"
+                aria-label="Share on X / Twitter"
+              >
+                <Twitter className="w-3.5 h-3.5" />
+                Share
+              </a>
+              <a
+                href="https://www.linkedin.com/sharing/share-offsite/?url=https://manageyourpg.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-blue-100 hover:text-white transition-colors"
+                aria-label="Share on LinkedIn"
+              >
+                <Linkedin className="w-3.5 h-3.5" />
+                Share
+              </a>
+              <a
+                href="https://www.facebook.com/sharer/sharer.php?u=https://manageyourpg.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-blue-100 hover:text-white transition-colors"
+                aria-label="Share on Facebook"
+              >
+                <Facebook className="w-3.5 h-3.5" />
+                Share
+              </a>
+            </div>
+          </div>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 mt-4 pt-4 border-t border-white/10">
+            <p className="text-blue-200/60 text-xs">
+              MY PG - India's #1 PG Management Software | Serving 5000+ PGs across 25+ cities
+            </p>
+            <div className="flex flex-wrap gap-6 text-xs text-blue-200/60">
               <Link to="/terms" className="hover:text-white transition-colors">
-                Terms of Service
+                Terms
               </Link>
               <Link to="/privacy" className="hover:text-white transition-colors">
-                Privacy Policy
+                Privacy
               </Link>
-              <a href="#" className="hover:text-white transition-colors">
-                Cookie Policy
-              </a>
+              <Link to="/press" className="hover:text-white transition-colors flex items-center gap-1">
+                <ExternalLink className="w-3 h-3" />
+                Press Kit
+              </Link>
             </div>
           </div>
         </motion.div>

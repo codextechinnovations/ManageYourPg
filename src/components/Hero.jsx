@@ -100,7 +100,7 @@ export function Hero() {
               className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-blue-100 text-[#1a1a4e] rounded-full"
             >
               <Star className="w-4 h-4 text-[#1a1a4e]" />
-              #1 PG Management Software in India
+              #1 PG Management & Hostel Management Software in India
             </motion.div>
 
             <motion.h1
@@ -122,7 +122,7 @@ export function Hero() {
               transition={{ delay: 0.4 }}
               className="text-xl text-gray-600 mb-8 leading-relaxed"
             >
-              MY PG is a comprehensive PG management software that automates rent collection, tenant management, room occupancy tracking, and expense reporting for Paying Guest accommodation owners across India. As of 2026, the platform serves more than 5,000 PG owners and manages over 50,000 tenants in 25+ Indian cities. MY PG is rated 4.8 out of 5 stars based on verified user reviews. Try the platform free for 7 days with no credit card required.
+              MY PG is a comprehensive PG management software and app that combines hostel management, tenant management, rent collection, and PG billing into one platform. Automate rent reminders, track room occupancy, manage digital KYC, and generate expense reports for your Paying Guest accommodation. As of 2026, the platform serves more than 5,000 PG owners and manages over 50,000 tenants in 25+ Indian cities. MY PG is rated 4.8 out of 5 stars based on verified user reviews. Try the platform free for 7 days with no credit card required.
             </motion.p>
 
             <motion.div

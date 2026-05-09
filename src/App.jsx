@@ -23,6 +23,7 @@ import AboutUs from './pages/AboutUs'
 import TermsConditions from './pages/TermsConditions'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import CareersPage from './pages/Careers'
+import { PressKit } from './pages/PressKit'
 
 function ScrollToHash() {
   const { hash } = useLocation()
@@ -50,11 +51,11 @@ function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>MY PG - #1 PG Management Software in India | Best Tenant & Rent Management App for PG Owners</title>
-        <meta name="description" content="MY PG is India's leading PG management software trusted by 5000+ PG owners. Automate rent collection, manage tenants, and track occupancy from one app. Start your 7-day free trial today." />
+        <title>MY PG - #1 PG Management Software & App | Hostel Management & Rent Collection Software for PG Owners</title>
+        <meta name="description" content="MY PG is India's best PG management software and app for PG owners. Automate rent collection, manage tenants with digital KYC, track occupancy, and generate bills. Try our hostel management software and tenant management system free for 7 days." />
         <link rel="canonical" href="https://manageyourpg.com/" />
-        <meta property="og:title" content="MY PG - #1 PG Management Software in India | Tenant & Rent Management App" />
-        <meta property="og:description" content="Manage your PG professionally with MY PG. Automate rent collection, manage tenants, and track occupancy. Trusted by 5000+ PG owners in India." />
+        <meta property="og:title" content="MY PG - #1 PG Management Software & App | Hostel & Rent Collection Software for PG Owners" />
+        <meta property="og:description" content="MY PG is India's leading PG management software and app for PG owners. Automate rent collection, manage tenants with digital KYC, track occupancy, and generate bills with our hostel management software. Free trial." />
         <meta property="og:url" content="https://manageyourpg.com/" />
       </Helmet>
       <ScrollToTop />
@@ -93,6 +94,7 @@ export default function App() {
           <Route path="/terms" element={<TermsConditions />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/careers" element={<CareersPage />} />
+          <Route path="/press" element={<PressKit />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

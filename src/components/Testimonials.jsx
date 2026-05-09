@@ -1,5 +1,6 @@
 import { motion } from 'motion/react'
 import { Star, Quote } from 'lucide-react'
+import { ShareButton } from './ShareButton'
 
 export function Testimonials() {
   const testimonials = [
@@ -90,11 +91,15 @@ export function Testimonials() {
 
                 <Quote className="w-10 h-10 text-[#1a1a4e]/20 mb-4" />
 
-                <blockquote cite={testimonial.cite} className="text-gray-700 leading-relaxed mb-6 flex-grow">
+                <blockquote cite={testimonial.cite} className="text-gray-700 leading-relaxed mb-4 flex-grow">
                   "{testimonial.content}"
                 </blockquote>
 
-                <div className="flex items-center gap-4 pt-6 border-t border-gray-200">
+                <div className="flex justify-end mb-4">
+                  <ShareButton text={`${testimonial.name}: "${testimonial.content}"`} />
+                </div>
+
+                <div className="flex items-center gap-4 pt-4 border-t border-gray-200">
                   <div className="w-14 h-14 rounded-full overflow-hidden flex-shrink-0 ring-2 ring-blue-100 group-hover:ring-blue-300 transition-all">
                     <img
                       src={testimonial.image}
