@@ -109,13 +109,9 @@ export function TrustStats() {
           className="text-center mb-12"
           id="trust-stats-desc"
         >
-          <motion.h2
-            animate={{ scale: [1, 1.02, 1] }}
-            transition={{ duration: 3, repeat: Infinity }}
-            className="text-3xl md:text-4xl font-bold text-white mb-4"
-          >
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Trusted by 5000+ PG Owners Across India
-          </motion.h2>
+          </h2>
           <p className="text-lg text-blue-100 max-w-2xl mx-auto">
             Join thousands of satisfied PG owners in Bangalore, Mumbai, Delhi, Chennai, Hyderabad, Pune 
             and other cities who streamlined their operations with MY PG
@@ -135,29 +131,13 @@ export function TrustStats() {
               role="article"
               aria-label={`${stat.value}${stat.suffix} ${stat.label} - ${stat.description}`}
             >
-              <motion.div
-                animate={{
-                  rotate: [0, 360],
-                }}
-                transition={{
-                  duration: 10,
-                  repeat: Infinity,
-                  ease: "linear",
-                  delay: index * 0.5,
-                }}
-                className={`w-14 h-14 mx-auto mb-4 rounded-xl bg-gradient-to-br ${stat.color} flex items-center justify-center shadow-lg group-hover:shadow-2xl transition-shadow`}
-              >
+              <div className={`w-14 h-14 mx-auto mb-4 rounded-xl bg-gradient-to-br ${stat.color} flex items-center justify-center shadow-lg`}>
                 <stat.icon className="w-7 h-7 text-white" />
-              </motion.div>
+              </div>
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-white mb-2 flex items-center justify-center">
                   <AnimatedCounter end={stat.value} />
-                  <motion.span
-                    animate={{ scale: [1, 1.1, 1] }}
-                    transition={{ duration: 2, repeat: Infinity, delay: index * 0.3 }}
-                  >
-                    {stat.suffix}
-                  </motion.span>
+                  <span>{stat.suffix}</span>
                 </div>
                 <p className="text-blue-100 font-medium">{stat.label}</p>
                 <p className="text-blue-200/60 text-xs mt-1">{stat.description}</p>

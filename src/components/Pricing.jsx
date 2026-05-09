@@ -159,17 +159,9 @@ export function Pricing() {
                 )}
 
                 <div className="p-8 flex-grow">
-                  <motion.div
-                    animate={{ rotate: [0, 10, -10, 0] }}
-                    transition={{
-                      duration: 3,
-                      repeat: Infinity,
-                      delay: index * 0.2,
-                    }}
-                    className={`w-14 h-14 mb-4 rounded-xl bg-gradient-to-br ${plan.color} flex items-center justify-center shadow-lg`}
-                  >
+                  <div className={`w-14 h-14 mb-4 rounded-xl bg-gradient-to-br ${plan.color} flex items-center justify-center shadow-lg`}>
                     <plan.icon className="w-7 h-7 text-white" />
-                  </motion.div>
+                  </div>
 
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">
                     {plan.name}
@@ -218,19 +210,12 @@ export function Pricing() {
 
                   <div className="space-y-3 mb-8">
                     {plan.features.map((feature, idx) => (
-                      <motion.div
-                        key={idx}
-                        initial={{ opacity: 0, x: -10 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: idx * 0.03, duration: 0.3 }}
-                        className="flex items-start gap-3"
-                      >
+                      <div key={idx} className="flex items-start gap-3">
                         <div className="flex-shrink-0 w-5 h-5 bg-green-100 rounded-full flex items-center justify-center mt-0.5">
                           <Check className="w-3 h-3 text-green-600" />
                         </div>
                         <span className="text-gray-700 text-sm">{feature}</span>
-                      </motion.div>
+                      </div>
                     ))}
                   </div>
                 </div>

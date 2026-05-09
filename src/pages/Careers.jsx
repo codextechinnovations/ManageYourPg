@@ -1,6 +1,7 @@
 import { motion } from 'motion/react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import { 
   Briefcase, 
   MapPin, 
@@ -14,7 +15,8 @@ import {
   DollarSign,
   Target,
   Phone,
-  Mail
+  Mail,
+  HelpCircle
 } from 'lucide-react'
 
 const jobDetails = {
@@ -73,6 +75,27 @@ export default function Careers() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>Careers at MY PG | Sales Executive Jobs Bangalore</title>
+        <meta name="description" content="Join MY PG - India's fastest-growing PG management software. Hiring Sales Executives in Bangalore. 5 openings, ₹4-8 LPA plus incentives. Apply now." />
+        <link rel="canonical" href="https://manageyourpg.com/careers" />
+        <meta property="og:title" content="Careers at MY PG | Job Openings in Bangalore" />
+        <meta property="og:description" content="Join MY PG - India's fastest-growing PG management software. Hiring Sales Executives in Bangalore with ₹4-8 LPA plus incentives." />
+        <meta property="og:url" content="https://manageyourpg.com/careers" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "JobPosting",
+          "title": "Sales Executive",
+          "description": "Join MY PG as a Sales Executive and help transform PG management across India.",
+          "datePosted": "2026-04-26",
+          "validThrough": "2026-06-30",
+          "employmentType": "FULL_TIME",
+          "hiringOrganization": { "@type": "Organization", "name": "MY PG Solutions", "sameAs": "https://manageyourpg.com/" },
+          "jobLocation": { "@type": "Place", "address": { "@type": "PostalAddress", "addressLocality": "Bangalore", "addressRegion": "Karnataka", "addressCountry": "IN" } },
+          "baseSalary": { "@type": "MonetaryAmount", "currency": "INR", "value": { "@type": "QuantitativeValue", "minValue": 400000, "maxValue": 800000, "unitText": "YEAR" } }
+        })}</script>
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Link to="/" className="inline-flex items-center gap-2 text-[#1a1a4e] hover:text-[#1e3a8a] transition-colors font-medium mb-8">
           <ArrowLeft className="w-5 h-5" />
@@ -110,7 +133,7 @@ export default function Careers() {
               at MY PG
             </h1>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Join India's fastest-growing PG management software company. We are looking for motivated individuals who want to be part of a dynamic team transforming the way PG owners manage their properties across India.
+              Join India's fastest-growing PG management software company. MY PG was founded in 2020 and has grown to serve 5,000+ PG owners managing 50,000+ tenants across 25+ Indian cities. Our team of 50+ professionals is transforming the way PG owners manage their properties across India. We are looking for motivated individuals to join our Sales team in Bangalore.
             </p>
           </motion.div>
 
@@ -363,6 +386,49 @@ export default function Careers() {
                 <div className="text-gray-600 text-sm">{stat.label}</div>
               </motion.div>
             ))}
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="mt-16"
+          >
+            <div className="flex items-center gap-2 mb-8">
+              <HelpCircle className="w-6 h-6 text-[#1a1a4e]" />
+              <h2 className="text-2xl font-bold text-gray-900">Common Questions About Careers at MY PG</h2>
+            </div>
+            <div className="space-y-6">
+              {[
+                {
+                  q: 'What is the work culture like at MY PG?',
+                  a: 'MY PG offers a dynamic, fast-paced work environment with a team of 50+ professionals based in Bangalore. Founded in 2020, the company has grown to serve 5,000+ PG owners across India. Employees enjoy flexible working hours, health insurance coverage, performance incentives, and opportunities for career growth in India\'s growing proptech SaaS sector.'
+                },
+                {
+                  q: 'What is the salary range for Sales Executive positions?',
+                  a: 'Sales Executives at MY PG earn a competitive base salary of ₹4,00,000 to ₹8,00,000 per year plus performance-based incentives. The role includes health insurance, flexible working hours, training programs, and career growth opportunities. Candidates with 1-3 years of B2B sales experience in real estate, SaaS, or fintech are preferred.'
+                },
+                {
+                  q: 'How do I apply for a job at MY PG?',
+                  a: 'You can apply directly through the application form on the MY PG careers page, or email your resume to manageyourpg@gmail.com. Our HR team reviews applications on a rolling basis and will contact qualified candidates for interviews. We currently have 5 openings for Sales Executive positions in Bangalore.'
+                },
+                {
+                  q: 'Does MY PG offer remote work options?',
+                  a: 'Sales Executive positions are based in Bangalore, Karnataka, with flexible working hours. The role involves field sales visits to PG owners across Bangalore, so candidates with their own transportation (bike preferred) are preferred. The company provides all necessary sales tools, CRM access, and product training.'
+                }
+              ].map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.7 + idx * 0.1 }}
+                  className="bg-gray-50 rounded-2xl p-6"
+                >
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">{item.q}</h3>
+                  <p className="text-gray-600 leading-relaxed">{item.a}</p>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
         </div>
       </section>

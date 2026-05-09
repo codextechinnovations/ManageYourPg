@@ -288,12 +288,14 @@ export function ChatBox() {
                 <button
                   onClick={() => setIsMinimized(!isMinimized)}
                   className="p-1.5 hover:bg-white/20 rounded-lg transition-colors"
+                  aria-label={isMinimized ? "Maximize chat" : "Minimize chat"}
                 >
                   <Minimize2 className="w-4 h-4" />
                 </button>
                 <button
                   onClick={() => setIsOpen(false)}
                   className="p-1.5 hover:bg-white/20 rounded-lg transition-colors"
+                  aria-label="Close chat"
                 >
                   <X className="w-4 h-4" />
                 </button>
@@ -383,6 +385,7 @@ export function ChatBox() {
                     <button
                       onClick={handleSend}
                       className="w-10 h-10 bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] hover:shadow-lg rounded-full flex items-center justify-center transition-all"
+                      aria-label="Send message"
                     >
                       <Send className="w-4 h-4 text-white" />
                     </button>

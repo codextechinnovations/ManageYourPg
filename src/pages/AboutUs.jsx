@@ -1,6 +1,7 @@
 import { motion } from 'motion/react'
-import { CheckCircle2, Smartphone, Monitor, Clock, Shield, Zap, HeadphonesIcon, ArrowLeft } from 'lucide-react'
+import { CheckCircle2, Smartphone, Monitor, Clock, Shield, Zap, HeadphonesIcon, ArrowLeft, HelpCircle } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 
 export default function AboutUs() {
   const features = [
@@ -19,6 +20,14 @@ export default function AboutUs() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>About Us | MY PG - #1 PG Management Software India</title>
+        <meta name="description" content="Learn about MY PG - India's leading PG management software. Founded in 2020, serving 5000+ PG owners across 25+ cities with 50000+ tenants managed." />
+        <link rel="canonical" href="https://manageyourpg.com/about" />
+        <meta property="og:title" content="About Us | MY PG - PG Management Software" />
+        <meta property="og:description" content="Learn about MY PG - India's leading PG management software serving 5000+ PG owners across 25+ cities." />
+        <meta property="og:url" content="https://manageyourpg.com/about" />
+      </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Link to="/" className="inline-flex items-center gap-2 text-[#1a1a4e] hover:text-[#1e3a8a] transition-colors font-medium mb-8">
           <ArrowLeft className="w-5 h-5" />
@@ -205,6 +214,72 @@ export default function AboutUs() {
               for PG owners and tenants alike. We are committed to transforming the way PG businesses
               operate across India, one property at a time.
             </p>
+
+            <div className="mt-12 grid md:grid-cols-4 gap-6">
+              {[
+                { value: '5,000+', label: 'Active PG Owners', desc: 'Trusted users across India' },
+                { value: '50,000+', label: 'Tenants Managed', desc: 'Through our platform' },
+                { value: '25+', label: 'Cities Served', desc: 'PAN India coverage' },
+                { value: '4.8/5', label: 'User Rating', desc: 'From 5,000+ verified reviews' },
+              ].map((stat, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: idx * 0.1, duration: 0.4 }}
+                  className="text-center p-6 bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-100 shadow-sm"
+                >
+                  <div className="text-3xl font-bold bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] bg-clip-text text-transparent mb-2">
+                    {stat.value}
+                  </div>
+                  <div className="font-semibold text-gray-900">{stat.label}</div>
+                  <div className="text-sm text-gray-500 mt-1">{stat.desc}</div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.6 }}
+            className="mt-20"
+          >
+            <div className="flex items-center gap-2 mb-8">
+              <HelpCircle className="w-6 h-6 text-[#1a1a4e]" />
+              <h2 className="text-2xl font-bold text-gray-900">Common Questions About MY PG</h2>
+            </div>
+            <div className="space-y-6">
+              {[
+                {
+                  q: 'What is MY PG and how does it work?',
+                  a: 'MY PG is a cloud-based PG management software that helps PG owners automate rent collection, manage tenants with digital KYC, track room occupancy in real-time, and generate expense reports. PG owners download the Android app or access the web dashboard, add their property details and tenants, and the platform handles rent reminders, payment tracking, receipts, and reporting automatically.'
+                },
+                {
+                  q: 'How many PG owners use MY PG in India?',
+                  a: 'As of 2026, MY PG serves over 5,000 PG owners and property managers across 25+ Indian cities who collectively manage more than 50,000 tenants through the platform. The software is rated 4.8 out of 5 stars based on verified user reviews.'
+                },
+                {
+                  q: 'What makes MY PG different from other property management software?',
+                  a: 'MY PG is specifically designed for the Indian PG market, supporting local payment methods like UPI, Google Pay, and PhonePe, providing WhatsApp Business API integration for tenant communication, offering multi-language support (Hindi, English, Tamil, Telugu, Kannada, Malayalam), and including India-specific features like police verification, Aadhaar KYC, and CCTV integration.'
+                },
+                {
+                  q: 'Is MY PG available on both mobile and web?',
+                  a: 'Yes, MY PG is available as an Android mobile app for on-the-go management and as a web dashboard accessible from any modern browser. Both platforms sync in real-time, allowing PG owners to manage their properties from anywhere. The Android app supports Android 5.0 and above.'
+                }
+              ].map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.6 + idx * 0.1 }}
+                  className="bg-gray-50 rounded-2xl p-6"
+                >
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">{item.q}</h3>
+                  <p className="text-gray-600 leading-relaxed">{item.a}</p>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
         </div>
       </section>

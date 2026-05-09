@@ -75,13 +75,9 @@ export function ServiceAreas() {
               whileHover={{ y: -5, scale: 1.02 }}
               className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center"
             >
-              <motion.div
-                animate={{ y: [0, -5, 0] }}
-                transition={{ duration: 2, repeat: Infinity, delay: index * 0.2 }}
-                className="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-[#1a1a4e] to-[#1e3a8a] flex items-center justify-center"
-              >
+              <div className="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-[#1a1a4e] to-[#1e3a8a] flex items-center justify-center">
                 <stat.icon className="w-6 h-6 text-white" />
-              </motion.div>
+              </div>
               <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
                 {stat.value}
               </div>
@@ -104,19 +100,14 @@ export function ServiceAreas() {
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {majorCities.map((city, index) => (
-              <motion.div
+              <div
                 key={city.name}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1, duration: 0.4 }}
-                whileHover={{ scale: 1.05, y: -5 }}
                 className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-4 text-center border border-gray-200 hover:border-blue-300 transition-all"
               >
                 <MapPin className="w-6 h-6 mx-auto mb-2 text-[#1a1a4e]" />
                 <h4 className="font-semibold text-gray-900 mb-1">{city.name}</h4>
                 <p className="text-sm text-gray-600">{city.pgs} PGs</p>
-              </motion.div>
+              </div>
             ))}
           </div>
 
@@ -133,14 +124,13 @@ export function ServiceAreas() {
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               {['Kolkata', 'Ahmedabad', 'Jaipur', 'Lucknow', 'Chandigarh', 'Coimbatore', 'Vizag', 'Indore'].map((city) => (
-                <motion.span
+                <span
                   key={city}
-                  whileHover={{ scale: 1.1 }}
                   className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full flex items-center gap-1"
                 >
                   <CheckCircle className="w-3 h-3 text-green-500" />
                   {city}
-                </motion.span>
+                </span>
               ))}
             </div>
           </motion.div>

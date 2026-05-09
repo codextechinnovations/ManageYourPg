@@ -179,24 +179,9 @@ export function Features() {
               whileHover={{ y: -12, scale: 1.03, rotate: 1 }}
               className="group bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all border border-gray-100 hover:border-blue-200 cursor-pointer"
             >
-              <motion.div
-                animate={{
-                  rotate: [0, 5, -5, 0],
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  delay: index * 0.2,
-                }}
-                className={`w-14 h-14 mb-4 rounded-xl bg-gradient-to-br ${feature.color} flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all`}
-              >
-                <motion.div
-                  whileHover={{ scale: 1.2, rotate: 360 }}
-                  transition={{ duration: 0.5 }}
-                >
-                  <feature.icon className="w-7 h-7 text-white" />
-                </motion.div>
-              </motion.div>
+              <div className={`w-14 h-14 mb-4 rounded-xl bg-gradient-to-br ${feature.color} flex items-center justify-center shadow-lg`}>
+                <feature.icon className="w-7 h-7 text-white" />
+              </div>
 
               <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#1a1a4e] transition-colors">
                 {feature.title}
@@ -204,29 +189,6 @@ export function Features() {
               <p className="text-gray-600 leading-relaxed">
                 {feature.description}
               </p>
-
-              <motion.div
-                initial={{ opacity: 0, x: -10 }}
-                whileHover={{ opacity: 1, x: 0 }}
-                className="mt-4 flex items-center gap-2 text-[#1a1a4e]"
-              >
-                <span className="text-sm font-medium">Learn more</span>
-                <motion.svg
-                  animate={{ x: [0, 5, 0] }}
-                  transition={{ duration: 1.5, repeat: Infinity }}
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </motion.svg>
-              </motion.div>
             </motion.div>
           ))}
         </div>

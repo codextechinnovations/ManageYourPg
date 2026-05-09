@@ -122,7 +122,7 @@ export function Hero() {
               transition={{ delay: 0.4 }}
               className="text-xl text-gray-600 mb-8 leading-relaxed"
             >
-              Automate rent collection, manage tenants, track room occupancy, and generate reports - all from one app. Rated #1 PG management app by 5000+ owners in Bangalore, Mumbai, Delhi, Chennai, Hyderabad, Pune. Try it FREE for 7 days - No credit card required!
+              MY PG is a comprehensive PG management software that automates rent collection, tenant management, room occupancy tracking, and expense reporting for Paying Guest accommodation owners across India. As of 2026, the platform serves more than 5,000 PG owners and manages over 50,000 tenants in 25+ Indian cities. MY PG is rated 4.8 out of 5 stars based on verified user reviews. Try the platform free for 7 days with no credit card required.
             </motion.p>
 
             <motion.div

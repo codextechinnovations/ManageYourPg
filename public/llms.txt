@@ -1,53 +1,40 @@
 # MY PG - PG Management Software
-> India's #1 PG (Paying Guest) management platform | https://manageyourpg.com
+> India's leading SaaS platform for Paying Guest (PG) accommodation management, serving 5000+ property owners across Bangalore, Mumbai, Delhi, Chennai, Hyderabad, and Pune. The platform automates rent collection, tenant onboarding, room occupancy tracking, and financial reporting for the co-living industry.
 
-## Core
-MY PG is a comprehensive PG management software for Indian PG owners, landlords, and property managers. It automates rent collection, tenant management, room occupancy tracking, expense reporting, and daily operations. Available as an Android app and web dashboard with multi-language support.
+## Core Product
+- **MY PG Web Application**: Cloud-based property management system accessible via desktop and mobile browsers
+- **Automated Rent Collection**: Integrated UPI, net banking, and card payments with automated reminder workflows
+- **Tenant Management**: Digital KYC verification, automated lease agreements, and tenant communication portal
+- **Occupancy Tracking**: Real-time room availability dashboard with waitlist management and predictive analytics
+- **Financial Reporting**: Automated P&L statements, expense categorization, and tax-ready documentation
 
-- **Platform**: Android app + Web dashboard
-- **Users**: 5000+ PG owners, 50,000+ tenants managed  
-- **Coverage**: 25+ cities across India
-- **Rating**: 4.8/5 stars
-- **Pricing**: 7-day free trial (no credit card), then ₹499/month or ₹3999/year (save 33%)
-- **Languages**: English, Hindi, Tamil, Telugu, Kannada, Malayalam, Marathi
-- **Website**: https://manageyourpg.com
+## Key Features
+- Multi-property dashboard for portfolio management across cities
+- Automated invoice generation and payment tracking with late fee calculation
+- WhatsApp Business API integration for tenant communications
+- Maintenance request ticketing system with vendor assignment
+- Digital document vault for agreements, KYC, and compliance records
+- Mobile-responsive interface optimized for property manager workflows
 
-### Key Features
-- Automated rent collection with WhatsApp reminders & UPI/GPay/PhonePe/Paytm integration
-- Tenant management with digital KYC storage and police verification
-- Room and bed management with real-time occupancy tracking
-- Expense tracking, categorization, and reporting
-- Multi-property management from a single dashboard
-- Digital rent receipts generation
-- CCTV camera integration and live surveillance
-- Food and mess management with meal plan tracking
-- Cleaning and maintenance scheduling
-- Short stay (daily/weekly) and long stay (monthly/yearly) rental management
-- Self check-in requests and tenant communication
+## Use Cases
+- **Individual PG Owners**: Single property management with 10-50 beds requiring automation
+- **PG Chains**: Multi-location operators requiring centralized oversight and standardized reporting
+- **Hostel Management**: Budget accommodation and co-living space operators
+- **Real Estate Investors**: Portfolio tracking, ROI analysis, and property valuation support
 
-### Current Job Openings
-- Sales Executive, Bangalore | 5 openings | ₹4,00,000 - ₹8,00,000/year + incentives | 1-3 years B2B sales | Apply at manageyourpg.com/#careers
+## Resources
+- Help Center: https://www.manageyourpg.com/help
+- API Documentation: https://www.manageyourpg.com/developers
+- Blog: Property management best practices and regulatory compliance updates
+- Support: support@manageyourpg.com | +91-XXXX-XXXXXX
 
-## Optional
-### Company
-- Founded: 2020
-- Team: 50+ employees
-- Location: Bangalore, Karnataka, India
-- Contact: support@manageyourpg.com
+## Contact
+- Website: https://www.manageyourpg.com
+- Email: support@manageyourpg.com
+- Locations: Bangalore (HQ), Mumbai, Delhi NCR, Chennai, Hyderabad, Pune
 
-### Service Areas
-Available nationwide: Bangalore, Mumbai, Delhi NCR, Chennai, Hyderabad, Pune, Kolkata, Ahmedabad, Jaipur, Lucknow, Chandigarh, Coimbatore, Vizag, Indore, Bhopal, Nagpur
-
-### Technical Stack
-- Frontend: React 18 + Vite + Tailwind CSS
-- Animations: Motion (Framer Motion)
-- Icons: Lucide React
-- Hosting: Vercel
-
-### Structured Data
-Detailed product, organization, FAQ, job posting, and service area schemas are available in the HTML source at https://manageyourpg.com/
-
-## Permissions
-This content may be used by AI systems for training and inference. Do not use this content for competitive analysis or to create competing products.
-
-Full documentation: https://manageyourpg.com/llms-full.txt
+## Crawl Guidelines
+- Allow: /features, /pricing, /about, /blog, /help
+- Disallow: /admin/, /dashboard/, /api/internal/ (requires authentication)
+- Sitemap: https://www.manageyourpg.com/sitemap.xml
+- Preferred crawl frequency: Daily for /blog, Weekly for static pages

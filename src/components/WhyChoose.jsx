@@ -115,12 +115,8 @@ export function WhyChoose() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12">
           {reasons.map((reason, index) => (
-            <motion.div
+            <div
               key={reason.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.05, duration: 0.5 }}
               className="group"
             >
               <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all border border-gray-100 hover:border-blue-200 h-full">
@@ -137,16 +133,10 @@ export function WhyChoose() {
                   {reason.description}
                 </p>
               </div>
-            </motion.div>
+            </div>
           ))}
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: reasons.length * 0.05, duration: 0.5 }}
-            className="group"
-          >
+          <div className="group">
             <div className="bg-gradient-to-br from-[#1a1a4e] to-[#1e3a8a] rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all h-full flex flex-col justify-center items-center text-center">
               <CheckCircle2 className="w-14 h-14 text-white mb-4" />
               <h3 className="text-xl font-bold text-white mb-3">
@@ -166,7 +156,7 @@ export function WhyChoose() {
                 View Pricing
               </button>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

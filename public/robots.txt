@@ -1,13 +1,31 @@
 User-agent: *
 Allow: /
+Allow: /about
+Allow: /careers
+Allow: /terms
+Allow: /privacy
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /api/
 
 Sitemap: https://manageyourpg.com/sitemap.xml
 
 User-agent: Googlebot
 Crawl-delay: 1
 
+User-agent: Googlebot-Image
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.svg
+
 User-agent: Bingbot
 Crawl-delay: 1
 
 User-agent: Slurp
 Crawl-delay: 1
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
