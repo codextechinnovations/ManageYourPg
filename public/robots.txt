@@ -4,6 +4,10 @@ Allow: /about
 Allow: /careers
 Allow: /terms
 Allow: /privacy
+Allow: /features
+Allow: /why-choose
+Allow: /list-your-pg
+Allow: /press
 Disallow: /admin/
 Disallow: /dashboard/
 Disallow: /api/
@@ -25,7 +29,31 @@ User-agent: Slurp
 Crawl-delay: 1
 
 User-agent: GPTBot
-Disallow: /
+Allow: /
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /api/
 
 User-agent: CCBot
-Disallow: /
+Allow: /
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /api/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /api/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /api/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /api/

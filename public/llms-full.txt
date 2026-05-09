@@ -5,9 +5,14 @@
 MY PG (ManageYourPG) is a comprehensive SaaS platform designed specifically for Indian PG (Paying Guest) accommodation owners, landlords, and property managers. The platform digitizes and automates all aspects of PG operations including rent collection, tenant management, room/bed tracking, expense management, and operational reporting.
 
 ## Website Structure
-- `/` — Homepage with Hero, Features, Screenshots, Pricing, Careers, Property Listings, Service Areas, About, Why Choose, Testimonials, FAQ, Contact sections
+- `/` — Homepage with Hero, KeyFacts, TrustStats, Features, Screenshots, Pricing, Careers, Property Listings, Service Areas, About, Why Choose, Testimonials, FAQ, Contact sections
+- `/features` — Full listing of all 17 PG management software features with detailed problem/solution/benefit/use-case sections
+- `/features/:slug` — Individual feature detail pages (17 total) including rent collection, tenant management, digital check-in, occupancy management, bed management, multi-property management, and more
+- `/why-choose` — Comprehensive page covering 7 reasons to choose MY PG with problem/solution/benefits/use-case format
+- `/list-your-pg` — Page for PG owners to list their properties for tenant discovery
 - `/about` — About Us page with company mission, stats, and values
 - `/careers` — Careers page with job openings, application form, and company stats
+- `/press` — Press kit with media resources, brand assets, and company information
 - `/terms` — Terms and Conditions
 - `/privacy` — Privacy Policy
 
