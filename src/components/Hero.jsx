@@ -13,7 +13,6 @@ import {
   BarChart3,
   Smartphone
 } from 'lucide-react'
-import apkFile from '../assets/app-debug.apk'
 
 export function Hero() {
   const floatingCards = [
@@ -164,14 +163,15 @@ export function Hero() {
               </motion.button>
 
               <motion.a
-                href={apkFile}
-                download
+                href="https://play.google.com/store/apps/details?id=com.manageyourpg.getyourstay&pcampaignid=web_share"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-full hover:shadow-2xl transition-all flex items-center justify-center gap-2"
               >
                 <Smartphone className="w-5 h-5" />
-                Download APK
+                Get It On Play Store
               </motion.a>
             </motion.div>
 
