@@ -16,6 +16,14 @@ MY PG (ManageYourPG) is a comprehensive SaaS platform designed specifically for 
 - `/terms` — Terms and Conditions
 - `/privacy` — Privacy Policy
 
+## City-Specific Pages
+- `/city/bangalore` — Bangalore PG management with local area coverage (Whitefield, Electronic City, Koramangala, 50+ localities), IT corridor focus, digital KYC for tech professionals, UPI payment integration
+- `/city/mumbai` — Mumbai PG management covering Western Line (Andheri, Borivali, Bandra) and Harbour Line (Vashi, Nerul, Thane), high-density room configurations, multi-payment support
+- `/city/delhi-ncr` — Delhi NCR PG management with coverage across Gurgaon (Cyber City, Sohna Road), Noida (Sector 62, Sector 15), Delhi (Dwarka, Rohini, Laxmi Nagar), corporate and student PG workflows
+- `/city/pune` — Pune PG management with Hinjewadi IT Park, Kharadi, Magarpatta focus, academic session management for student PGs, mess/food management, dual tenant segment (students + IT professionals)
+- `/city/hyderabad` — Hyderabad PG management covering HITEC City, Gachibowli, Madhapur, Aadhaar e-verification, UPI-native payments, premium PG amenities tracking
+- `/city/chennai` — Chennai PG management along OMR corridor, Guindy, Velachery, Tambaram, vegetarian mess management, Tamil language support, long-term tenant lifecycle tools
+
 ## Pricing
 | Plan | Price | Duration | Features |
 |------|-------|----------|----------|

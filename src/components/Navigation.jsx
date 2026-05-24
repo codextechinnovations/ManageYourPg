@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Menu, X, Phone } from 'lucide-react'
+import { Menu, X, Phone, ChevronDown } from 'lucide-react'
 import { motion, AnimatePresence } from 'motion/react'
 import { Link, useLocation } from 'react-router-dom'
 import logo from '../assets/manageyourpg-logo.svg'
@@ -7,6 +7,7 @@ import logo from '../assets/manageyourpg-logo.svg'
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isCitiesDropdownOpen, setIsCitiesDropdownOpen] = useState(false)
   const location = useLocation()
   const isHome = location.pathname === '/'
 
@@ -117,6 +118,37 @@ export function Navigation() {
                 </a>
               )
             })}
+            <div
+              className="relative"
+              onMouseEnter={() => setIsCitiesDropdownOpen(true)}
+              onMouseLeave={() => setIsCitiesDropdownOpen(false)}
+            >
+              <button
+                onClick={() => setIsCitiesDropdownOpen(!isCitiesDropdownOpen)}
+                className="text-gray-700 hover:text-[#1a1a4e] transition-colors relative group font-medium flex items-center gap-1"
+              >
+                Cities
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isCitiesDropdownOpen ? 'rotate-180' : ''}`} />
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] group-hover:w-full transition-all duration-300"></span>
+              </button>
+              <AnimatePresence>
+                {isCitiesDropdownOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    className="absolute top-full left-0 mt-2 bg-white rounded-xl shadow-xl border border-gray-200 py-2 min-w-[200px] z-50"
+                  >
+                    <Link to="/city/bangalore" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsCitiesDropdownOpen(false)}>Bangalore</Link>
+                    <Link to="/city/mumbai" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsCitiesDropdownOpen(false)}>Mumbai</Link>
+                    <Link to="/city/delhi-ncr" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsCitiesDropdownOpen(false)}>Delhi NCR</Link>
+                    <Link to="/city/pune" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsCitiesDropdownOpen(false)}>Pune</Link>
+                    <Link to="/city/hyderabad" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsCitiesDropdownOpen(false)}>Hyderabad</Link>
+                    <Link to="/city/chennai" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsCitiesDropdownOpen(false)}>Chennai</Link>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
             <Link
               to="/#contact"
               onClick={() => setIsMobileMenuOpen(false)}
@@ -185,6 +217,17 @@ export function Navigation() {
                   </a>
                 )
               })}
+              <div className="px-4 py-2">
+                <div className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Cities</div>
+                <div className="grid grid-cols-2 gap-1">
+                  <Link to="/city/bangalore" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Bangalore</Link>
+                  <Link to="/city/mumbai" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Mumbai</Link>
+                  <Link to="/city/delhi-ncr" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Delhi NCR</Link>
+                  <Link to="/city/pune" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Pune</Link>
+                  <Link to="/city/hyderabad" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Hyderabad</Link>
+                  <Link to="/city/chennai" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Chennai</Link>
+                </div>
+              </div>
               <Link
                 to="/#contact"
                 onClick={() => setIsMobileMenuOpen(false)}

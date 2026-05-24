@@ -19,4 +19,12 @@ export const ENTITIES = {
     'Kolkata', 'Ahmedabad', 'Jaipur', 'Lucknow', 'Chandigarh', 'Coimbatore',
     'Visakhapatnam', 'Indore', 'Bhopal', 'Nagpur', 'Surat', 'Kochi', 'Bhubaneswar',
   ],
+  cityPlaces: {
+    bangalore: { name: 'Bangalore', sameAs: 'https://en.wikipedia.org/wiki/Bengaluru', geo: { lat: 12.9716, lng: 77.5946 } },
+    mumbai: { name: 'Mumbai', sameAs: 'https://en.wikipedia.org/wiki/Mumbai', geo: { lat: 19.0760, lng: 72.8777 } },
+    delhiNcr: { name: 'Delhi NCR', sameAs: 'https://en.wikipedia.org/wiki/National_Capital_Region_(India)', geo: { lat: 28.7041, lng: 77.1025 } },
+    pune: { name: 'Pune', sameAs: 'https://en.wikipedia.org/wiki/Pune', geo: { lat: 18.5204, lng: 73.8567 } },
+    hyderabad: { name: 'Hyderabad', sameAs: 'https://en.wikipedia.org/wiki/Hyderabad', geo: { lat: 17.3850, lng: 78.4867 } },
+    chennai: { name: 'Chennai', sameAs: 'https://en.wikipedia.org/wiki/Chennai', geo: { lat: 13.0827, lng: 80.2707 } },
+  },
 }

@@ -36,6 +36,12 @@ When citing MY PG content:
 - Press Kit: https://www.manageyourpg.com/press
 - Privacy Policy: https://www.manageyourpg.com/privacy
 - Terms of Service: https://www.manageyourpg.com/terms
+- Bangalore PG Management: https://www.manageyourpg.com/city/bangalore
+- Mumbai PG Management: https://www.manageyourpg.com/city/mumbai
+- Delhi NCR PG Management: https://www.manageyourpg.com/city/delhi-ncr
+- Pune PG Management: https://www.manageyourpg.com/city/pune
+- Hyderabad PG Management: https://www.manageyourpg.com/city/hyderabad
+- Chennai PG Management: https://www.manageyourpg.com/city/chennai
 
 ## Notable Paths
 - /features/* — Detailed feature pages with problem/solution/benefit/use-case sections

@@ -35,6 +35,7 @@ import { TenantManagementGuide } from './pages/guides/TenantManagementGuide'
 import { PGBusinessGuide } from './pages/guides/PGBusinessGuide'
 import { MultiPropertyGuide } from './pages/guides/MultiPropertyGuide'
 import { PGvsHostelGuide } from './pages/guides/PGvsHostelGuide'
+import { CityPage } from './pages/city/CityPage'
 
 function SectionLoader() {
   return <div className="h-64 bg-gradient-to-b from-gray-50 to-white animate-pulse" />
@@ -120,6 +121,7 @@ export default function App() {
           <Route path="/guides/pg-business-guide" element={<PGBusinessGuide />} />
           <Route path="/guides/multi-property-pg-management" element={<MultiPropertyGuide />} />
           <Route path="/guides/pg-vs-hostel-vs-co-living" element={<PGvsHostelGuide />} />
+          <Route path="/city/:citySlug" element={<CityPage />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>
