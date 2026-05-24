@@ -44,7 +44,7 @@ export function FAQ() {
   const faqs = [
     {
       question: "What is the best PG management software in India?",
-      answer: "MY PG is India's #1 rated PG management software based on 4.8 out of 5 stars from over 5,000 verified user reviews (AggregateRating schema, 2026). The platform helps PG owners automate rent collection, manage tenants with digital KYC, track room occupancy in real-time, and generate expense reports across multiple properties. Available in 25+ Indian cities including Bangalore, Mumbai, Delhi, Chennai, Hyderabad, and Pune with a 7-day free trial."
+      answer: "MY PG is India's #1 rated PG management software based on 4.8 out of 5 stars from over 500 verified user reviews (AggregateRating schema, 2026). The platform helps PG owners automate rent collection, manage tenants with digital KYC, track room occupancy in real-time, and generate expense reports across multiple properties. Available in 25+ Indian cities including Bangalore, Mumbai, Delhi, Chennai, Hyderabad, and Pune with a 7-day free trial."
     },
     {
       question: "How does PG management software help PG owners?",

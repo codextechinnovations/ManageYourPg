@@ -70,6 +70,7 @@ export function CityPage() {
         <meta property="og:description" content={city.metaDesc} />
         <meta property="og:url" content={`${ENTITIES.domain}/city/${city.slug}`} />
         <meta name="robots" content="index, follow" />
+        <meta name="keywords" content={city.keywords.join(', ')} />
         <script type="application/ld+json">
           {JSON.stringify({
             '@context': 'https://schema.org',
@@ -128,19 +129,6 @@ export function CityPage() {
               {city.headerDesc}
             </p>
 
-            <div className="flex flex-wrap gap-6 mb-10">
-              {city.stats.map(stat => (
-                <div key={stat.label} className="bg-white rounded-xl px-6 py-4 shadow-sm border border-gray-100">
-                  <div className="text-2xl font-bold text-[#1a1a4e]">{stat.value}</div>
-                  <div className="text-sm text-gray-500">{stat.label}</div>
-                </div>
-              ))}
-              <div className="bg-white rounded-xl px-6 py-4 shadow-sm border border-gray-100">
-                <div className="text-2xl font-bold text-[#1a1a4e]">4.8/5</div>
-                <div className="text-sm text-gray-500">User Rating</div>
-              </div>
-            </div>
-
             <div className="flex flex-col sm:flex-row gap-4">
               <CTAButton variant="primary" href="/#contact">Start Free Trial in {city.name}</CTAButton>
               <CTAButton variant="secondary" href="/features">View Features</CTAButton>
@@ -149,51 +137,7 @@ export function CityPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8 items-start">
-            <div>
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                Why Choose {ENTITIES.softwareName} for Your {city.name} PG?
-              </h2>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                {city.headerDesc.split('. ').slice(0, 3).join('. ')}.
-              </p>
-              <div className="space-y-4">
-                {city.benefits.map((b, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">{b}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="bg-gradient-to-br from-[#1a1a4e] to-[#1e3a8a] rounded-2xl p-6 md:p-8 text-white">
-              <h3 className="text-xl font-bold mb-4">Key Local Insights</h3>
-              <div className="space-y-4">
-                <div>
-                  <div className="flex items-center gap-2 text-blue-200 text-sm font-semibold mb-2">
-                    <School className="w-4 h-4" /> Major Educational Institutions
-                  </div>
-                  <p className="text-white/90 text-sm leading-relaxed">{city.colleges.slice(0, 5).join(', ')}</p>
-                </div>
-                <div>
-                  <div className="flex items-center gap-2 text-blue-200 text-sm font-semibold mb-2">
-                    <Briefcase className="w-4 h-4" /> Key Employment Hubs
-                  </div>
-                  <p className="text-white/90 text-sm leading-relaxed">{city.techHubs.join(', ')}</p>
-                </div>
-                <div>
-                  <div className="flex items-center gap-2 text-blue-200 text-sm font-semibold mb-2">
-                    <MapPin className="w-4 h-4" /> Key Localities Served
-                  </div>
-                  <p className="text-white/90 text-sm leading-relaxed">{city.areas.slice(0, 8).join(', ')}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -216,6 +160,21 @@ export function CityPage() {
                 <h3 className="font-bold text-gray-900 mb-2 text-lg">{f.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{f.desc}</p>
               </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-white border-t border-gray-100">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 text-center">
+            Popular Topics — {city.name} PG Management
+          </h2>
+          <div className="flex flex-wrap justify-center gap-2">
+            {city.keywords.map(kw => (
+              <span key={kw} className="px-3 py-1.5 bg-blue-50 text-[#1a1a4e] text-sm rounded-full border border-blue-100">
+                {kw}
+              </span>
             ))}
           </div>
         </div>
@@ -245,7 +204,7 @@ export function CityPage() {
             What {city.name} PG Owners Say
           </h2>
           <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">
-            Join 5,000+ PG owners who trust {ENTITIES.softwareName}.
+            Join 500+ PG owners who trust {ENTITIES.softwareName}.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             {city.testimonials.map((t, i) => (
@@ -332,7 +291,7 @@ export function CityPage() {
             <CTAButton variant="ghost" href="/features">Explore Features</CTAButton>
           </div>
           <div className="flex items-center justify-center gap-6 mt-8 text-blue-200 text-sm">
-            <span className="flex items-center gap-1"><Users className="w-4 h-4" /> 5,000+ Users</span>
+            <span className="flex items-center gap-1"><Users className="w-4 h-4" /> 500+ Users</span>
             <span className="flex items-center gap-1"><Star className="w-4 h-4" /> 4.8/5 Rating</span>
             <span className="flex items-center gap-1"><IndianRupee className="w-4 h-4" /> Free Trial</span>
           </div>

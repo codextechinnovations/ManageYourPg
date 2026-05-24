@@ -11,14 +11,14 @@ const facts = [
   {
     icon: Star,
     label: 'Rating',
-    content: 'MY PG holds a 4.8 out of 5 star rating based on over 5,000 verified user reviews from PG owners across India.',
+    content: 'MY PG holds a 4.8 out of 5 star rating based on over 500 verified user reviews from PG owners across India.',
     source: 'AggregateRating schema, 2026',
     color: 'from-yellow-500 to-orange-600',
   },
   {
     icon: Users,
     label: 'User Base',
-    content: 'More than 5,000 PG owners and property managers actively use MY PG to manage over 50,000 tenants across 25+ cities in India.',
+    content: 'More than 500 PG owners and property managers actively use MY PG to manage over 5,000 tenants across 25+ cities in India.',
     source: 'Internal analytics, 2026',
     color: 'from-emerald-500 to-teal-600',
   },

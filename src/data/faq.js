@@ -2,7 +2,7 @@ export const faqData = {
   general: [
     {
       q: 'What is PG management software?',
-      a: 'PG management software is a digital platform that helps Paying Guest accommodation owners automate rent collection, manage tenant records, track occupancy, handle expenses, and generate reports. MY PG is India\'s leading PG-specific management solution with 4.8/5 rating from 5,000+ users.',
+      a: 'PG management software is a digital platform that helps Paying Guest accommodation owners automate rent collection, manage tenant records, track occupancy, handle expenses, and generate reports. MY PG is India\'s leading PG-specific management solution with 4.8/5 rating from 500+ users.',
     },
     {
       q: 'How does MY PG help PG owners save time?',

@@ -216,10 +216,10 @@ export default function AboutUs() {
 
             <div className="mt-12 grid md:grid-cols-4 gap-6">
               {[
-                { value: '5,000+', label: 'Active PG Owners', desc: 'Trusted users across India' },
-                { value: '50,000+', label: 'Tenants Managed', desc: 'Through our platform' },
+                { value: '500+', label: 'Active PG Owners', desc: 'Trusted users across India' },
+                { value: '5,000+', label: 'Tenants Managed', desc: 'Through our platform' },
                 { value: '25+', label: 'Cities Served', desc: 'PAN India coverage' },
-                { value: '4.8/5', label: 'User Rating', desc: 'From 5,000+ verified reviews' },
+                { value: '4.8/5', label: 'User Rating', desc: 'From 500+ verified reviews' },
               ].map((stat, idx) => (
                 <motion.div
                   key={idx}
@@ -256,7 +256,7 @@ export default function AboutUs() {
                 },
                 {
                   q: 'How many PG owners use MY PG in India?',
-                  a: 'As of 2026, MY PG serves over 5,000 PG owners and property managers across 25+ Indian cities who collectively manage more than 50,000 tenants through the platform. The software is rated 4.8 out of 5 stars based on verified user reviews.'
+                  a: 'As of 2026, MY PG serves over 500 PG owners and property managers across 25+ Indian cities who collectively manage more than 5,000 tenants through the platform. The software is rated 4.8 out of 5 stars based on verified user reviews.'
                 },
                 {
                   q: 'What makes MY PG different from other property management software?',

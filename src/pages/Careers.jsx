@@ -136,7 +136,7 @@ export default function Careers() {
               at MY PG
             </h1>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Join India's fastest-growing PG management software company. MY PG was founded in 2020 and has grown to serve 5,000+ PG owners managing 50,000+ tenants across 25+ Indian cities. Our team of 50+ professionals is transforming the way PG owners manage their properties across India. We are looking for motivated individuals to join our Sales team in Bangalore.
+              Join India's fastest-growing PG management software company. MY PG was founded in 2020 and has grown to serve 500+ PG owners managing 5,000+ tenants across 25+ Indian cities. Our team of 50+ professionals is transforming the way PG owners manage their properties across India. We are looking for motivated individuals to join our Sales team in Bangalore.
             </p>
           </motion.div>
 
@@ -405,7 +405,7 @@ export default function Careers() {
               {[
                 {
                   q: 'What is the work culture like at MY PG?',
-                  a: 'MY PG offers a dynamic, fast-paced work environment with a team of 50+ professionals based in Bangalore. Founded in 2020, the company has grown to serve 5,000+ PG owners across India. Employees enjoy flexible working hours, health insurance coverage, performance incentives, and opportunities for career growth in India\'s growing proptech SaaS sector.'
+                  a: 'MY PG offers a dynamic, fast-paced work environment with a team of 50+ professionals based in Bangalore. Founded in 2020, the company has grown to serve 500+ PG owners across India. Employees enjoy flexible working hours, health insurance coverage, performance incentives, and opportunities for career growth in India\'s growing proptech SaaS sector.'
                 },
                 {
                   q: 'What is the salary range for Sales Executive positions?',

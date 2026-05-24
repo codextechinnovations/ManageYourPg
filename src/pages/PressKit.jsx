@@ -6,10 +6,10 @@ import { ShareButton } from '../components/ShareButton'
 
 export function PressKit() {
   const stats = [
-    { icon: Users, value: '5,000+', label: 'PGs Managed' },
+    { icon: Users, value: '500+', label: 'PGs Managed' },
     { icon: Star, value: '4.8/5', label: 'User Rating' },
     { icon: MapPin, value: '25+', label: 'Cities' },
-    { icon: Smartphone, value: '50,000+', label: 'Tenants Served' },
+    { icon: Smartphone, value: '5,000+', label: 'Tenants Served' },
     { icon: BarChart3, value: '80%', label: 'Less Late Payments' },
   ]
 
@@ -67,10 +67,10 @@ export function PressKit() {
                   MY PG is India's #1 rated PG (Paying Guest) management software platform, helping PG owners and property managers automate rent collection, manage tenants with digital KYC, track room occupancy in real-time, and generate comprehensive expense reports — all from a single dashboard.
                 </p>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Founded to address the lack of organized digital tools for India's rapidly growing PG accommodation sector, MY PG serves over 5,000 PG owners managing more than 50,000 tenants across 25+ cities. The platform is available as an Android mobile app and a web dashboard, supporting 6 Indian languages.
+                  Founded to address the lack of organized digital tools for India's rapidly growing PG accommodation sector, MY PG serves over 500 PG owners managing more than 5,000 tenants across 25+ cities. The platform is available as an Android mobile app and a web dashboard, supporting 6 Indian languages.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  MY PG has achieved a 4.8 out of 5 star rating from over 5,000 verified user reviews, making it the highest-rated PG management software in India. The platform reduces late rent payments by up to 80% through automated WhatsApp reminders and digital receipts.
+                  MY PG has achieved a 4.8 out of 5 star rating from over 500 verified user reviews, making it the highest-rated PG management software in India. The platform reduces late rent payments by up to 80% through automated WhatsApp reminders and digital receipts.
                 </p>
               </div>
             </motion.div>
@@ -179,7 +179,7 @@ export function PressKit() {
                   </div>
                   <div>
                     <dt className="text-sm font-semibold text-gray-900">User Rating</dt>
-                    <dd className="text-gray-600">4.8 / 5 (5,000+ reviews)</dd>
+                    <dd className="text-gray-600">4.8 / 5 (500+ reviews)</dd>
                   </div>
                   <div>
                     <dt className="text-sm font-semibold text-gray-900">Contact</dt>
@@ -204,7 +204,7 @@ export function PressKit() {
                 </div>
                 <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
                   <h3 className="font-semibold text-gray-900 mb-2">How many PG owners use MY PG?</h3>
-                  <p className="text-gray-600">Over 5,000 PG owners actively use MY PG across 25+ cities in India, managing more than 50,000 tenants. The platform processes thousands of rent transactions monthly with an 80% reduction in late payments.</p>
+                  <p className="text-gray-600">Over 500 PG owners actively use MY PG across 25+ cities in India, managing more than 5,000 tenants. The platform processes thousands of rent transactions monthly with an 80% reduction in late payments.</p>
                 </div>
                 <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
                   <h3 className="font-semibold text-gray-900 mb-2">What is MY PG's pricing model?</h3>

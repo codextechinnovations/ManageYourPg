@@ -23,10 +23,10 @@ const features = [
 ]
 
 const faqs = [
-  { q: 'What is PG management software?', a: 'PG management software is a digital platform that automates rent collection, tenant management, occupancy tracking, expense management, and reporting for Paying Guest accommodation owners. MY PG is India\'s leading PG-specific solution with 4.8/5 rating from 5,000+ verified users across 25+ cities.' },
+  { q: 'What is PG management software?', a: 'PG management software is a digital platform that automates rent collection, tenant management, occupancy tracking, expense management, and reporting for Paying Guest accommodation owners. MY PG is India\'s leading PG-specific solution with 4.8/5 rating from 500+ verified users across 25+ cities.' },
   { q: 'How does PG management software work?', a: 'PG owners create a digital profile of their property, add room and bed configurations, and invite tenants. The system automatically sends rent reminders via WhatsApp, generates digital receipts, tracks occupancy in real-time, and provides a dashboard with key metrics. Tenants get a self-service portal for payments and maintenance requests.' },
   { q: 'How much does PG management software cost in India?', a: 'Prices range from free trials to ₹499-₹999 per month for premium features. MY PG offers a 7-day free trial with no credit card, followed by ₹499/month or ₹3,999/year (33% savings). Most Indian PG management software is priced between ₹299 and ₹1,499 per month depending on features and property count.' },
-  { q: 'Which is the best PG management software in India?', a: 'MY PG is rated 4.8/5 by 5,000+ verified users, making it the highest-rated PG management software in India. It offers rent automation, digital KYC, multi-property management, mobile app access, and supports 6 Indian languages. Features include UPI payment integration, WhatsApp reminders, and CCTV integration.' },
+  { q: 'Which is the best PG management software in India?', a: 'MY PG is rated 4.8/5 by 500+ verified users, making it the highest-rated PG management software in India. It offers rent automation, digital KYC, multi-property management, mobile app access, and supports 6 Indian languages. Features include UPI payment integration, WhatsApp reminders, and CCTV integration.' },
   { q: 'Can I manage multiple PG properties with one account?', a: 'Yes, MY PG supports multi-property management from a single dashboard. You can view occupancy, payments, expenses, and tenant data across all properties in one place. The platform scales from 1 property with 5 beds to 50+ properties with 1,000+ beds.' },
   { q: 'Is PG management software useful for small PGs?', a: 'Absolutely. Even single-property PGs with 5-20 beds benefit from automated rent reminders, digital receipts, and organized tenant records. MY PG is designed to be equally useful for small PGs and large chains, with the same intuitive interface regardless of property count.' },
   { q: 'What payment methods does PG software support?', a: 'MY PG supports UPI (Google Pay, PhonePe, Paytm), net banking, debit/credit cards, and cash. Tenants receive automatic reminders with payment links. All transactions are recorded with timestamps and unique IDs for complete audit trails.' },
@@ -102,7 +102,7 @@ export function PGManagementGuide() {
                 Unlike general property management software, PG management tools are built specifically for the Indian PG market. They understand that PG owners deal with high tenant turnover (every 3-11 months), multiple payment methods (UPI, cash, bank transfer), room/bed-level tracking (single, double, triple sharing), and unique requirements like food management, security deposits, and police verification.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                MY PG is India's leading PG management software, serving 5,000+ PG owners across 25+ cities with a 4.8/5 user rating. It combines rent collection automation, digital KYC, occupancy tracking, and multi-property management in a single platform accessible via Android app and web dashboard.
+                MY PG is India's leading PG management software, serving 500+ PG owners across 25+ cities with a 4.8/5 user rating. It combines rent collection automation, digital KYC, occupancy tracking, and multi-property management in a single platform accessible via Android app and web dashboard.
               </p>
             </section>
 
@@ -299,7 +299,7 @@ export function PGManagementGuide() {
                 <CTAButton variant="secondary" href="/#contact">Start Free Trial</CTAButton>
                 <CTAButton variant="ghost" href="/features">View All Features</CTAButton>
               </div>
-              <p className="text-blue-200 text-sm mt-4">Join 5,000+ PG owners across 25+ Indian cities</p>
+              <p className="text-blue-200 text-sm mt-4">Join 500+ PG owners across 25+ Indian cities</p>
             </div>
           </motion.div>
         </div>
