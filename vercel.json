@@ -1,4 +1,9 @@
 {
+  "redirects": [
+    { "source": "/pricing", "destination": "/#pricing", "permanent": true },
+    { "source": "/app", "destination": "https://play.google.com/store/apps/details?id=com.mypg.app", "permanent": true },
+    { "source": "/android", "destination": "https://play.google.com/store/apps/details?id=com.mypg.app", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],

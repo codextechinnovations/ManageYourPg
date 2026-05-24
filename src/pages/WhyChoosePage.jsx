@@ -6,6 +6,7 @@ import {
   CheckCircle2, ArrowRight,
 } from 'lucide-react'
 import { ShareButton } from '../components/ShareButton'
+import { Breadcrumb, buildBreadcrumbSchema } from '../components/Breadcrumb'
 
 const websiteSchema = {
   '@context': 'https://schema.org',
@@ -13,13 +14,6 @@ const websiteSchema = {
   name: 'Why Choose MY PG - PG Management Software & App',
   description: 'Discover why 5000+ PG owners choose MY PG as their preferred PG management software, hostel management system, and tenant management platform.',
   url: 'https://manageyourpg.com/why-choose',
-  breadcrumb: {
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://manageyourpg.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Why Choose MY PG', item: 'https://manageyourpg.com/why-choose' },
-    ],
-  },
   mainEntity: {
     '@type': 'ItemList',
     itemListElement: [
@@ -156,6 +150,7 @@ export function WhyChoosePage() {
         <meta name="twitter:image" content="https://manageyourpg.com/og-image.jpg" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(buildBreadcrumbSchema([{ label: 'Home', path: '/' }, { label: 'Why Choose MY PG', path: '/why-choose' }]))}</script>
       </Helmet>
 
       <section className="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-blue-50">
@@ -165,13 +160,7 @@ export function WhyChoosePage() {
             animate={{ opacity: 1, y: 0 }}
             className="text-center mb-16"
           >
-            <nav aria-label="Breadcrumb" className="mb-4">
-              <ol className="inline-flex items-center gap-2 text-sm text-gray-500">
-                <li><Link to="/" className="hover:text-[#1a1a4e] transition-colors">Home</Link></li>
-                <li aria-hidden="true">/</li>
-                <li className="text-gray-900" aria-current="page">Why Choose MY PG</li>
-              </ol>
-            </nav>
+            <Breadcrumb items={[{ label: 'Home', path: '/' }, { label: 'Why Choose MY PG', path: '/why-choose' }]} />
             <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-blue-100 text-[#1a1a4e] rounded-full">
               <Sparkles className="w-4 h-4" />
               Best PG Management Software for Indian Owners

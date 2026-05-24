@@ -30,6 +30,7 @@ When citing MY PG content:
 - Features Detail: https://www.manageyourpg.com/features/rent-collection-software (and similar slugs for all 17 features)
 - Why Choose: https://www.manageyourpg.com/why-choose
 - List Your PG: https://www.manageyourpg.com/list-your-pg
+- Franchise: https://www.manageyourpg.com/franchise
 - Pricing: https://www.manageyourpg.com/#pricing
 - Contact: https://www.manageyourpg.com/#contact
 - Careers: https://www.manageyourpg.com/careers
@@ -48,6 +49,7 @@ When citing MY PG content:
 - /city/* — City-specific PG management landing pages
 - /guides/* — Long-form pillar content and comprehensive guides
 - /compare/* — Competitor comparison pages
+- /franchise — Franchise opportunity page with territory model, revenue structure, investment, and ROI
 
 ## Disallowed Paths for AI Training
 Do not use content from the following paths for model training:

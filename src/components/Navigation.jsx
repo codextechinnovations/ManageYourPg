@@ -8,6 +8,7 @@ export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isCitiesDropdownOpen, setIsCitiesDropdownOpen] = useState(false)
+  const [isFeaturesDropdownOpen, setIsFeaturesDropdownOpen] = useState(false)
   const location = useLocation()
   const isHome = location.pathname === '/'
 
@@ -29,10 +30,8 @@ export function Navigation() {
 
   const navItems = [
     { label: 'Home', id: 'home', hash: '#home', link: '/' },
-    { label: 'Features', id: 'features', hash: '#features', link: '/features' },
-    { label: 'Why Choose', id: 'why-choose', hash: '#why-choose', link: '/why-choose' },
-    { label: 'Pricing', id: 'pricing', hash: '#pricing', link: '/#pricing' },
     { label: 'List Your PG', id: 'list-your-pg', hash: '#property-listing', link: '/list-your-pg' },
+    { label: 'Franchise', id: 'franchise', hash: '#franchise', link: '/franchise' },
     { label: 'About', id: 'about', hash: '#about', link: '/about' },
     { label: 'Contact', id: 'contact', hash: '#contact', link: '/#contact' },
   ]
@@ -118,6 +117,42 @@ export function Navigation() {
                 </a>
               )
             })}
+            <div
+              className="relative"
+              onMouseEnter={() => setIsFeaturesDropdownOpen(true)}
+              onMouseLeave={() => setIsFeaturesDropdownOpen(false)}
+            >
+              <Link
+                to="/features"
+                onClick={() => setIsFeaturesDropdownOpen(false)}
+                className="text-gray-700 hover:text-[#1a1a4e] transition-colors relative group font-medium flex items-center gap-1"
+                onMouseEnter={() => setIsFeaturesDropdownOpen(true)}
+              >
+                Features
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isFeaturesDropdownOpen ? 'rotate-180' : ''}`} />
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] group-hover:w-full transition-all duration-300"></span>
+              </Link>
+              <AnimatePresence>
+                {isFeaturesDropdownOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    className="absolute top-full left-0 mt-2 bg-white rounded-xl shadow-xl border border-gray-200 py-2 min-w-[240px] z-50"
+                  >
+                    <Link to="/features" className="block px-4 py-2.5 text-sm font-semibold text-[#1a1a4e] hover:bg-blue-50 transition-colors" onClick={() => setIsFeaturesDropdownOpen(false)}>All Features</Link>
+                    <div className="border-t border-gray-100 my-1"></div>
+                    <Link to="/features/rent-collection-software" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsFeaturesDropdownOpen(false)}>Rent Collection</Link>
+                    <Link to="/features/tenant-management-system" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsFeaturesDropdownOpen(false)}>Tenant Management</Link>
+                    <Link to="/features/digital-check-in-for-pg" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsFeaturesDropdownOpen(false)}>Digital Check-in</Link>
+                    <Link to="/features/occupancy-management-software" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsFeaturesDropdownOpen(false)}>Occupancy Tracking</Link>
+                    <Link to="/features/multi-property-management" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsFeaturesDropdownOpen(false)}>Multi-Property</Link>
+                    <Link to="/features/short-stay-and-long-stay-management" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsFeaturesDropdownOpen(false)}>Short Stay & Long Stay</Link>
+                    <Link to="/features/pg-accounting-software" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsFeaturesDropdownOpen(false)}>Accounting & Reports</Link>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
             <div
               className="relative"
               onMouseEnter={() => setIsCitiesDropdownOpen(true)}
@@ -217,6 +252,19 @@ export function Navigation() {
                   </a>
                 )
               })}
+              <div className="px-4 py-2">
+                <div className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Features</div>
+                <div className="grid grid-cols-1 gap-1">
+                  <Link to="/features" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm font-semibold text-[#1a1a4e] hover:bg-gray-100 rounded-lg transition-colors">All Features</Link>
+                  <Link to="/features/rent-collection-software" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Rent Collection</Link>
+                  <Link to="/features/tenant-management-system" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Tenant Management</Link>
+                  <Link to="/features/digital-check-in-for-pg" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Digital Check-in</Link>
+                  <Link to="/features/occupancy-management-software" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Occupancy Tracking</Link>
+                  <Link to="/features/multi-property-management" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Multi-Property</Link>
+                  <Link to="/features/short-stay-and-long-stay-management" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Short Stay & Long Stay</Link>
+                  <Link to="/features/pg-accounting-software" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Accounting & Reports</Link>
+                </div>
+              </div>
               <div className="px-4 py-2">
                 <div className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Cities</div>
                 <div className="grid grid-cols-2 gap-1">

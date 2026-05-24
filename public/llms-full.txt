@@ -10,6 +10,7 @@ MY PG (ManageYourPG) is a comprehensive SaaS platform designed specifically for 
 - `/features/:slug` — Individual feature detail pages (17 total) including rent collection, tenant management, digital check-in, occupancy management, bed management, multi-property management, and more
 - `/why-choose` — Comprehensive page covering 7 reasons to choose MY PG with problem/solution/benefits/use-case format
 - `/list-your-pg` — Page for PG owners to list their properties for tenant discovery
+- `/franchise` — Franchise pitch deck page with territory structure, revenue model (40% subscription share + onboarding fees), investment breakdown (₹2-3.5L), ROI projections, and franchisee qualifications
 - `/about` — About Us page with company mission, stats, and values
 - `/careers` — Careers page with job openings, application form, and company stats
 - `/press` — Press kit with media resources, brand assets, and company information
