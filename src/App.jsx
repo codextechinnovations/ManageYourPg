@@ -5,21 +5,21 @@ import { Navigation } from './components/Navigation'
 import { Hero } from './components/Hero'
 import { ScrollToTop } from './components/ScrollToTop'
 
-const KeyFacts = lazy(() => import('./components/KeyFacts'))
-const TrustStats = lazy(() => import('./components/TrustStats'))
-const Features = lazy(() => import('./components/Features'))
-const Screenshots = lazy(() => import('./components/Screenshots'))
-const Pricing = lazy(() => import('./components/Pricing'))
-const Careers = lazy(() => import('./components/Careers'))
-const Testimonials = lazy(() => import('./components/Testimonials'))
-const FAQ = lazy(() => import('./components/FAQ'))
-const Contact = lazy(() => import('./components/Contact'))
-const Footer = lazy(() => import('./components/Footer'))
-const ServiceAreas = lazy(() => import('./components/ServiceAreas'))
-const About = lazy(() => import('./components/About'))
-const WhyChoose = lazy(() => import('./components/WhyChoose'))
-const PropertyListing = lazy(() => import('./components/PropertyListing'))
-const ChatBox = lazy(() => import('./components/ChatBox'))
+const KeyFacts = lazy(() => import('./components/KeyFacts').then(m => ({ default: m.KeyFacts })))
+const TrustStats = lazy(() => import('./components/TrustStats').then(m => ({ default: m.TrustStats })))
+const Features = lazy(() => import('./components/Features').then(m => ({ default: m.Features })))
+const Screenshots = lazy(() => import('./components/Screenshots').then(m => ({ default: m.Screenshots })))
+const Pricing = lazy(() => import('./components/Pricing').then(m => ({ default: m.Pricing })))
+const Careers = lazy(() => import('./components/Careers').then(m => ({ default: m.Careers })))
+const Testimonials = lazy(() => import('./components/Testimonials').then(m => ({ default: m.Testimonials })))
+const FAQ = lazy(() => import('./components/FAQ').then(m => ({ default: m.FAQ })))
+const Contact = lazy(() => import('./components/Contact').then(m => ({ default: m.Contact })))
+const Footer = lazy(() => import('./components/Footer').then(m => ({ default: m.Footer })))
+const ServiceAreas = lazy(() => import('./components/ServiceAreas').then(m => ({ default: m.ServiceAreas })))
+const About = lazy(() => import('./components/About').then(m => ({ default: m.About })))
+const WhyChoose = lazy(() => import('./components/WhyChoose').then(m => ({ default: m.WhyChoose })))
+const PropertyListing = lazy(() => import('./components/PropertyListing').then(m => ({ default: m.PropertyListing })))
+const ChatBox = lazy(() => import('./components/ChatBox').then(m => ({ default: m.ChatBox })))
 import AboutUs from './pages/AboutUs'
 import TermsConditions from './pages/TermsConditions'
 import PrivacyPolicy from './pages/PrivacyPolicy'
