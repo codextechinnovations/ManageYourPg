@@ -1,24 +1,25 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useEffect, lazy, Suspense } from 'react'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 import { Navigation } from './components/Navigation'
 import { Hero } from './components/Hero'
-import { TrustStats } from './components/TrustStats'
-import { Features } from './components/Features'
-import { Screenshots } from './components/Screenshots'
-import { Pricing } from './components/Pricing'
-import { Careers } from './components/Careers'
-import { Testimonials } from './components/Testimonials'
-import { FAQ } from './components/FAQ'
-import { Contact } from './components/Contact'
-import { Footer } from './components/Footer'
 import { ScrollToTop } from './components/ScrollToTop'
-import { ServiceAreas } from './components/ServiceAreas'
-import { About } from './components/About'
-import { WhyChoose } from './components/WhyChoose'
-import { PropertyListing } from './components/PropertyListing'
-import { KeyFacts } from './components/KeyFacts'
-import { ChatBox } from './components/ChatBox'
+
+const KeyFacts = lazy(() => import('./components/KeyFacts'))
+const TrustStats = lazy(() => import('./components/TrustStats'))
+const Features = lazy(() => import('./components/Features'))
+const Screenshots = lazy(() => import('./components/Screenshots'))
+const Pricing = lazy(() => import('./components/Pricing'))
+const Careers = lazy(() => import('./components/Careers'))
+const Testimonials = lazy(() => import('./components/Testimonials'))
+const FAQ = lazy(() => import('./components/FAQ'))
+const Contact = lazy(() => import('./components/Contact'))
+const Footer = lazy(() => import('./components/Footer'))
+const ServiceAreas = lazy(() => import('./components/ServiceAreas'))
+const About = lazy(() => import('./components/About'))
+const WhyChoose = lazy(() => import('./components/WhyChoose'))
+const PropertyListing = lazy(() => import('./components/PropertyListing'))
+const ChatBox = lazy(() => import('./components/ChatBox'))
 import AboutUs from './pages/AboutUs'
 import TermsConditions from './pages/TermsConditions'
 import PrivacyPolicy from './pages/PrivacyPolicy'
@@ -28,6 +29,16 @@ import { FeaturesPage } from './pages/FeaturesPage'
 import { FeatureDetail } from './pages/FeatureDetail'
 import { ListYourPG } from './pages/ListYourPG'
 import { WhyChoosePage } from './pages/WhyChoosePage'
+import { PGManagementGuide } from './pages/guides/PGManagementGuide'
+import { RentCollectionGuide } from './pages/guides/RentCollectionGuide'
+import { TenantManagementGuide } from './pages/guides/TenantManagementGuide'
+import { PGBusinessGuide } from './pages/guides/PGBusinessGuide'
+import { MultiPropertyGuide } from './pages/guides/MultiPropertyGuide'
+import { PGvsHostelGuide } from './pages/guides/PGvsHostelGuide'
+
+function SectionLoader() {
+  return <div className="h-64 bg-gradient-to-b from-gray-50 to-white animate-pulse" />
+}
 
 function ScrollToHash() {
   const { hash } = useLocation()
@@ -67,22 +78,22 @@ function HomePage() {
       <Navigation />
       <main>
         <Hero />
-        <KeyFacts />
-        <TrustStats />
-        <Features />
-        <Screenshots />
-        <Pricing />
-        <Careers />
-        <PropertyListing />
-        <ServiceAreas />
-        <About />
-        <WhyChoose />
-        <Testimonials />
-        <FAQ />
-        <Contact />
+        <Suspense fallback={<SectionLoader />}><KeyFacts /></Suspense>
+        <Suspense fallback={<SectionLoader />}><TrustStats /></Suspense>
+        <Suspense fallback={<SectionLoader />}><Features /></Suspense>
+        <Suspense fallback={<SectionLoader />}><Screenshots /></Suspense>
+        <Suspense fallback={<SectionLoader />}><Pricing /></Suspense>
+        <Suspense fallback={<SectionLoader />}><Careers /></Suspense>
+        <Suspense fallback={<SectionLoader />}><PropertyListing /></Suspense>
+        <Suspense fallback={<SectionLoader />}><ServiceAreas /></Suspense>
+        <Suspense fallback={<SectionLoader />}><About /></Suspense>
+        <Suspense fallback={<SectionLoader />}><WhyChoose /></Suspense>
+        <Suspense fallback={<SectionLoader />}><Testimonials /></Suspense>
+        <Suspense fallback={<SectionLoader />}><FAQ /></Suspense>
+        <Suspense fallback={<SectionLoader />}><Contact /></Suspense>
       </main>
-      <Footer />
-      <ChatBox />
+      <Suspense fallback={<SectionLoader />}><Footer /></Suspense>
+      <Suspense fallback={null}><ChatBox /></Suspense>
     </div>
   )
 }
@@ -103,6 +114,12 @@ export default function App() {
           <Route path="/features/:slug" element={<FeatureDetail />} />
           <Route path="/list-your-pg" element={<ListYourPG />} />
           <Route path="/why-choose" element={<WhyChoosePage />} />
+          <Route path="/guides/pg-management-software-guide" element={<PGManagementGuide />} />
+          <Route path="/guides/rent-collection-guide" element={<RentCollectionGuide />} />
+          <Route path="/guides/tenant-management-guide" element={<TenantManagementGuide />} />
+          <Route path="/guides/pg-business-guide" element={<PGBusinessGuide />} />
+          <Route path="/guides/multi-property-pg-management" element={<MultiPropertyGuide />} />
+          <Route path="/guides/pg-vs-hostel-vs-co-living" element={<PGvsHostelGuide />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

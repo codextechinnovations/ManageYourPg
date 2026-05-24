@@ -1,6 +1,7 @@
 import { motion } from 'motion/react'
 import { Helmet } from 'react-helmet-async'
 import { Download, ExternalLink, Mail, Star, Users, MapPin, Smartphone, BarChart3 } from 'lucide-react'
+import { Breadcrumb, buildBreadcrumbSchema } from '../components/Breadcrumb'
 import { ShareButton } from '../components/ShareButton'
 
 export function PressKit() {
@@ -21,6 +22,7 @@ export function PressKit() {
         <meta property="og:title" content="Press Kit - MY PG | Brand Assets & Media Resources" />
         <meta property="og:description" content="Download MY PG brand assets including logos, product screenshots, company facts, and media resources." />
         <meta name="robots" content="index, follow" />
+        <script type="application/ld+json">{JSON.stringify(buildBreadcrumbSchema([{ label: 'Home', path: '/' }, { label: 'Press Kit', path: '/press' }]))}</script>
       </Helmet>
 
       <section className="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-blue-50">
@@ -34,6 +36,7 @@ export function PressKit() {
               <Download className="w-4 h-4" />
               Press Kit
             </div>
+            <Breadcrumb items={[{ label: 'Home', path: '/' }, { label: 'Press Kit', path: '/press' }]} />
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               MY PG{' '}
               <span className="bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] bg-clip-text text-transparent">

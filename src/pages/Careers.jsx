@@ -2,6 +2,7 @@ import { motion } from 'motion/react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
+import { Breadcrumb, buildBreadcrumbSchema } from '../components/Breadcrumb'
 import { 
   Briefcase, 
   MapPin, 
@@ -95,6 +96,7 @@ export default function Careers() {
           "baseSalary": { "@type": "MonetaryAmount", "currency": "INR", "value": { "@type": "QuantitativeValue", "minValue": 400000, "maxValue": 800000, "unitText": "YEAR" } }
         })}</script>
         <meta name="robots" content="index, follow" />
+        <script type="application/ld+json">{JSON.stringify(buildBreadcrumbSchema([{ label: 'Home', path: '/' }, { label: 'Careers', path: '/careers' }]))}</script>
       </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Link to="/" className="inline-flex items-center gap-2 text-[#1a1a4e] hover:text-[#1e3a8a] transition-colors font-medium mb-8">
@@ -125,6 +127,7 @@ export default function Careers() {
             <div className="inline-block mb-4 px-4 py-2 bg-amber-100 text-amber-800 rounded-full">
               Join Our Growing Team
             </div>
+            <Breadcrumb items={[{ label: 'Home', path: '/' }, { label: 'Careers', path: '/careers' }]} />
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Career{' '}
               <span className="bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] bg-clip-text text-transparent">

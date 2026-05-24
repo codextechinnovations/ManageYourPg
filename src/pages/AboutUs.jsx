@@ -2,6 +2,7 @@ import { motion } from 'motion/react'
 import { CheckCircle2, Smartphone, Monitor, Clock, Shield, Zap, HeadphonesIcon, ArrowLeft, HelpCircle } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
+import { Breadcrumb, buildBreadcrumbSchema } from '../components/Breadcrumb'
 
 export default function AboutUs() {
   const features = [
@@ -27,12 +28,10 @@ export default function AboutUs() {
         <meta property="og:title" content="About Us | MY PG - PG Management Software" />
         <meta property="og:description" content="Learn about MY PG - India's leading PG management software serving 5000+ PG owners across 25+ cities." />
         <meta property="og:url" content="https://manageyourpg.com/about" />
+        <script type="application/ld+json">{JSON.stringify(buildBreadcrumbSchema([{ label: 'Home', path: '/' }, { label: 'About', path: '/about' }]))}</script>
       </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <Link to="/" className="inline-flex items-center gap-2 text-[#1a1a4e] hover:text-[#1e3a8a] transition-colors font-medium mb-8">
-          <ArrowLeft className="w-5 h-5" />
-          Back to Home
-        </Link>
+        <Breadcrumb items={[{ label: 'Home', path: '/' }, { label: 'About', path: '/about' }]} />
       </div>
 
       <section className="py-16 md:py-24 bg-white relative overflow-hidden">

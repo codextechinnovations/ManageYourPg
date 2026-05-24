@@ -29,9 +29,9 @@ export function Navigation() {
   const navItems = [
     { label: 'Home', id: 'home', hash: '#home', link: '/' },
     { label: 'Features', id: 'features', hash: '#features', link: '/features' },
-    { label: 'Screenshots', id: 'screenshots', hash: '#screenshots', link: '/#screenshots' },
+    { label: 'Why Choose', id: 'why-choose', hash: '#why-choose', link: '/why-choose' },
     { label: 'Pricing', id: 'pricing', hash: '#pricing', link: '/#pricing' },
-    { label: 'Careers', id: 'careers', hash: '#careers', link: '/careers' },
+    { label: 'List Your PG', id: 'list-your-pg', hash: '#property-listing', link: '/list-your-pg' },
     { label: 'About', id: 'about', hash: '#about', link: '/about' },
     { label: 'Contact', id: 'contact', hash: '#contact', link: '/#contact' },
   ]

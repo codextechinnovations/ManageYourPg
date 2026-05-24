@@ -7,5 +7,14 @@ export default defineConfig({
   build: {
     outDir: 'build',
     emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+          motion: ['motion'],
+          icons: ['lucide-react'],
+        },
+      },
+    },
   },
 })

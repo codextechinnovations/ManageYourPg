@@ -1,6 +1,7 @@
 import { motion } from 'motion/react'
 import { Helmet } from 'react-helmet-async'
 import { Link, useParams, Navigate } from 'react-router-dom'
+import { Breadcrumb, buildBreadcrumbSchema } from '../components/Breadcrumb'
 import {
   LayoutDashboard, UserPlus, UserCheck, CreditCard, Receipt, FileText,
   BedDouble, BellRing, Shield, ShieldCheck, Wallet, MessageSquare,
@@ -288,6 +289,7 @@ export function FeatureDetail() {
         <meta property="og:title" content={`${feature.title} - MY PG | PG Management Software Feature`} />
         <meta property="og:description" content={feature.shortDesc} />
         <meta name="robots" content="index, follow" />
+        <script type="application/ld+json">{JSON.stringify(buildBreadcrumbSchema([{ label: 'Home', path: '/' }, { label: 'Features', path: '/features' }, { label: feature.title, path: '#' }]))}</script>
       </Helmet>
 
       <section className="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-blue-50 min-h-screen">
@@ -324,6 +326,7 @@ export function FeatureDetail() {
                     <Star className="w-3 h-3 fill-current" /> 4.8/5
                   </span>
                 </div>
+                <Breadcrumb items={[{ label: 'Home', path: '/' }, { label: 'Features', path: '/features' }, { label: feature.title, path: '#' }]} />
                 <h1 className="text-3xl md:text-4xl font-bold text-gray-900">{feature.title}</h1>
                 <p className="text-gray-600 mt-2">{feature.shortDesc}</p>
               </div>

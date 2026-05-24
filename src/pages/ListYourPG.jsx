@@ -1,6 +1,7 @@
 import { motion } from 'motion/react'
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
+import { Breadcrumb, buildBreadcrumbSchema } from '../components/Breadcrumb'
 import {
   Building2, Smartphone, Globe, Users, CheckCircle2, ArrowRight, Home,
   Search, ShieldCheck, CreditCard, FileText, Wrench, HeadphonesIcon, MapPin,
@@ -116,6 +117,7 @@ export function ListYourPG() {
         <meta property="og:title" content="List Your PG Property on GetYourStay - Free PG Listing Platform for PG Owners" />
         <meta property="og:description" content="List your PG property on GetYourStay. Free listing, no commission. Integrated with MY PG tenant management and rent collection. Reach thousands of tenants in 25+ Indian cities." />
         <meta name="robots" content="index, follow" />
+        <script type="application/ld+json">{JSON.stringify(buildBreadcrumbSchema([{ label: 'Home', path: '/' }, { label: 'List Your PG', path: '/list-your-pg' }]))}</script>
       </Helmet>
 
       <section className="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-blue-50">
@@ -129,6 +131,7 @@ export function ListYourPG() {
               <Home className="w-4 h-4" />
               <span className="text-sm font-medium">GetYourStay - Free PG Listing Platform</span>
             </div>
+            <Breadcrumb items={[{ label: 'Home', path: '/' }, { label: 'List Your PG', path: '/list-your-pg' }]} />
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               List Your PG &{' '}
               <span className="bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] bg-clip-text text-transparent">

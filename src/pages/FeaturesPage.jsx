@@ -1,6 +1,7 @@
 import { motion } from 'motion/react'
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
+import { Breadcrumb, buildBreadcrumbSchema } from '../components/Breadcrumb'
 import {
   LayoutDashboard, UserPlus, UserCheck, CreditCard, Receipt, FileText,
   BedDouble, BellRing, Shield, ShieldCheck, Wallet, MessageSquare,
@@ -245,6 +246,7 @@ export function FeaturesPage() {
         <meta property="og:title" content="PG Management Software Features - MY PG | Complete PG Owner Dashboard, Tenant Management & Rent Collection" />
         <meta property="og:description" content="Explore all MY PG features including PG owner dashboard, tenant management, rent collection software, occupancy management, multi-property management, and more." />
         <meta name="robots" content="index, follow" />
+        <script type="application/ld+json">{JSON.stringify(buildBreadcrumbSchema([{ label: 'Home', path: '/' }, { label: 'Features', path: '/features' }]))}</script>
       </Helmet>
 
       <section className="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-blue-50">
@@ -258,6 +260,7 @@ export function FeaturesPage() {
               <LayoutDashboard className="w-4 h-4" />
               Complete PG Management & Hostel ERP System
             </div>
+            <Breadcrumb items={[{ label: 'Home', path: '/' }, { label: 'Features', path: '/features' }]} />
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               All{' '}
               <span className="bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] bg-clip-text text-transparent">

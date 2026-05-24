@@ -11,7 +11,7 @@ export default {
         secondary: '#1e3a8a',
       },
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
+        sans: ['Lato', 'sans-serif'],
       },
     },
   },

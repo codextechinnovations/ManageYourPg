@@ -2,6 +2,7 @@ import { motion } from 'motion/react'
 import { ArrowLeft, HelpCircle } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
+import { Breadcrumb, buildBreadcrumbSchema } from '../components/Breadcrumb'
 
 const sections = [
   {
@@ -80,13 +81,11 @@ export default function TermsConditions() {
         <title>Terms and Conditions | MY PG - PG Management Software</title>
         <meta name="description" content="Terms and Conditions for MY PG - India's leading PG management software. Includes subscription terms, data privacy, user obligations, and legal agreements." />
         <link rel="canonical" href="https://manageyourpg.com/terms" />
+        <script type="application/ld+json">{JSON.stringify(buildBreadcrumbSchema([{ label: 'Home', path: '/' }, { label: 'Terms & Conditions', path: '/terms' }]))}</script>
       </Helmet>
       <div className="bg-gradient-to-br from-[#1a1a4e] to-[#1e3a8a] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <Link to="/" className="inline-flex items-center gap-2 text-blue-200 hover:text-white transition-colors font-medium mb-4">
-            <ArrowLeft className="w-5 h-5" />
-            Back to Home
-          </Link>
+          <Breadcrumb items={[{ label: 'Home', path: '/' }, { label: 'Terms & Conditions', path: '/terms' }]} />
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

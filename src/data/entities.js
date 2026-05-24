@@ -1,0 +1,22 @@
+export const ENTITIES = {
+  softwareName: 'MY PG',
+  softwareType: 'PG Management Software',
+  organization: 'MY PG Solutions',
+  headquarters: 'Bangalore, Karnataka, India',
+  foundingDate: '2020',
+  rating: '4.8',
+  reviewCount: '5000',
+  monthlyPrice: '₹499',
+  yearlyPrice: '₹3,999',
+  tenantCount: '50,000+',
+  userCount: '5,000+',
+  cityCount: '25+',
+  phone: '+91 9741821179',
+  email: 'support@manageyourpg.com',
+  domain: 'https://manageyourpg.com',
+  cities: [
+    'Bangalore', 'Mumbai', 'Delhi NCR', 'Chennai', 'Hyderabad', 'Pune',
+    'Kolkata', 'Ahmedabad', 'Jaipur', 'Lucknow', 'Chandigarh', 'Coimbatore',
+    'Visakhapatnam', 'Indore', 'Bhopal', 'Nagpur', 'Surat', 'Kochi', 'Bhubaneswar',
+  ],
+}
