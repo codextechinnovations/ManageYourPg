@@ -143,6 +143,7 @@ export function Navigation() {
                     <Link to="/features" className="block px-4 py-2.5 text-sm font-semibold text-[#1a1a4e] hover:bg-blue-50 transition-colors" onClick={() => setIsFeaturesDropdownOpen(false)}>All Features</Link>
                     <div className="border-t border-gray-100 my-1"></div>
                     <Link to="/features/rent-collection-software" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsFeaturesDropdownOpen(false)}>Rent Collection</Link>
+                    <Link to="/features/online-rent-collection-app" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsFeaturesDropdownOpen(false)}>WhatsApp Integration</Link>
                     <Link to="/features/tenant-management-system" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsFeaturesDropdownOpen(false)}>Tenant Management</Link>
                     <Link to="/features/digital-check-in-for-pg" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsFeaturesDropdownOpen(false)}>Digital Check-in</Link>
                     <Link to="/features/occupancy-management-software" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsFeaturesDropdownOpen(false)}>Occupancy Tracking</Link>
@@ -257,6 +258,7 @@ export function Navigation() {
                 <div className="grid grid-cols-1 gap-1">
                   <Link to="/features" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm font-semibold text-[#1a1a4e] hover:bg-gray-100 rounded-lg transition-colors">All Features</Link>
                   <Link to="/features/rent-collection-software" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Rent Collection</Link>
+                  <Link to="/features/online-rent-collection-app" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">WhatsApp Integration</Link>
                   <Link to="/features/tenant-management-system" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Tenant Management</Link>
                   <Link to="/features/digital-check-in-for-pg" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Digital Check-in</Link>
                   <Link to="/features/occupancy-management-software" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Occupancy Tracking</Link>

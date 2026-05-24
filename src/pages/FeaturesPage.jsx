@@ -274,7 +274,7 @@ export function FeaturesPage() {
             <div className="flex items-center justify-center gap-3 text-sm text-gray-500">
               <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4 text-green-500" /> 17 powerful features</span>
               <span className="w-1 h-1 rounded-full bg-gray-300" />
-              <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4 text-green-500" /> Trusted by 5000+ PG owners</span>
+              <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4 text-green-500" /> Trusted by 500+ PG owners</span>
               <span className="w-1 h-1 rounded-full bg-gray-300" />
               <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4 text-green-500" /> Free 7-day trial</span>
             </div>

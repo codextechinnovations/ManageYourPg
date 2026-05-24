@@ -37,7 +37,7 @@ export function TrustStats() {
   const stats = [
     {
       icon: Building2,
-      value: 5000,
+      value: 500,
       suffix: '+',
       label: 'PGs Managed',
       description: 'Trusted PG properties',
@@ -46,7 +46,7 @@ export function TrustStats() {
     },
     {
       icon: Users,
-      value: 50000,
+      value: 5000,
       suffix: '+',
       label: 'Tenants Served',
       description: 'Happy tenants across India',
@@ -111,7 +111,7 @@ export function TrustStats() {
           id="trust-stats-desc"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Trusted by 5000+ PG Owners Across India
+            Trusted by 500+ PG Owners Across India
           </h2>
           <p className="text-lg text-blue-100 max-w-2xl mx-auto">
             Join thousands of satisfied PG owners in Bangalore, Mumbai, Delhi, Chennai, Hyderabad, Pune 

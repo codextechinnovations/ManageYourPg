@@ -372,7 +372,7 @@ export default function Careers() {
           >
             {[
               { number: "10,000+", label: "PG Owners Served" },
-              { number: "50,000+", label: "Tenants Managed" },
+              { number: "5,000+", label: "Tenants Managed" },
               { number: "50+", label: "Cities Covered" },
               { number: "4.8★", label: "App Rating" }
             ].map((stat, idx) => (

@@ -3,7 +3,7 @@ import { MessageCircle, X, Send, Bot, User, Minimize2, Loader2 } from 'lucide-re
 import { useState, useRef, useEffect } from 'react'
 
 const quickReplies = [
-  { question: "What is MY PG?", answer: "MY PG is India's #1 PG management software, trusted by 5000+ PG owners. It helps automate rent collection, manage tenants, track room occupancy, generate reports & manage expenses across 25+ cities in India." },
+  { question: "What is MY PG?", answer: "MY PG is India's #1 PG management software, trusted by 500+ PG owners. It helps automate rent collection, manage tenants, track room occupancy, generate reports & manage expenses across 25+ cities in India." },
   { question: "Pricing details?", answer: "We offer a 7-day FREE trial for PG owners - no credit card required! After that, Premium plans start at just ₹499/month (₹3,999/year) for unlimited features including multi-property support." },
   { question: "How to start?", answer: "Simply download our APK, create an account, and start your 7-day FREE trial - no credit card required! Our onboarding team provides free assistance to help you configure everything." },
   { question: "Manage multiple PGs?", answer: "Yes! MY PG supports multi-property management allowing you to manage unlimited PG buildings, hostels, or co-living spaces from a single dashboard. Track occupancy, revenue, and expenses across all properties in real-time." },
@@ -183,11 +183,11 @@ const getAIResponse = (userMessage, conversationHistory) => {
     },
     { 
       triggers: ['compare', 'vs', 'better than', 'alternative', 'other apps'],
-      response: "MY PG stands out with: 5000+ active users, lowest pricing starting free, dedicated mobile apps, multi-language support, UPI payment integration, WhatsApp notifications, and dedicated 24/7 customer support. Rated 4.8 stars by users!"
+      response: "MY PG stands out with: 500+ active users, lowest pricing starting free, dedicated mobile apps, multi-language support, UPI payment integration, WhatsApp notifications, and dedicated 24/7 customer support. Rated 4.8 stars by users!"
     },
     { 
       triggers: ['user', 'users', 'people', 'who use', 'customers'],
-      response: "MY PG is trusted by over 5000+ PG owners across 25+ cities in India. Our users include individual PG owners, property management companies, and hostel operators."
+      response: "MY PG is trusted by over 500+ PG owners across 25+ cities in India. Our users include individual PG owners, property management companies, and hostel operators."
     },
     { 
       triggers: ['update', 'upgrade', 'new feature', 'latest'],

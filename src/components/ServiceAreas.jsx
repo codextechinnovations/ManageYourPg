@@ -12,8 +12,8 @@ export function ServiceAreas() {
   ]
 
   const stats = [
-    { icon: Building2, value: '5000+', label: 'PGs Managed' },
-    { icon: Users, value: '50000+', label: 'Tenants Served' },
+    { icon: Building2, value: '500+', label: 'PGs Managed' },
+    { icon: Users, value: '5000+', label: 'Tenants Served' },
     { icon: MapPin, value: '25+', label: 'Cities' },
     { icon: TrendingUp, value: '98%', label: 'Customer Retention' },
   ]

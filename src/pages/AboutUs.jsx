@@ -23,10 +23,10 @@ export default function AboutUs() {
     <div className="min-h-screen bg-white">
       <Helmet>
         <title>About Us | MY PG - #1 PG Management Software India</title>
-        <meta name="description" content="Learn about MY PG - India's leading PG management software. Founded in 2020, serving 5000+ PG owners across 25+ cities with 50000+ tenants managed." />
+        <meta name="description" content="Learn about MY PG - India's leading PG management software. Founded in 2020, serving 500+ PG owners across 25+ cities with 5000+ tenants managed." />
         <link rel="canonical" href="https://manageyourpg.com/about" />
         <meta property="og:title" content="About Us | MY PG - PG Management Software" />
-        <meta property="og:description" content="Learn about MY PG - India's leading PG management software serving 5000+ PG owners across 25+ cities." />
+        <meta property="og:description" content="Learn about MY PG - India's leading PG management software serving 500+ PG owners across 25+ cities." />
         <meta property="og:url" content="https://manageyourpg.com/about" />
         <script type="application/ld+json">{JSON.stringify(buildBreadcrumbSchema([{ label: 'Home', path: '/' }, { label: 'About', path: '/about' }]))}</script>
       </Helmet>
@@ -93,7 +93,7 @@ export default function AboutUs() {
                 </span>
               </h2>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                We are India's leading PG management platform, trusted by over 5000+ PG owners
+                We are India's leading PG management platform, trusted by over 500+ PG owners
                 across 25+ cities. Our mission is to simplify PG management through innovative
                 technology, helping owners save time, reduce stress, and grow their business.
               </p>

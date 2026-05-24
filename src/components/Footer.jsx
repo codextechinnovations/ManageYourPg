@@ -197,7 +197,7 @@ export function Footer() {
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 mt-4 pt-4 border-t border-white/10">
             <p className="text-blue-200/60 text-xs">
-              MY PG - India's #1 PG Management Software | Serving 5000+ PGs across 25+ cities
+              MY PG - India's #1 PG Management Software | Serving 500+ PGs across 25+ cities
             </p>
             <div className="flex flex-wrap gap-6 text-xs text-blue-200/60">
               <Link to="/terms" className="hover:text-white transition-colors">

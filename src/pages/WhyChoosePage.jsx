@@ -12,7 +12,7 @@ const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
   name: 'Why Choose MY PG - PG Management Software & App',
-  description: 'Discover why 5000+ PG owners choose MY PG as their preferred PG management software, hostel management system, and tenant management platform.',
+  description: 'Discover why 500+ PG owners choose MY PG as their preferred PG management software, hostel management system, and tenant management platform.',
   url: 'https://manageyourpg.com/why-choose',
   mainEntity: {
     '@type': 'ItemList',
@@ -134,19 +134,19 @@ export function WhyChoosePage() {
     <>
       <Helmet>
         <title>Why Choose MY PG - PG Management Software & App | Benefits for Indian PG Owners</title>
-        <meta name="description" content="Discover why 5000+ PG owners choose MY PG as India's best PG management software. Save 10+ hours weekly, automate rent collection, track payments, and manage multiple properties from one app. Free 7-day trial." />
+        <meta name="description" content="Discover why 500+ PG owners choose MY PG as India's best PG management software. Save 10+ hours weekly, automate rent collection, track payments, and manage multiple properties from one app. Free 7-day trial." />
         <link rel="canonical" href="https://manageyourpg.com/why-choose" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="MY PG - PG Management Software" />
         <meta property="og:title" content="Why Choose MY PG - PG Management Software & App | Benefits for Indian PG Owners" />
-        <meta property="og:description" content="Discover why 5000+ PG owners choose MY PG. Save time, automate rent collection, track payments, and manage multiple properties from one platform. Free trial." />
+        <meta property="og:description" content="Discover why 500+ PG owners choose MY PG. Save time, automate rent collection, track payments, and manage multiple properties from one platform. Free trial." />
         <meta property="og:url" content="https://manageyourpg.com/why-choose" />
         <meta property="og:image" content="https://manageyourpg.com/og-image.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Why Choose MY PG - PG Management Software & App | Benefits for Indian PG Owners" />
-        <meta name="twitter:description" content="Discover why 5000+ PG owners choose MY PG. Save time, automate rent collection, and manage multiple properties from one platform." />
+        <meta name="twitter:description" content="Discover why 500+ PG owners choose MY PG. Save time, automate rent collection, and manage multiple properties from one platform." />
         <meta name="twitter:image" content="https://manageyourpg.com/og-image.jpg" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
@@ -177,7 +177,7 @@ export function WhyChoosePage() {
             <div className="flex items-center justify-center gap-3 text-sm text-gray-500">
               <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4 text-green-500" /> 7 powerful reasons</span>
               <span className="w-1 h-1 rounded-full bg-gray-300" />
-              <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4 text-green-500" /> Trusted by 5000+ PG owners</span>
+              <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4 text-green-500" /> Trusted by 500+ PG owners</span>
               <span className="w-1 h-1 rounded-full bg-gray-300" />
               <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4 text-green-500" /> Free 7-day trial</span>
             </div>
