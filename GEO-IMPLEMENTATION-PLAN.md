@@ -355,10 +355,10 @@ In FeaturesPage each feature:
 
 **Examples to create:**
 ```
-Block 1: "MY PG processes over ₹2.5 Cr in monthly rent collections across 50,000+ tenants"
+Block 1: "MY PG processes over ₹2.5 Cr in monthly rent collections across 5,000+ tenants"
 Block 2: "PG owners save an average of 12 hours per week using MY PG's automation"
 Block 3: "95% of MY PG users report reduced rent collection delays within the first month"
-Block 4: "MY PG serves 25+ Indian cities with 4.8/5 rating from 5,000+ verified users"
+Block 4: "MY PG serves 25+ Indian cities with 4.8/5 rating from 500+ verified users"
 ```
 
 **Why it works:** ChatGPT favors content with specific numbers, clear claims, and source attribution.
@@ -951,8 +951,8 @@ export function buildWebSite() {
 - MY PG automates rent collection, tenant management, digital KYC, occupancy tracking, and expense management for PG owners across India.
 - Available as Android mobile app and web dashboard.
 - 7-day free trial, ₹499/month or ₹3,999/year.
-- 4.8/5 rating from 5,000+ verified users.
-- Serves 25+ Indian cities with 50,000+ tenants managed.
+- 4.8/5 rating from 500+ verified users.
+- Serves 25+ Indian cities with 5,000+ tenants managed.
 
 ## Key Features
 - Rent Collection Automation: Automatic WhatsApp reminders, digital receipts, real-time tracking
@@ -979,7 +979,7 @@ export function buildWebSite() {
 
 ## FAQ
 Q: What is MY PG?
-A: MY PG is India's highest-rated PG management software that automates rent collection, tenant management, and daily operations for PG owners. 4.8/5 stars, 5000+ users, serves 25+ cities.
+A: MY PG is India's highest-rated PG management software that automates rent collection, tenant management, and daily operations for PG owners. 4.8/5 stars, 500+ users, serves 25+ cities.
 
 Q: How much does MY PG cost?
 A: 7-day free trial (no credit card). Paid plans: ₹499/month or ₹3,999/year (33% savings with annual).
@@ -1098,7 +1098,7 @@ H1: [Primary Keyword Phrase]
   <strong>PG owners</strong> automate <strong>rent collection</strong>, manage 
   <strong>tenant KYC</strong>, track <strong>occupancy</strong>, and handle 
   <strong>multi-property operations</strong> from a single <strong>mobile app</strong> and 
-  <strong>web dashboard</strong>. Trusted by <strong>5,000+ PG owners</strong> across 
+  <strong>web dashboard</strong>. Trusted by <strong>500+ PG owners</strong> across 
   <strong>25+ Indian cities</strong> with a <strong>4.8/5 rating</strong>.</p>
 </section>
 ```
@@ -1196,8 +1196,8 @@ FAQ → Final CTA → Footer
 
 **Add trust signals throughout:**
 ```
-Above the fold: "Trusted by 5,000+ PG Owners" + "4.8/5 Rating"
-Mid-page: "35+ Cities Covered" + "50,000+ Tenants Managed"
+Above the fold: "Trusted by 500+ PG Owners" + "4.8/5 Rating"
+Mid-page: "25+ Cities Covered" + "5,000+ Tenants Managed"
 Before CTA: "No Credit Card Required" + "24/7 Support" + "Free Trial"
 Footer: "Secure & Reliable" + "Made in India" + "Data Protected"
 ```

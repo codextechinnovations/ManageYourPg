@@ -25,6 +25,21 @@ MY PG (ManageYourPG) is a comprehensive SaaS platform designed specifically for 
 - `/city/hyderabad` — Hyderabad PG management covering HITEC City, Gachibowli, Madhapur, Aadhaar e-verification, UPI-native payments, premium PG amenities tracking
 - `/city/chennai` — Chennai PG management along OMR corridor, Guindy, Velachery, Tambaram, vegetarian mess management, Tamil language support, long-term tenant lifecycle tools
 
+## Comparison Pages
+- `/compare/my-pg-vs-co-living-platform` — Compare MY PG with premium co-living platforms
+- `/compare/my-pg-vs-basic-rent-tracker` — Compare MY PG with basic rent tracking tools
+- `/compare/my-pg-vs-new-web-tool` — Compare MY PG with newer web-only PG tools
+
+## App Landing Page
+- `/pg-management-app` — Dedicated landing page for the MY PG management app, targeting "PG management app" search intent
+
+## Tools
+- `/tools/rent-calculator` — Free PG rent and ROI calculator for Indian PG owners
+
+## Auth
+- `/signin` — Sign in to existing MY PG account
+- `/signup` — Create new MY PG account
+
 ## Pricing
 | Plan | Price | Duration | Features |
 |------|-------|----------|----------|
@@ -112,7 +127,7 @@ Available in 50+ cities including: Bangalore, Mumbai, Delhi, Gurgaon, Noida, Che
 
 ## Schema Markup
 The website includes comprehensive JSON-LD structured data:
-- SoftwareApplication schema with aggregate rating (4.8/5, 5000+ reviews)
+- SoftwareApplication schema with aggregate rating (4.8/5, 500+ reviews)
 - Organization schema with contact details and social profiles
 - FAQPage schema with 10+ frequently asked questions and answers
 - JobPosting schema for Sales Executive position

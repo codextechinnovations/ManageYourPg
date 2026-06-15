@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Menu, X, Phone, ChevronDown } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { motion, AnimatePresence } from 'motion/react'
 import { Link, useLocation } from 'react-router-dom'
 import logo from '../assets/manageyourpg-logo.svg'
@@ -7,8 +7,6 @@ import logo from '../assets/manageyourpg-logo.svg'
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [isCitiesDropdownOpen, setIsCitiesDropdownOpen] = useState(false)
-  const [isFeaturesDropdownOpen, setIsFeaturesDropdownOpen] = useState(false)
   const location = useLocation()
   const isHome = location.pathname === '/'
 
@@ -31,9 +29,9 @@ export function Navigation() {
   const navItems = [
     { label: 'Home', id: 'home', hash: '#home', link: '/' },
     { label: 'List Your PG', id: 'list-your-pg', hash: '#property-listing', link: '/list-your-pg' },
-    { label: 'Franchise', id: 'franchise', hash: '#franchise', link: '/franchise' },
     { label: 'About', id: 'about', hash: '#about', link: '/about' },
     { label: 'Contact', id: 'contact', hash: '#contact', link: '/#contact' },
+    { label: 'Sign In', id: 'signin', link: 'https://owner.manageyourpg.com/login', external: true },
   ]
 
   return (
@@ -77,6 +75,23 @@ export function Navigation() {
 
           <div className="hidden md:flex items-center space-x-8" role="menubar">
             {navItems.map((item) => {
+              if (item.external) {
+                return (
+                  <a
+                    key={item.id}
+                    href={item.link}
+                    className="text-gray-700 hover:text-[#1a1a4e] transition-colors relative group font-medium"
+                    role="menuitem"
+                    itemScope
+                    itemType="https://schema.org/Action"
+                    itemProp="target"
+                  >
+                    {item.label}
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] group-hover:w-full transition-all duration-300"></span>
+                    <meta itemProp="name" content={item.label} />
+                  </a>
+                )
+              }
               if (item.link === '/about' || item.link.startsWith('/') && !item.link.startsWith('/#')) {
                 return (
                   <Link
@@ -117,83 +132,14 @@ export function Navigation() {
                 </a>
               )
             })}
-            <div
-              className="relative"
-              onMouseEnter={() => setIsFeaturesDropdownOpen(true)}
-              onMouseLeave={() => setIsFeaturesDropdownOpen(false)}
-            >
-              <Link
-                to="/features"
-                onClick={() => setIsFeaturesDropdownOpen(false)}
-                className="text-gray-700 hover:text-[#1a1a4e] transition-colors relative group font-medium flex items-center gap-1"
-                onMouseEnter={() => setIsFeaturesDropdownOpen(true)}
-              >
-                Features
-                <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isFeaturesDropdownOpen ? 'rotate-180' : ''}`} />
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] group-hover:w-full transition-all duration-300"></span>
-              </Link>
-              <AnimatePresence>
-                {isFeaturesDropdownOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    className="absolute top-full left-0 mt-2 bg-white rounded-xl shadow-xl border border-gray-200 py-2 min-w-[240px] z-50"
-                  >
-                    <Link to="/features" className="block px-4 py-2.5 text-sm font-semibold text-[#1a1a4e] hover:bg-blue-50 transition-colors" onClick={() => setIsFeaturesDropdownOpen(false)}>All Features</Link>
-                    <div className="border-t border-gray-100 my-1"></div>
-                    <Link to="/features/rent-collection-software" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsFeaturesDropdownOpen(false)}>Rent Collection</Link>
-                    <Link to="/features/online-rent-collection-app" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsFeaturesDropdownOpen(false)}>WhatsApp Integration</Link>
-                    <Link to="/features/tenant-management-system" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsFeaturesDropdownOpen(false)}>Tenant Management</Link>
-                    <Link to="/features/digital-check-in-for-pg" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsFeaturesDropdownOpen(false)}>Digital Check-in</Link>
-                    <Link to="/features/occupancy-management-software" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsFeaturesDropdownOpen(false)}>Occupancy Tracking</Link>
-                    <Link to="/features/multi-property-management" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsFeaturesDropdownOpen(false)}>Multi-Property</Link>
-                    <Link to="/features/short-stay-and-long-stay-management" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsFeaturesDropdownOpen(false)}>Short Stay & Long Stay</Link>
-                    <Link to="/features/pg-accounting-software" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsFeaturesDropdownOpen(false)}>Accounting & Reports</Link>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-            <div
-              className="relative"
-              onMouseEnter={() => setIsCitiesDropdownOpen(true)}
-              onMouseLeave={() => setIsCitiesDropdownOpen(false)}
-            >
-              <button
-                onClick={() => setIsCitiesDropdownOpen(!isCitiesDropdownOpen)}
-                className="text-gray-700 hover:text-[#1a1a4e] transition-colors relative group font-medium flex items-center gap-1"
-              >
-                Cities
-                <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isCitiesDropdownOpen ? 'rotate-180' : ''}`} />
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] group-hover:w-full transition-all duration-300"></span>
-              </button>
-              <AnimatePresence>
-                {isCitiesDropdownOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    className="absolute top-full left-0 mt-2 bg-white rounded-xl shadow-xl border border-gray-200 py-2 min-w-[200px] z-50"
-                  >
-                    <Link to="/city/bangalore" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsCitiesDropdownOpen(false)}>Bangalore</Link>
-                    <Link to="/city/mumbai" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsCitiesDropdownOpen(false)}>Mumbai</Link>
-                    <Link to="/city/delhi-ncr" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsCitiesDropdownOpen(false)}>Delhi NCR</Link>
-                    <Link to="/city/pune" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsCitiesDropdownOpen(false)}>Pune</Link>
-                    <Link to="/city/hyderabad" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsCitiesDropdownOpen(false)}>Hyderabad</Link>
-                    <Link to="/city/chennai" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#1a1a4e] transition-colors" onClick={() => setIsCitiesDropdownOpen(false)}>Chennai</Link>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-            <Link
-              to="/#contact"
-              onClick={() => setIsMobileMenuOpen(false)}
+            <a
+              href="https://sales.manageyourpg.com/pgownersignup"
               className="px-6 py-2.5 bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] text-white rounded-full hover:shadow-lg hover:scale-105 transition-all font-semibold"
               role="menuitem"
-              aria-label="Get Started - Contact MY PG"
+              aria-label="Register for MY PG"
             >
-              Get Started
-            </Link>
+              Register
+            </a>
           </div>
 
           <button
@@ -222,6 +168,19 @@ export function Navigation() {
           >
             <div className="px-4 py-4 space-y-3">
               {navItems.map((item) => {
+                if (item.external) {
+                  return (
+                    <a
+                      key={item.id}
+                      href={item.link}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors font-medium"
+                      role="menuitem"
+                    >
+                      {item.label}
+                    </a>
+                  )
+                }
                 if (item.link === '/about' || item.link.startsWith('/') && !item.link.startsWith('/#')) {
                   return (
                     <Link
@@ -253,39 +212,14 @@ export function Navigation() {
                   </a>
                 )
               })}
-              <div className="px-4 py-2">
-                <div className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Features</div>
-                <div className="grid grid-cols-1 gap-1">
-                  <Link to="/features" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm font-semibold text-[#1a1a4e] hover:bg-gray-100 rounded-lg transition-colors">All Features</Link>
-                  <Link to="/features/rent-collection-software" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Rent Collection</Link>
-                  <Link to="/features/online-rent-collection-app" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">WhatsApp Integration</Link>
-                  <Link to="/features/tenant-management-system" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Tenant Management</Link>
-                  <Link to="/features/digital-check-in-for-pg" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Digital Check-in</Link>
-                  <Link to="/features/occupancy-management-software" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Occupancy Tracking</Link>
-                  <Link to="/features/multi-property-management" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Multi-Property</Link>
-                  <Link to="/features/short-stay-and-long-stay-management" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Short Stay & Long Stay</Link>
-                  <Link to="/features/pg-accounting-software" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Accounting & Reports</Link>
-                </div>
-              </div>
-              <div className="px-4 py-2">
-                <div className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Cities</div>
-                <div className="grid grid-cols-2 gap-1">
-                  <Link to="/city/bangalore" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Bangalore</Link>
-                  <Link to="/city/mumbai" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Mumbai</Link>
-                  <Link to="/city/delhi-ncr" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Delhi NCR</Link>
-                  <Link to="/city/pune" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Pune</Link>
-                  <Link to="/city/hyderabad" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Hyderabad</Link>
-                  <Link to="/city/chennai" onClick={() => setIsMobileMenuOpen(false)} className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Chennai</Link>
-                </div>
-              </div>
-              <Link
-                to="/#contact"
+              <a
+                href="https://sales.manageyourpg.com/pgownersignup"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="block w-full px-4 py-2.5 bg-gradient-to-r from-[#1a1a4e] to-[#1e3a8a] text-white rounded-full hover:shadow-lg transition-all font-semibold text-center"
                 role="menuitem"
               >
-                Get Started
-              </Link>
+                Register
+              </a>
             </div>
           </motion.div>
         )}

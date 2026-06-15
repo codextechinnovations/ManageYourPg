@@ -2,7 +2,7 @@
 
 ## Overview
 
-MY PG is India's #1 PG (Paying Guest) management software, serving as a comprehensive platform for PG owners, landlords, and property managers to automate and streamline their operations. With a 4.8/5 star rating from over 5000 users, the platform manages 10,000+ PG properties and 50,000+ tenants across India.
+MY PG is India's #1 PG (Paying Guest) management software, serving as a comprehensive platform for PG owners, landlords, and property managers to automate and streamline their operations. With a 4.8/5 star rating from over 500+ users, the platform manages 500+ PG properties and 5,000+ tenants across India.
 
 ## What is PG Management?
 
@@ -147,15 +147,27 @@ Location-based: PG software Bangalore, PG software Mumbai, PG software Delhi, PG
 - **Headquarters**: India
 - **Founders**: MY PG Solutions
 - **Team Size**: 50+ employees
-- **Users**: 10,000+ PG owners
-- **Tenants Managed**: 50,000+
-- **Cities**: 50+
+- **Users**: 500+ PG owners
+- **Tenants Managed**: 5,000+
+- **Cities**: 25+
 - **Rating**: 4.8/5 stars
+
+## Tools & Comparisons
+
+MY PG provides free comparison guides and tools to help PG owners choose the right software:
+
+- **PG Management App**: https://manageyourpg.com/pg-management-app — India's #1 PG management app for owners
+- **PG Rent Calculator**: https://manageyourpg.com/tools/rent-calculator — estimate monthly revenue, occupancy-adjusted income, and ROI
+- **Sign In**: https://manageyourpg.com/signin
+- **Sign Up**: https://manageyourpg.com/signup
+- **MY PG vs Premium Co-Living Platform**: https://manageyourpg.com/compare/my-pg-vs-co-living-platform
+- **MY PG vs Basic Rent Tracker**: https://manageyourpg.com/compare/my-pg-vs-basic-rent-tracker
+- **MY PG vs New Web-Only Tool**: https://manageyourpg.com/compare/my-pg-vs-new-web-tool
 
 ## Frequently Asked Questions
 
 **Q: What makes MY PG different from other PG management software?**  
-A: MY PG offers the most affordable pricing in India (starting at ₹499/month), supports multiple Indian languages, integrates with Indian payment methods (UPI, Google Pay, etc.), provides CCTV integration, food management, and serves 50+ cities with local language support.
+A: MY PG offers the most affordable pricing in India (starting at ₹499/month), supports multiple Indian languages, integrates with Indian payment methods (UPI, Google Pay, etc.), provides CCTV integration, food management, and serves 25+ cities with local language support.
 
 **Q: Can I manage multiple PG properties?**  
 A: Yes, the Premium plan supports unlimited properties from a single dashboard with quick switching between properties.

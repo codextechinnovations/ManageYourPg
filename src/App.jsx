@@ -37,6 +37,13 @@ import { MultiPropertyGuide } from './pages/guides/MultiPropertyGuide'
 import { PGvsHostelGuide } from './pages/guides/PGvsHostelGuide'
 import { CityPage } from './pages/city/CityPage'
 import { Franchise } from './pages/Franchise'
+import { MyPGvsCrib } from './pages/compare/MyPGvsCrib'
+import { MyPGvsTrackMyPG } from './pages/compare/MyPGvsTrackMyPG'
+import { MyPGvsDevStayZ } from './pages/compare/MyPGvsDevStayZ'
+import { RentCalculator } from './pages/tools/RentCalculator'
+import { SignIn } from './pages/SignIn'
+import { SignUp } from './pages/SignUp'
+import { PGManagementApp } from './pages/PGManagementApp'
 
 function SectionLoader() {
   return <div className="h-64 bg-gradient-to-b from-gray-50 to-white animate-pulse" />
@@ -68,8 +75,8 @@ function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>MY PG - #1 PG Management Software & App | Hostel Management & Rent Collection Software for PG Owners</title>
-        <meta name="description" content="MY PG is India's best PG management software and app for PG owners. Automate rent collection, manage tenants with digital KYC, track occupancy, and generate bills. Try our hostel management software and tenant management system free for 7 days." />
+        <title>MY PG - #1 PG Management App & Software in India | Best for PG Owners</title>
+        <meta name="description" content="MY PG is India's #1 PG management app and software. Automate rent collection, manage tenants with digital KYC, track occupancy, and generate bills. Try the best hostel management app free for 7 days." />
         <link rel="canonical" href="https://manageyourpg.com/" />
         <meta property="og:title" content="MY PG - #1 PG Management Software & App | Hostel & Rent Collection Software for PG Owners" />
         <meta property="og:description" content="MY PG is India's leading PG management software and app for PG owners. Automate rent collection, manage tenants with digital KYC, track occupancy, and generate bills with our hostel management software. Free trial." />
@@ -124,6 +131,13 @@ export default function App() {
           <Route path="/guides/pg-vs-hostel-vs-co-living" element={<PGvsHostelGuide />} />
           <Route path="/city/:citySlug" element={<CityPage />} />
           <Route path="/franchise" element={<Franchise />} />
+          <Route path="/compare/my-pg-vs-co-living-platform" element={<MyPGvsCrib />} />
+          <Route path="/compare/my-pg-vs-basic-rent-tracker" element={<MyPGvsTrackMyPG />} />
+          <Route path="/compare/my-pg-vs-new-web-tool" element={<MyPGvsDevStayZ />} />
+          <Route path="/tools/rent-calculator" element={<RentCalculator />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/pg-management-app" element={<PGManagementApp />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

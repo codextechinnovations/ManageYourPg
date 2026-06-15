@@ -31,12 +31,12 @@ export function Screenshots() {
   const opacity = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0, 1, 1, 0])
 
   const screens = [
-    { label: 'PG Owner Dashboard', image: '/screenshots/dashboard-screen.jpg', feature: 'Real-time PG Occupancy Analytics' },
-    { label: 'Tenant Management System', image: '/screenshots/tenants-screen.jpg', feature: 'Digital Tenant Management with KYC' },
-    { label: 'Rent Collection Software', image: '/screenshots/payments-screen-1.jpg', feature: 'Automated Payment Tracking with Receipts' },
-    { label: 'Bed Management System', image: '/screenshots/rooms-screen.jpg', feature: 'Room & Bed Occupancy Tracking' },
-    { label: 'Notice Board', image: '/screenshots/send-notice-screen.jpg', feature: 'Send Notices via PG Management App' },
-    { label: 'PG Management App Menu', image: '/screenshots/side-menu-screen.jpg', feature: 'Complete PG Operations Navigation' },
+    { label: 'PG Owner Dashboard', image: '/screenshots/dashboard-screen.webp', feature: 'Real-time PG Occupancy Analytics' },
+    { label: 'Tenant Management System', image: '/screenshots/tenants-screen.webp', feature: 'Digital Tenant Management with KYC' },
+    { label: 'Rent Collection Software', image: '/screenshots/payments-screen-1.webp', feature: 'Automated Payment Tracking with Receipts' },
+    { label: 'Bed Management System', image: '/screenshots/rooms-screen.webp', feature: 'Room & Bed Occupancy Tracking' },
+    { label: 'Notice Board', image: '/screenshots/send-notice-screen.webp', feature: 'Send Notices via PG Management App' },
+    { label: 'PG Management App Menu', image: '/screenshots/side-menu-screen.webp', feature: 'Complete PG Operations Navigation' },
   ]
 
   const features = [
@@ -145,6 +145,8 @@ export function Screenshots() {
                       src={screens[activeIndex].image}
                       alt={screens[activeIndex].label}
                       className="w-[360px] md:w-[350px] h-[680px] object-cover"
+                      loading="lazy"
+                      decoding="async"
                     />
                     
                     <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a4e]/60 via-transparent to-transparent pointer-events-none" />
@@ -251,7 +253,7 @@ export function Screenshots() {
               </div>
               
               <div className="p-0.5">
-                <img src="https://i.ibb.co/9mNfcMXG/Screenshot-2026-04-21-121259.png" alt="MY PG Web Dashboard - PG Management Software with Occupancy, Rent Collection & Tenant Management" className="w-full rounded-b-xl" />
+                <img src="https://i.ibb.co/9mNfcMXG/Screenshot-2026-04-21-121259.png" alt="MY PG Web Dashboard - PG Management Software with Occupancy, Rent Collection & Tenant Management" className="w-full rounded-b-xl" loading="lazy" decoding="async" />
               </div>
             </div>
           </motion.div>

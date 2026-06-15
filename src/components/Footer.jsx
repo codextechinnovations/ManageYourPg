@@ -15,6 +15,7 @@ export function Footer() {
 
   const quickLinks = [
     { label: 'Home', id: 'home', to: '/' },
+    { label: 'PG Management App', id: 'pg-management-app', to: '/pg-management-app' },
     { label: 'Features', id: 'features', to: '/#features' },
     { label: 'Screenshots', id: 'screenshots', to: '/#screenshots' },
     { label: 'Pricing', id: 'pricing', to: '/#pricing' },
