@@ -207,6 +207,9 @@ export function Footer() {
               <Link to="/privacy" className="hover:text-white transition-colors">
                 Privacy
               </Link>
+              <Link to="/refund-cancellation" className="hover:text-white transition-colors">
+                Refund & Cancellation
+              </Link>
               <Link to="/press" className="hover:text-white transition-colors flex items-center gap-1">
                 <ExternalLink className="w-3 h-3" />
                 Press Kit

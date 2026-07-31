@@ -23,6 +23,7 @@ const ChatBox = lazy(() => import('./components/ChatBox').then(m => ({ default: 
 import AboutUs from './pages/AboutUs'
 import TermsConditions from './pages/TermsConditions'
 import PrivacyPolicy from './pages/PrivacyPolicy'
+import RefundCancellationPolicy from './pages/RefundCancellationPolicy'
 import CareersPage from './pages/Careers'
 import { PressKit } from './pages/PressKit'
 import { FeaturesPage } from './pages/FeaturesPage'
@@ -117,6 +118,7 @@ export default function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/terms" element={<TermsConditions />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/refund-cancellation" element={<RefundCancellationPolicy />} />
           <Route path="/careers" element={<CareersPage />} />
           <Route path="/press" element={<PressKit />} />
           <Route path="/features" element={<FeaturesPage />} />
