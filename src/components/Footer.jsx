@@ -218,11 +218,7 @@ export function Footer() {
               </Link>
             </div>
           </div>
-          {isHome && (
-            <div className="text-center mt-4 pt-4 border-t border-white/10">
-              <p className="text-blue-100 text-sm font-medium">Powered By Sugam Travels</p>
-            </div>
-          )}
+         
         </motion.div>
       </div>
     </footer>
