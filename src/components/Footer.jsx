@@ -1,10 +1,12 @@
 import { motion } from 'motion/react'
 import { Facebook, Twitter, Linkedin, Instagram, Youtube, Mail, Phone, ExternalLink } from 'lucide-react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import logo from '../assets/manageyourpg-logo.svg'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
+  const location = useLocation()
+  const isHome = location.pathname === '/'
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id)
@@ -216,6 +218,11 @@ export function Footer() {
               </Link>
             </div>
           </div>
+          {isHome && (
+            <div className="text-center mt-4 pt-4 border-t border-white/10">
+              <p className="text-blue-100 text-sm font-medium">Powered By Sugam Travels</p>
+            </div>
+          )}
         </motion.div>
       </div>
     </footer>

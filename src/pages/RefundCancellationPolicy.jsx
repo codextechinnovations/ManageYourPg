@@ -11,7 +11,7 @@ const sections = [
   },
   {
     title: '2. Perishable Items',
-    content: 'Codex Tech Innovations And Consultants LLP does not accept cancellation requests for perishable items like flowers, eatables, etc. However, the refund / replacement can be made if the user establishes that the quality of the product delivered is not good.'
+    content: 'sugam travels does not accept cancellation requests for perishable items like flowers, eatables, etc. However, the refund / replacement can be made if the user establishes that the quality of the product delivered is not good.'
   },
   {
     title: '3. Damaged or Defective Items',
@@ -27,7 +27,7 @@ const sections = [
   },
   {
     title: '6. Refund Processing',
-    content: 'In case of any refunds approved by Codex Tech Innovations And Consultants LLP, it will take 5 days for the refund to be processed to you.'
+    content: 'In case of any refunds approved by sugam travels, it will take 5 days for the refund to be processed to you.'
   }
 ]
 
@@ -42,7 +42,7 @@ const faqs = [
   },
   {
     question: 'How long does a refund take?',
-    answer: 'Once a refund is approved by Codex Tech Innovations And Consultants LLP, it will take 5 business days for the refund to be processed and credited to your original payment method.'
+    answer: 'Once a refund is approved by sugam travels, it will take 5 business days for the refund to be processed and credited to your original payment method.'
   },
   {
     question: 'Can I get a refund for perishable items?',
